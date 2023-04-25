@@ -34,7 +34,7 @@
       "metadata" : {
         "label" : "DBT_0",
         "slug" : "DBT_0",
-        "x" : 580,
+        "x" : 560,
         "y" : 300
       },
       "ports" : {
@@ -108,7 +108,7 @@
         "label" : "Script_1",
         "slug" : "Script_1",
         "x" : 760,
-        "y" : 300
+        "y" : 260
       },
       "ports" : {
         "inputs" : [ {
@@ -133,8 +133,8 @@
       "metadata" : {
         "label" : "Script_1_1",
         "slug" : "Script_1_1",
-        "x" : 940,
-        "y" : 300
+        "x" : 1000,
+        "y" : 280
       },
       "ports" : {
         "inputs" : [ {
