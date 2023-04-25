@@ -1,0 +1,633 @@
+---
+version: 2
+sources:
+- name: "prophecy-qa.qa_test_dataset"
+  database: "prophecy-qa"
+  schema: "qa_test_dataset"
+  config:
+    enabled: true
+  tables:
+  - name: "all_type_table"
+    columns:
+    - name: "c_int64"
+      dataType:
+        type: "Integer"
+    - name: "c_bignumeric"
+      dataType:
+        type: "BigNumeric"
+    - name: "c_bool"
+      dataType:
+        type: "Boolean"
+    - name: "c_bytes"
+      dataType:
+        type: "Bytes"
+    - name: "c_string"
+      dataType:
+        type: "String"
+    - name: "c_float64"
+      dataType:
+        type: "Float"
+    - name: "c_numeric_1"
+      dataType:
+        type: "Numeric"
+    - name: "c_numeric_2"
+      dataType:
+        type: "Numeric"
+    - name: "c_date"
+      dataType:
+        type: "Date"
+    - name: "c_interval"
+      dataType:
+        type: "Interval"
+    - name: "c_time"
+      dataType:
+        type: "Time"
+    - name: "c_timestamp"
+      dataType:
+        type: "Timestamp"
+    - name: "c_datetime"
+      dataType:
+        type: "Date"
+    - name: "c_geography"
+      dataType:
+        type: "Geography"
+    - name: "c_json"
+      dataType:
+        type: "Json"
+    - name: "c_array_int64"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Integer"
+    - name: "c_struct"
+      dataType:
+        type: "Record"
+        fields:
+        - name: "name"
+          dataType:
+            type: "String"
+        - name: "age"
+          dataType:
+            type: "Integer"
+        - name: "department"
+          dataType:
+            type: "String"
+    - name: "p_date"
+      dataType:
+        type: "Date"
+  - name: "CATALOG_SALES"
+    columns:
+    - name: "CS_SOLD_DATE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SOLD_TIME_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SHIP_DATE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_BILL_CUSTOMER_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_BILL_CDEMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_BILL_HDEMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_BILL_ADDR_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SHIP_CUSTOMER_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SHIP_CDEMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SHIP_HDEMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SHIP_ADDR_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_CALL_CENTER_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_CATALOG_PAGE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SHIP_MODE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_WAREHOUSE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_ITEM_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_PROMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CS_ORDER_NUMBER"
+      dataType:
+        type: "Numeric"
+    - name: "CS_QUANTITY"
+      dataType:
+        type: "Numeric"
+    - name: "CS_WHOLESALE_COST"
+      dataType:
+        type: "Numeric"
+    - name: "CS_LIST_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "CS_SALES_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "CS_EXT_DISCOUNT_AMT"
+      dataType:
+        type: "Numeric"
+    - name: "CS_EXT_SALES_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "CS_EXT_WHOLESALE_COST"
+      dataType:
+        type: "Numeric"
+    - name: "CS_EXT_LIST_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "CS_EXT_TAX"
+      dataType:
+        type: "Numeric"
+    - name: "CS_COUPON_AMT"
+      dataType:
+        type: "Numeric"
+    - name: "CS_EXT_SHIP_COST"
+      dataType:
+        type: "Numeric"
+    - name: "CS_NET_PAID"
+      dataType:
+        type: "Numeric"
+    - name: "CS_NET_PAID_INC_TAX"
+      dataType:
+        type: "Numeric"
+    - name: "CS_NET_PAID_INC_SHIP"
+      dataType:
+        type: "Numeric"
+    - name: "CS_NET_PAID_INC_SHIP_TAX"
+      dataType:
+        type: "Numeric"
+    - name: "CS_NET_PROFIT"
+      dataType:
+        type: "Numeric"
+  - name: "WAREHOUSE"
+    columns:
+    - name: "W_WAREHOUSE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "W_WAREHOUSE_ID"
+      dataType:
+        type: "String"
+    - name: "W_WAREHOUSE_NAME"
+      dataType:
+        type: "String"
+    - name: "W_WAREHOUSE_SQ_FT"
+      dataType:
+        type: "Numeric"
+    - name: "W_STREET_NUMBER"
+      dataType:
+        type: "String"
+    - name: "W_STREET_NAME"
+      dataType:
+        type: "String"
+    - name: "W_STREET_TYPE"
+      dataType:
+        type: "String"
+    - name: "W_SUITE_NUMBER"
+      dataType:
+        type: "String"
+    - name: "W_CITY"
+      dataType:
+        type: "String"
+    - name: "W_COUNTY"
+      dataType:
+        type: "String"
+    - name: "W_STATE"
+      dataType:
+        type: "String"
+    - name: "W_ZIP"
+      dataType:
+        type: "String"
+    - name: "W_COUNTRY"
+      dataType:
+        type: "String"
+    - name: "W_GMT_OFFSET"
+      dataType:
+        type: "Numeric"
+  - name: "SHIP_MODE"
+    columns:
+    - name: "SM_SHIP_MODE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SM_SHIP_MODE_ID"
+      dataType:
+        type: "String"
+    - name: "SM_TYPE"
+      dataType:
+        type: "String"
+    - name: "SM_CODE"
+      dataType:
+        type: "String"
+    - name: "SM_CARRIER"
+      dataType:
+        type: "String"
+    - name: "SM_CONTRACT"
+      dataType:
+        type: "String"
+  - name: "CALL_CENTER"
+    columns:
+    - name: "CC_CALL_CENTER_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CC_CALL_CENTER_ID"
+      dataType:
+        type: "String"
+    - name: "CC_REC_START_DATE"
+      dataType:
+        type: "Date"
+    - name: "CC_REC_END_DATE"
+      dataType:
+        type: "Date"
+    - name: "CC_CLOSED_DATE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CC_OPEN_DATE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "CC_NAME"
+      dataType:
+        type: "String"
+    - name: "CC_CLASS"
+      dataType:
+        type: "String"
+    - name: "CC_EMPLOYEES"
+      dataType:
+        type: "Numeric"
+    - name: "CC_SQ_FT"
+      dataType:
+        type: "Numeric"
+    - name: "CC_HOURS"
+      dataType:
+        type: "String"
+    - name: "CC_MANAGER"
+      dataType:
+        type: "String"
+    - name: "CC_MKT_ID"
+      dataType:
+        type: "Numeric"
+    - name: "CC_MKT_CLASS"
+      dataType:
+        type: "String"
+    - name: "CC_MKT_DESC"
+      dataType:
+        type: "String"
+    - name: "CC_MARKET_MANAGER"
+      dataType:
+        type: "String"
+    - name: "CC_DIVISION"
+      dataType:
+        type: "Numeric"
+    - name: "CC_DIVISION_NAME"
+      dataType:
+        type: "String"
+    - name: "CC_COMPANY"
+      dataType:
+        type: "Numeric"
+    - name: "CC_COMPANY_NAME"
+      dataType:
+        type: "String"
+    - name: "CC_STREET_NUMBER"
+      dataType:
+        type: "String"
+    - name: "CC_STREET_NAME"
+      dataType:
+        type: "String"
+    - name: "CC_STREET_TYPE"
+      dataType:
+        type: "String"
+    - name: "CC_SUITE_NUMBER"
+      dataType:
+        type: "String"
+    - name: "CC_CITY"
+      dataType:
+        type: "String"
+    - name: "CC_COUNTY"
+      dataType:
+        type: "String"
+    - name: "CC_STATE"
+      dataType:
+        type: "String"
+    - name: "CC_ZIP"
+      dataType:
+        type: "String"
+    - name: "CC_COUNTRY"
+      dataType:
+        type: "String"
+    - name: "CC_GMT_OFFSET"
+      dataType:
+        type: "Numeric"
+    - name: "CC_TAX_PERCENTAGE"
+      dataType:
+        type: "Numeric"
+  - name: "DATE_DIM"
+    columns:
+    - name: "D_DATE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "D_DATE_ID"
+      dataType:
+        type: "String"
+    - name: "D_DATE"
+      dataType:
+        type: "Date"
+    - name: "D_MONTH_SEQ"
+      dataType:
+        type: "Numeric"
+    - name: "D_WEEK_SEQ"
+      dataType:
+        type: "Numeric"
+    - name: "D_QUARTER_SEQ"
+      dataType:
+        type: "Numeric"
+    - name: "D_YEAR"
+      dataType:
+        type: "Numeric"
+    - name: "D_DOW"
+      dataType:
+        type: "Numeric"
+    - name: "D_MOY"
+      dataType:
+        type: "Numeric"
+    - name: "D_DOM"
+      dataType:
+        type: "Numeric"
+    - name: "D_QOY"
+      dataType:
+        type: "Numeric"
+    - name: "D_FY_YEAR"
+      dataType:
+        type: "Numeric"
+    - name: "D_FY_QUARTER_SEQ"
+      dataType:
+        type: "Numeric"
+    - name: "D_FY_WEEK_SEQ"
+      dataType:
+        type: "Numeric"
+    - name: "D_DAY_NAME"
+      dataType:
+        type: "String"
+    - name: "D_QUARTER_NAME"
+      dataType:
+        type: "String"
+    - name: "D_HOLIDAY"
+      dataType:
+        type: "String"
+    - name: "D_WEEKEND"
+      dataType:
+        type: "String"
+    - name: "D_FOLLOWING_HOLIDAY"
+      dataType:
+        type: "String"
+    - name: "D_FIRST_DOM"
+      dataType:
+        type: "Numeric"
+    - name: "D_LAST_DOM"
+      dataType:
+        type: "Numeric"
+    - name: "D_SAME_DAY_LY"
+      dataType:
+        type: "Numeric"
+    - name: "D_SAME_DAY_LQ"
+      dataType:
+        type: "Numeric"
+    - name: "D_CURRENT_DAY"
+      dataType:
+        type: "String"
+    - name: "D_CURRENT_WEEK"
+      dataType:
+        type: "String"
+    - name: "D_CURRENT_MONTH"
+      dataType:
+        type: "String"
+    - name: "D_CURRENT_QUARTER"
+      dataType:
+        type: "String"
+    - name: "D_CURRENT_YEAR"
+      dataType:
+        type: "String"
+  - name: "STORE_SALES"
+    columns:
+    - name: "SS_SOLD_DATE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_SOLD_TIME_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_ITEM_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_CUSTOMER_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_CDEMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_HDEMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_ADDR_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_STORE_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_PROMO_SK"
+      dataType:
+        type: "Numeric"
+    - name: "SS_TICKET_NUMBER"
+      dataType:
+        type: "Numeric"
+    - name: "SS_QUANTITY"
+      dataType:
+        type: "Numeric"
+    - name: "SS_WHOLESALE_COST"
+      dataType:
+        type: "Numeric"
+    - name: "SS_LIST_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "SS_SALES_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "SS_EXT_DISCOUNT_AMT"
+      dataType:
+        type: "Numeric"
+    - name: "SS_EXT_SALES_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "SS_EXT_WHOLESALE_COST"
+      dataType:
+        type: "Numeric"
+    - name: "SS_EXT_LIST_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "SS_EXT_TAX"
+      dataType:
+        type: "Numeric"
+    - name: "SS_COUPON_AMT"
+      dataType:
+        type: "Numeric"
+    - name: "SS_NET_PAID"
+      dataType:
+        type: "Numeric"
+    - name: "SS_NET_PAID_INC_TAX"
+      dataType:
+        type: "Numeric"
+    - name: "SS_NET_PROFIT"
+      dataType:
+        type: "Numeric"
+  - name: "ITEM"
+    columns:
+    - name: "I_ITEM_SK"
+      dataType:
+        type: "Numeric"
+    - name: "I_ITEM_ID"
+      dataType:
+        type: "String"
+    - name: "I_REC_START_DATE"
+      dataType:
+        type: "Date"
+    - name: "I_REC_END_DATE"
+      dataType:
+        type: "Date"
+    - name: "I_ITEM_DESC"
+      dataType:
+        type: "String"
+    - name: "I_CURRENT_PRICE"
+      dataType:
+        type: "Numeric"
+    - name: "I_WHOLESALE_COST"
+      dataType:
+        type: "Numeric"
+    - name: "I_BRAND_ID"
+      dataType:
+        type: "Numeric"
+    - name: "I_BRAND"
+      dataType:
+        type: "String"
+    - name: "I_CLASS_ID"
+      dataType:
+        type: "Numeric"
+    - name: "I_CLASS"
+      dataType:
+        type: "String"
+    - name: "I_CATEGORY_ID"
+      dataType:
+        type: "Numeric"
+    - name: "I_CATEGORY"
+      dataType:
+        type: "String"
+    - name: "I_MANUFACT_ID"
+      dataType:
+        type: "Numeric"
+    - name: "I_MANUFACT"
+      dataType:
+        type: "String"
+    - name: "I_SIZE"
+      dataType:
+        type: "String"
+    - name: "I_FORMULATION"
+      dataType:
+        type: "String"
+    - name: "I_COLOR"
+      dataType:
+        type: "String"
+    - name: "I_UNITS"
+      dataType:
+        type: "String"
+    - name: "I_CONTAINER"
+      dataType:
+        type: "String"
+    - name: "I_MANAGER_ID"
+      dataType:
+        type: "Numeric"
+    - name: "I_PRODUCT_NAME"
+      dataType:
+        type: "String"
+  - name: "qa_table_with_complex_column_names_and_table_with_long_name_1_table_with_complex_column_names_and_table_with_long_name_table_with_complex_column_names_and_table_with_long_name"
+    columns:
+    - name: "c_int64"
+      dataType:
+        type: "Integer"
+    - name: "_c_bignumeric"
+      dataType:
+        type: "BigNumeric"
+    - name: "_c_bool123"
+      dataType:
+        type: "Boolean"
+    - name: "c_bytes"
+      dataType:
+        type: "Bytes"
+    - name: "c_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little123"
+      dataType:
+        type: "String"
+    - name: "c_float64"
+      dataType:
+        type: "Float"
+    - name: "_c_numeric_1"
+      dataType:
+        type: "Numeric"
+    - name: "_c_numeric_2"
+      dataType:
+        type: "Numeric"
+    - name: "c_date"
+      dataType:
+        type: "Date"
+    - name: "c_interval"
+      dataType:
+        type: "Interval"
+    - name: "c_time"
+      dataType:
+        type: "Time"
+    - name: "c_timestamp"
+      dataType:
+        type: "Timestamp"
+    - name: "c_datetime"
+      dataType:
+        type: "Date"
+    - name: "c_geography"
+      dataType:
+        type: "Geography"
+    - name: "_c_json"
+      dataType:
+        type: "Json"
+    - name: "_c_array_int64"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Integer"
+    - name: "_c_struct1"
+      dataType:
+        type: "Record"
+        fields:
+        - name: "_name1"
+          dataType:
+            type: "String"
+        - name: "_age2"
+          dataType:
+            type: "Integer"
+        - name: "_department3"
+          dataType:
+            type: "String"
+    - name: "p_date"
+      dataType:
+        type: "Date"

@@ -1,0 +1,4492 @@
+{
+  "name" : "SQL_BigquerySharedBasic",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "bigquery",
+  "fabricId" : "5285",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Database",
+    "name" : "prophecy-qa",
+    "children" : [ {
+      "type" : "Schema",
+      "name" : "qa_test_dataset",
+      "tables" : {
+        "RAW_ORDERS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "USER_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "ORDER_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "STATUS",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "env_uitesting_shared_mid_model_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "c_struct",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "department",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          } ]
+        },
+        "SHIP_MODE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "SM_SHIP_MODE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SM_SHIP_MODE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "SM_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "SM_CODE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "SM_CARRIER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "SM_CONTRACT",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "DBGEN_VERSION" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "DV_VERSION",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "DV_CREATE_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "DV_CREATE_TIME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "DV_CMDLINE_ARGS",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "payments" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "payment_method",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "amount",
+            "dataType" : {
+              "type" : "Float"
+            }
+          } ]
+        },
+        "raw_customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "raw_orders" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "user_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "status",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "ITEM" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "I_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_ITEM_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_REC_START_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "I_REC_END_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "I_ITEM_DESC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CURRENT_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_BRAND_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_BRAND",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CLASS_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CATEGORY_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_CATEGORY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_MANUFACT_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_MANUFACT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_SIZE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_FORMULATION",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_COLOR",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_UNITS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CONTAINER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_MANAGER_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "I_PRODUCT_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "PAYMENTS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "ORDER_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "PAYMENT_METHOD",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AMOUNT",
+            "dataType" : {
+              "type" : "Float"
+            }
+          } ]
+        },
+        "CALL_CENTER" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "CC_CALL_CENTER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_CALL_CENTER_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_REC_START_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "CC_REC_END_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "CC_CLOSED_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_OPEN_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_EMPLOYEES",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_SQ_FT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_HOURS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_MANAGER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_MKT_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_MKT_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_MKT_DESC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_MARKET_MANAGER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_DIVISION",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_DIVISION_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_COMPANY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_COMPANY_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_STREET_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_STREET_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_STREET_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_SUITE_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_CITY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_COUNTY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_STATE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_ZIP",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_COUNTRY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_GMT_OFFSET",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CC_TAX_PERCENTAGE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "CUSTOMER_ADDRESS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "CA_ADDRESS_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CA_ADDRESS_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_STREET_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_STREET_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_STREET_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_SUITE_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_CITY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_COUNTY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_STATE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_ZIP",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_COUNTRY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CA_GMT_OFFSET",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CA_LOCATION_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "seed" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "WEB_PAGE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "WP_WEB_PAGE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_WEB_PAGE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WP_REC_START_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "WP_REC_END_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "WP_CREATION_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_ACCESS_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_AUTOGEN_FLAG",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WP_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_URL",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WP_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WP_CHAR_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_LINK_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_IMAGE_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WP_MAX_AD_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "annual_enterprise" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "Year_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Industry_aggregation_NZSIOC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Industry_code_NZSIOC",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Industry_name_NZSIOC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Units_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Variable_code_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Variable_name_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Variable_category_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Value_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Industry_code_ANZSIC06",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "CUSTOMERS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "FIRST_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "LAST_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "raw_payments" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "payment_method",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "amount",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "country_classification" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "country_code",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "country_label",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "goods_classification" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "NZHSC_Level_2_Code_HS4",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "NZHSC_Level_1_Code_HS2",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "NZHSC_Level_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "NZHSC_Level_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Status_HS4",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "model_with_only_seed_base" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "country_code",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "country_label",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "code_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "service_label_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_macro2",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "tpcds_1_env_uitesting_shared" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "I_ITEM_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_ITEM_DESC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CATEGORY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "I_CURRENT_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "ITEMREVENUE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "REVENUERATIO",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SM_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CC_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "all_type_table" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "c_struct",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "department",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          } ]
+        },
+        "basic_payments" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "payment_method",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "amount",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "env_uitesting_basic_project_model_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "order_id_main",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "user_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "status",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "payments_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "ORDER_ID",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "PAYMENT_METHOD",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AMOUNT",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "FULL_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "env_uitesting_shared_useall_model_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "cfor_col_0",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_col_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_col_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_col_3",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_col_4",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_if",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_bool_expr",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_concat_expr",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_add_expr",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_struct",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "department",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "c_concat_basic",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_dbt_utils",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "CUSTOMER_DEMOGRAPHICS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "CD_DEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CD_GENDER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CD_MARITAL_STATUS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CD_EDUCATION_STATUS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CD_PURCHASE_ESTIMATE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CD_CREDIT_RATING",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CD_DEP_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CD_DEP_EMPLOYED_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CD_DEP_COLLEGE_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "seed-rename" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : " name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : " age",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "CATALOG_RETURNS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "CR_RETURNED_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURNED_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REFUNDED_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REFUNDED_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REFUNDED_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REFUNDED_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURNING_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURNING_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURNING_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURNING_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_CALL_CENTER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_CATALOG_PAGE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_SHIP_MODE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_WAREHOUSE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REASON_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_ORDER_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURN_QUANTITY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURN_AMOUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURN_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURN_AMT_INC_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_FEE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_RETURN_SHIP_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REFUNDED_CASH",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_REVERSED_CHARGE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_STORE_CREDIT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CR_NET_LOSS",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "qa_test_table" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_int",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "STORE_RETURNS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "SR_RETURNED_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_RETURN_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_STORE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_REASON_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_TICKET_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_RETURN_QUANTITY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_RETURN_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_RETURN_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_RETURN_AMT_INC_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_FEE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_RETURN_SHIP_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_REFUNDED_CASH",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_REVERSED_CHARGE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_STORE_CREDIT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SR_NET_LOSS",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "testModel" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : " name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : " age",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "INCOME_BAND" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "IB_INCOME_BAND_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "IB_LOWER_BOUND",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "IB_UPPER_BOUND",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "WEB_SITE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "WEB_SITE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WEB_SITE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_REC_START_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "WEB_REC_END_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "WEB_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_OPEN_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WEB_CLOSE_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WEB_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_MANAGER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_MKT_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WEB_MKT_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_MKT_DESC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_MARKET_MANAGER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_COMPANY_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WEB_COMPANY_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_STREET_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_STREET_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_STREET_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_SUITE_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_CITY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_COUNTY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_STATE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_ZIP",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_COUNTRY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "WEB_GMT_OFFSET",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WEB_TAX_PERCENTAGE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "WEB_SALES" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "WS_SOLD_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SOLD_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SHIP_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_BILL_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_BILL_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_BILL_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_BILL_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SHIP_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SHIP_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SHIP_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SHIP_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_WEB_PAGE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_WEB_SITE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SHIP_MODE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_WAREHOUSE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_PROMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_ORDER_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_QUANTITY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_LIST_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_SALES_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_EXT_DISCOUNT_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_EXT_SALES_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_EXT_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_EXT_LIST_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_EXT_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_COUPON_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_EXT_SHIP_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_NET_PAID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_NET_PAID_INC_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_NET_PAID_INC_SHIP",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_NET_PAID_INC_SHIP_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WS_NET_PROFIT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "economic_survey_manufacturing" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "Series_reference",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Period_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Data_value",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Suppressed_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "STATUS_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "UNITS_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Magnitude_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Subject_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Group_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_3",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_4",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_5",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "WEB_RETURNS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "WR_RETURNED_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURNED_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REFUNDED_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REFUNDED_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REFUNDED_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REFUNDED_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURNING_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURNING_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURNING_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURNING_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_WEB_PAGE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REASON_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_ORDER_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURN_QUANTITY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURN_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURN_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURN_AMT_INC_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_FEE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_RETURN_SHIP_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REFUNDED_CASH",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_REVERSED_CHARGE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_ACCOUNT_CREDIT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "WR_NET_LOSS",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "qa_table_with_complex_column_names_and_table_with_long_name_1_table_with_complex_column_names_and_table_with_long_name_table_with_complex_column_names_and_table_with_long_name" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "_c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "_c_bool123",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little123",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "_c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "_c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "_c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "_c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "_c_struct1",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "_name1",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "_age2",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "_department3",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          } ]
+        },
+        "STORE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "S_STORE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_STORE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_REC_START_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "S_REC_END_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "S_CLOSED_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_STORE_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_NUMBER_EMPLOYEES",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_FLOOR_SPACE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_HOURS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_MANAGER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_MARKET_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_GEOGRAPHY_CLASS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_MARKET_DESC",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_MARKET_MANAGER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_DIVISION_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_DIVISION_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_COMPANY_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_COMPANY_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_STREET_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_STREET_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_STREET_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_SUITE_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_CITY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_COUNTY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_STATE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_ZIP",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_COUNTRY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "S_GMT_OFFSET",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "S_TAX_PRECENTAGE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "TIME_DIM" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "T_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "T_TIME_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "T_TIME",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "T_HOUR",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "T_MINUTE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "T_SECOND",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "T_AM_PM",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "T_SHIFT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "T_SUB_SHIFT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "T_MEAL_TIME",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "qa_table-with complex characters ?????? 00_????tudiant-01" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "RAW_CUSTOMERS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "FIRST_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "LAST_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "CUSTOMER" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "C_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_CUSTOMER_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_CURRENT_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_CURRENT_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_CURRENT_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_FIRST_SHIPTO_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_FIRST_SALES_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_SALUTATION",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_FIRST_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_LAST_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_PREFERRED_CUST_FLAG",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_BIRTH_DAY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_BIRTH_MONTH",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_BIRTH_YEAR",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "C_BIRTH_COUNTRY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_LOGIN",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_EMAIL_ADDRESS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "C_LAST_REVIEW_DATE",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "DATE_DIM" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "D_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_DATE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "D_MONTH_SEQ",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_WEEK_SEQ",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_QUARTER_SEQ",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_YEAR",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_DOW",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_MOY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_DOM",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_QOY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_FY_YEAR",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_FY_QUARTER_SEQ",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_FY_WEEK_SEQ",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_DAY_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_QUARTER_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_HOLIDAY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_WEEKEND",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_FOLLOWING_HOLIDAY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_FIRST_DOM",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_LAST_DOM",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_SAME_DAY_LY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_SAME_DAY_LQ",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "D_CURRENT_DAY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_CURRENT_WEEK",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_CURRENT_MONTH",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_CURRENT_QUARTER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "D_CURRENT_YEAR",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "ORDERS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "USER_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "ORDER_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "STATUS",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "business_financial_data" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "Series_reference",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Period1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Data_value",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Suppressed1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "STATUS1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "UNITS1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Magnitude_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Subject_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Group_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_3",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_4",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_5",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "env_uitesting_main_model_bigquery_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_base_dependency_macro",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_boolean_macro",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_dbt_date",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "c_struct",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "department",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          } ]
+        },
+        "CATALOG_PAGE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "CP_CATALOG_PAGE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CP_CATALOG_PAGE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CP_START_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CP_END_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CP_DEPARTMENT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CP_CATALOG_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CP_CATALOG_PAGE_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CP_DESCRIPTION",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CP_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "epl_data" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "Div_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Date_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HomeTeam_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AwayTeam_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "FTHG_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "FTAG_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "FTR_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HTHG_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HTAG_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HTR_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Referee_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HS_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "AS_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HST_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "AST_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HF_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "AF_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HC_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "AC_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HY_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "AY_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "HR_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "AR_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "B365H_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "B365D_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "B365A_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BWH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BWD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BWA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "IWH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "IWD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "IWA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "PSH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "PSD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "PSA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "WHH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "WHD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "WHA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "VCH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "VCD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "VCA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Bb1X2_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "BbMxH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAvH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbMxD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAvD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbMxA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAvA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbOU_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "BbMx_2_5",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAv_2_5",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbMx_2_5_2",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAv_2_5_2",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAH_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "BbAHh_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbMxAHH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAvAHH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbMxAHA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "BbAvAHA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "PSCH_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "PSCD_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "PSCA_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          } ]
+        },
+        "ROWS_100_TABLE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "A",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "orders" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "user_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "status",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "basic_orders" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "user_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "status",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "hundred_rows_table" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "a",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "HOUSEHOLD_DEMOGRAPHICS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "HD_DEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "HD_INCOME_BAND_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "HD_BUY_POTENTIAL",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HD_DEP_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "HD_VEHICLE_COUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "electronic_cards_transactions" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "Series_reference",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Period_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Data_value_1",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Suppressed_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "STATUS_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "UNITS_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Magnitude_1",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Subject_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Group_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Series_title_3",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Series_title_4",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Series_title_5",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "EMPLOYEES" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "TITLE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "EMPLOYEE_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "MANAGER_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "REASON" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "R_REASON_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "R_REASON_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "R_REASON_DESC",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "service_classification" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "code_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "service_label_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "RAW_PAYMENTS" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "ORDER_ID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "PAYMENT_METHOD",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AMOUNT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "STORE_SALES" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "SS_SOLD_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_SOLD_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_STORE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_PROMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_TICKET_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_QUANTITY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_LIST_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_SALES_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_EXT_DISCOUNT_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_EXT_SALES_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_EXT_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_EXT_LIST_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_EXT_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_COUPON_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_NET_PAID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_NET_PAID_INC_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "SS_NET_PROFIT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "WAREHOUSE" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "W_WAREHOUSE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "W_WAREHOUSE_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_WAREHOUSE_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_WAREHOUSE_SQ_FT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "W_STREET_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_STREET_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_STREET_TYPE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_SUITE_NUMBER",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_CITY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_COUNTY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_STATE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_ZIP",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_COUNTRY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "W_GMT_OFFSET",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "env_uitesting_shared_child_model_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "c_struct",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "department",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          } ]
+        },
+        "test_model_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "input",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "description",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "host",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "suffix",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "domain",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "env_uitesting_shared_parent_model_1" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "BigNumeric"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          }, {
+            "name" : "c_bytes",
+            "dataType" : {
+              "type" : "Bytes"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_numeric_1",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_numeric_2",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "c_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_interval",
+            "dataType" : {
+              "type" : "Interval"
+            }
+          }, {
+            "name" : "c_time",
+            "dataType" : {
+              "type" : "Time"
+            }
+          }, {
+            "name" : "c_timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "c_datetime",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "c_geography",
+            "dataType" : {
+              "type" : "Geography"
+            }
+          }, {
+            "name" : "c_json",
+            "dataType" : {
+              "type" : "Json"
+            }
+          }, {
+            "name" : "c_array_int64",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          }, {
+            "name" : "c_struct",
+            "dataType" : {
+              "type" : "Record",
+              "fields" : [ {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }, {
+                "name" : "department",
+                "dataType" : {
+                  "type" : "String"
+                }
+              } ]
+            }
+          }, {
+            "name" : "p_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          } ]
+        },
+        "basic_customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "CATALOG_SALES" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "CS_SOLD_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SOLD_TIME_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SHIP_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_BILL_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_BILL_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_BILL_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_BILL_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SHIP_CUSTOMER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SHIP_CDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SHIP_HDEMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SHIP_ADDR_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_CALL_CENTER_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_CATALOG_PAGE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SHIP_MODE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_WAREHOUSE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_PROMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_ORDER_NUMBER",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_QUANTITY",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_LIST_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_SALES_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_EXT_DISCOUNT_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_EXT_SALES_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_EXT_WHOLESALE_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_EXT_LIST_PRICE",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_EXT_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_COUPON_AMT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_EXT_SHIP_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_NET_PAID",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_NET_PAID_INC_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_NET_PAID_INC_SHIP",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_NET_PAID_INC_SHIP_TAX",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "CS_NET_PROFIT",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        },
+        "PROMOTION" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "P_PROMO_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "P_PROMO_ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_START_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "P_END_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "P_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "P_COST",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "P_RESPONSE_TARGET",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "P_PROMO_NAME",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_DMAIL",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_EMAIL",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_CATALOG",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_TV",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_RADIO",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_PRESS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_EVENT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_DEMO",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_CHANNEL_DETAILS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_PURPOSE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "P_DISCOUNT_ACTIVE",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "INVENTORY" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "INV_DATE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "INV_ITEM_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "INV_WAREHOUSE_SK",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          }, {
+            "name" : "INV_QUANTITY_ON_HAND",
+            "dataType" : {
+              "type" : "Numeric"
+            }
+          } ]
+        }
+      }
+    }, {
+      "type" : "Schema",
+      "name" : "qa_test_another_dataset",
+      "tables" : {
+        "hundred_rows_table" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "a",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "orders" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "user_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "status",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "payments" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "payment_method",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "amount",
+            "dataType" : {
+              "type" : "Float"
+            }
+          } ]
+        },
+        "customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }
+    } ]
+  },
+  "dependenciesContainer" : { },
+  "frontEndLanguage" : "sql"
+}

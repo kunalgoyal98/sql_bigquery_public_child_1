@@ -1,0 +1,201 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "4931",
+    "jobId" : "jobs/REL_BQ_Databricks",
+    "name" : "REL_BQ_Databricks",
+    "schedule" : "0 0 0 * * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "abhisheks@prophecy.io",
+      "onStart" : false,
+      "onSuccess" : true,
+      "onFailure" : true
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "2068",
+      "name" : "dev_shared",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "Medium" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "3856",
+      "name" : "dev_expired_donotdelete",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "4931",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "5528",
+      "name" : "Automated-Databricks-ACLNewDude",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2", "small2" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    } ]
+  },
+  "processes" : {
+    "W5DNxP-98wHJUsGutvatJ$$zMYvW0zpoLg1xgHm4F3qi" : {
+      "id" : "W5DNxP-98wHJUsGutvatJ$$zMYvW0zpoLg1xgHm4F3qi",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 500,
+        "y" : 240
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "K-ZMZX4f_IlZoRACChsj8$$BFzRdYvxGZDeIEpjVAB8y",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "VTuQFtLbp92kEaN20lV-I$$m0q-UmlSL74JKr7BehNuy",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "runModelWithParents" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "env_uitesting_shared_mid_model_1",
+        "projectId" : "23113",
+        "runOnlyModel" : "true",
+        "failFast" : true,
+        "loadingModels" : false,
+        "fullRefresh" : true,
+        "profile" : "run_profile",
+        "sqlFabricId" : "5286",
+        "gitEntityValue" : "main",
+        "runModelWithChildren" : true,
+        "execDeps" : true,
+        "noAnonymousUsageStats" : true,
+        "execTest" : false,
+        "warnError" : false,
+        "currentProjectModels" : [ {
+          "label" : "tpcds_1_env_uitesting_shared",
+          "value" : "tpcds_1_env_uitesting_shared",
+          "id" : "23113/.prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared",
+          "name" : "tpcds_1_env_uitesting_shared"
+        }, {
+          "label" : "env_uitesting_shared_useall_model_1",
+          "value" : "env_uitesting_shared_useall_model_1",
+          "id" : "23113/.prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1",
+          "name" : "env_uitesting_shared_useall_model_1"
+        }, {
+          "label" : "env_uitesting_shared_child_model_1",
+          "value" : "env_uitesting_shared_child_model_1",
+          "id" : "23113/.prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1",
+          "name" : "env_uitesting_shared_child_model_1"
+        }, {
+          "label" : "env_uitesting_shared_mid_model_1",
+          "value" : "env_uitesting_shared_mid_model_1",
+          "id" : "23113/.prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1",
+          "name" : "env_uitesting_shared_mid_model_1"
+        }, {
+          "label" : "env_uitesting_shared_parent_model_1",
+          "value" : "env_uitesting_shared_parent_model_1",
+          "id" : "23113/.prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1",
+          "name" : "env_uitesting_shared_parent_model_1"
+        } ]
+      }
+    },
+    "2qs19H3-tKOwjqRZw88kV$$h9EdQXQ7UklEyOTXY13rv" : {
+      "id" : "2qs19H3-tKOwjqRZw88kV$$h9EdQXQ7UklEyOTXY13rv",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 760,
+        "y" : 280
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IIi0gb659U1m8bQpDFiUB$$zCGeRWa4yOOEzUS5dp5Ud",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "tp85_x0z7bHDdWG2_kB3K$$hVFsPXdZZItkKmJRifJBX",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "sfv7gERN3h-HZ9YiqjT1K",
+    "source" : "W5DNxP-98wHJUsGutvatJ$$zMYvW0zpoLg1xgHm4F3qi",
+    "target" : "2qs19H3-tKOwjqRZw88kV$$h9EdQXQ7UklEyOTXY13rv",
+    "sourcePort" : "VTuQFtLbp92kEaN20lV-I$$m0q-UmlSL74JKr7BehNuy",
+    "targetPort" : "IIi0gb659U1m8bQpDFiUB$$zCGeRWa4yOOEzUS5dp5Ud"
+  } ]
+}

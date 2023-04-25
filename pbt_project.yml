@@ -1,0 +1,204 @@
+name: SQL_BigquerySharedBasic
+description: ''
+version: 0.0.1
+author: null
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/REL_BQ_AIRFLOW:
+    name: REL_BQ_AIRFLOW
+    description: TEST AIRFLOW JOB BIGQUERY
+    fabricUID: 5295
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 10 * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-04-21 13:02:23'
+    modifiedAt: '2023-04-21 13:41:50'
+    author: abhisheks+shared@prophecy.io
+  jobs/REL_BQ_Databricks:
+    name: REL_BQ_Databricks
+    description: ''
+    fabricUID: 4931
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: abhisheks@prophecy.io
+      onStart: false
+      onSuccess: true
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-04-21 13:42:59'
+    modifiedAt: '2023-04-21 13:47:11'
+    author: abhisheks+shared@prophecy.io
+functions:
+  author: null
+  createdAt: '2023-04-16 15:58:13'
+  modifiedAt: '2023-04-16 15:58:13'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1:
+    name: env_uitesting_shared_parent_model_1
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/main/env_uitesting_shared_parent_model_1.sql
+    - .prophecy/ide/models/env_uitesting_shared_parent_model_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-04-16 16:04:01'
+    modifiedAt: '2023-04-16 16:04:01'
+  .prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1:
+    name: env_uitesting_shared_child_model_1
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/main/env_uitesting_shared_child_model_1.sql
+    - .prophecy/ide/models/env_uitesting_shared_child_model_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-04-16 16:06:07'
+    modifiedAt: '2023-04-16 16:06:07'
+  .prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1:
+    name: env_uitesting_shared_mid_model_1
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/main/env_uitesting_shared_mid_model_1.sql
+    - .prophecy/ide/models/env_uitesting_shared_mid_model_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-04-16 16:05:29'
+    modifiedAt: '2023-04-16 16:05:29'
+  .prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared:
+    name: tpcds_1_env_uitesting_shared
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/tpcds/tpcds_1_env_uitesting_shared.sql
+    - .prophecy/ide/models/tpcds_1_env_uitesting_shared.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-04-20 04:12:51'
+    modifiedAt: '2023-04-20 04:12:51'
+  .prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1:
+    name: env_uitesting_shared_useall_model_1
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/main/env_uitesting_shared_useall_model_1.sql
+    - .prophecy/ide/models/env_uitesting_shared_useall_model_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-04-16 16:08:46'
+    modifiedAt: '2023-04-16 16:08:46'
+sqlMacros: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/raw_customers:
+    name: raw_customers
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/raw/raw_customers.csv
+    createdAt: '2023-04-16 15:59:36'
+    modifiedAt: '2023-04-16 15:59:36'
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy-qa_qa_test_dataset:
+    name: prophecy-qa.qa_test_dataset
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-04-16 16:04:09'
+    modifiedAt: '2023-04-16 16:04:09'
+    tables:
+    - name: all_type_table
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-16 16:04:09'
+      modifiedAt: '2023-04-16 16:04:09'
+    - name: CATALOG_SALES
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:15:55'
+      modifiedAt: '2023-04-20 04:15:55'
+    - name: WAREHOUSE
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:16:00'
+      modifiedAt: '2023-04-20 04:16:00'
+    - name: SHIP_MODE
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:16:08'
+      modifiedAt: '2023-04-20 04:16:08'
+    - name: CALL_CENTER
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:16:12'
+      modifiedAt: '2023-04-20 04:16:12'
+    - name: DATE_DIM
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:18:46'
+      modifiedAt: '2023-04-20 04:18:46'
+    - name: STORE_SALES
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:24:12'
+      modifiedAt: '2023-04-20 04:24:12'
+    - name: ITEM
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 04:24:30'
+      modifiedAt: '2023-04-20 04:24:30'
+    - name: qa_table_with_complex_column_names_and_table_with_long_name_1_table_with_complex_column_names_and_table_with_long_name_table_with_complex_column_names_and_table_with_long_name
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-20 09:31:43'
+      modifiedAt: '2023-04-20 09:31:43'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2023-04-16 15:58:13'
+  modifiedAt: '2023-04-16 15:58:13'
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
