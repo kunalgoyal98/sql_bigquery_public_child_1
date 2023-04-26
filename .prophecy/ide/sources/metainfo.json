@@ -4487,10 +4487,6 @@
       }
     } ]
   },
-  "dependenciesContainer" : {
-    "prophecyProjectDependencies" : {
-      "https://github.com/abhisheks-prophecy/sql_bigquery_public_parent" : "24111"
-    }
-  },
+  "dependenciesContainer" : { },
   "frontEndLanguage" : "sql"
 }
