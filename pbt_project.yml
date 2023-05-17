@@ -29,9 +29,9 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2023-04-21 13:02:23'
-    modifiedAt: '2023-05-17 16:53:35'
+    modifiedAt: '2023-05-17 17:20:21'
     author: abhisheks+shared@prophecy.io
 functions:
   author: null

@@ -6,7 +6,7 @@
     "name" : "REL_BQ_AIRFLOW",
     "dagName" : "uitesting_shared_team_SQL_BigquerySharedBasic_REL_BQ_AIRFLOW",
     "schedule" : "0 0 10 * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
