@@ -31,8 +31,8 @@
       "component" : "Macro",
       "metadata" : {
         "label" : "Macro_1",
-        "x" : 540,
-        "y" : 820,
+        "x" : 280,
+        "y" : 720,
         "phase" : 0,
         "macroDependencies" : [ "SQL_BigQueryParentProjectMain.qa_all_not_null" ]
       },
@@ -112,8 +112,8 @@
       "component" : "Filter",
       "metadata" : {
         "label" : "Filter_1",
-        "x" : 760,
-        "y" : 320,
+        "x" : 800,
+        "y" : 420,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -476,8 +476,8 @@
       "component" : "Seed",
       "metadata" : {
         "label" : "raw_payments",
-        "x" : 340,
-        "y" : 120,
+        "x" : 20,
+        "y" : 820,
         "phase" : 0
       },
       "properties" : {
@@ -525,7 +525,7 @@
       "metadata" : {
         "label" : "AllStunningOne",
         "x" : 540,
-        "y" : 320,
+        "y" : 360,
         "phase" : 0,
         "macroDependencies" : [ "SQL_BaseGitDepProjectAllFinal.bigquery__language_specific_concat_base", "SQL_BigQueryParentProjectMain.qa_boolean_macro" ]
       },
@@ -809,6 +809,16 @@
               "dataType" : {
                 "type" : "BigNumeric"
               }
+            }, {
+              "name" : "c_struct_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_struct_age",
+              "dataType" : {
+                "type" : "Integer"
+              }
             } ]
           },
           "slug" : "in0"
@@ -994,7 +1004,7 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "x" : 540,
-        "y" : 1020,
+        "y" : 560,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -1251,8 +1261,8 @@
       "component" : "Model",
       "metadata" : {
         "label" : "env_uitesting_shared_parent_model_1",
-        "x" : 100,
-        "y" : 420,
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -1388,8 +1398,8 @@
       "component" : "SQLStatement",
       "metadata" : {
         "label" : "SQLStatement_2",
-        "x" : 540,
-        "y" : 520,
+        "x" : 280,
+        "y" : 920,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -1483,8 +1493,8 @@
       "component" : "Model",
       "metadata" : {
         "label" : "env_uitesting_shared_mid_model_1",
-        "x" : 120,
-        "y" : 820,
+        "x" : 20,
+        "y" : 420,
         "phase" : 0
       },
       "properties" : {
@@ -1620,7 +1630,7 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_1",
-        "x" : 340,
+        "x" : 280,
         "y" : 320,
         "phase" : 0,
         "macroDependencies" : [ ]
@@ -1729,9 +1739,19 @@
             "expression" : "env_uitesting_shared_parent_model_1.c_bignumeric"
           },
           "alias" : "c_bignumeric"
+        }, {
+          "expression" : {
+            "expression" : "env_uitesting_shared_child_model_1.c_struct.name"
+          },
+          "alias" : "c_struct_name"
+        }, {
+          "expression" : {
+            "expression" : "env_uitesting_shared_child_model_1.c_struct.age"
+          },
+          "alias" : "c_struct_age"
         } ],
-        "activeTab" : "conditions",
-        "columnsSelector" : [ "UmZRVpbC##c_bool", "yKXZXKGz##c_bool", "UmZRVpbC##c_int64", "tQfO4szI##c_int64", "UmZRVpbC##c_bignumeric", "tQfO4szI##c_bignumeric", "tQfO4szI##c_bool", "UmZRVpbC##c_string", "UmZRVpbC##c_geography", "UmZRVpbC##c_numeric_1", "tQfO4szI##p_date", "UmZRVpbC##c_timestamp", "UmZRVpbC##c_bool", "UmZRVpbC##c_json", "UmZRVpbC##c_interval", "UmZRVpbC##c_int64", "UmZRVpbC##c_float64", "UmZRVpbC##c_numeric_2", "UmZRVpbC##c_date", "UmZRVpbC##c_datetime", "UmZRVpbC##c_bytes", "UmZRVpbC##c_struct", "UmZRVpbC##c_array_int64", "UmZRVpbC##c_time", "UmZRVpbC##c_bignumeric" ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "UmZRVpbC##c_bool", "yKXZXKGz##c_bool", "UmZRVpbC##c_int64", "tQfO4szI##c_int64", "UmZRVpbC##c_bignumeric", "tQfO4szI##c_bignumeric", "tQfO4szI##c_bool", "UmZRVpbC##c_string", "UmZRVpbC##c_geography", "UmZRVpbC##c_numeric_1", "tQfO4szI##p_date", "UmZRVpbC##c_timestamp", "UmZRVpbC##c_bool", "UmZRVpbC##c_json", "UmZRVpbC##c_interval", "UmZRVpbC##c_int64", "UmZRVpbC##c_float64", "UmZRVpbC##c_numeric_2", "UmZRVpbC##c_date", "UmZRVpbC##c_datetime", "UmZRVpbC##c_bytes", "UmZRVpbC##c_struct", "UmZRVpbC##c_array_int64", "UmZRVpbC##c_time", "UmZRVpbC##c_bignumeric", "yKXZXKGz##c_struct", "yKXZXKGz##c_struct.name", "yKXZXKGz##c_struct.age" ],
         "headAlias" : "env_uitesting_shared_parent_model_1"
       },
       "ports" : {
@@ -2197,6 +2217,16 @@
               "dataType" : {
                 "type" : "BigNumeric"
               }
+            }, {
+              "name" : "c_struct_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_struct_age",
+              "dataType" : {
+                "type" : "Integer"
+              }
             } ]
           },
           "slug" : "out"
@@ -2209,8 +2239,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_1",
-        "x" : 340,
-        "y" : 520,
+        "x" : 280,
+        "y" : 120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -2461,8 +2491,8 @@
       "component" : "Model",
       "metadata" : {
         "label" : "env_uitesting_main_model_bigquery_1",
-        "x" : 120,
-        "y" : 1020,
+        "x" : 20,
+        "y" : 620,
         "phase" : 0
       },
       "properties" : {
@@ -2613,7 +2643,7 @@
       "component" : "Model",
       "metadata" : {
         "label" : "env_uitesting_shared_child_model_1",
-        "x" : 120,
+        "x" : 20,
         "y" : 220,
         "phase" : 0
       },
@@ -2750,7 +2780,7 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "env_uitesting_shared_useall_model_1",
-        "x" : 1180,
+        "x" : 1200,
         "y" : 520,
         "phase" : 0,
         "macroDependencies" : [ ]
@@ -2998,8 +3028,8 @@
       "component" : "Seed",
       "metadata" : {
         "label" : "raw_orders",
-        "x" : 340,
-        "y" : 720,
+        "x" : 20,
+        "y" : 1020,
         "phase" : 0
       },
       "properties" : {
@@ -3046,8 +3076,8 @@
       "component" : "Filter",
       "metadata" : {
         "label" : "SQLStatement_1",
-        "x" : 340,
-        "y" : 1020,
+        "x" : 280,
+        "y" : 520,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -3330,8 +3360,8 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_2",
-        "x" : 760,
-        "y" : 820,
+        "x" : 800,
+        "y" : 620,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -3558,7 +3588,7 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_3",
-        "x" : 960,
+        "x" : 1000,
         "y" : 520,
         "phase" : 0,
         "macroDependencies" : [ ]
