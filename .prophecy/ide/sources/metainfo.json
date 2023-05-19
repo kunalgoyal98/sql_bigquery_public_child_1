@@ -193,6 +193,15 @@
             }
           } ]
         },
+        "test" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "output",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
         "DBGEN_VERSION" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -961,6 +970,74 @@
             }
           } ]
         },
+        "test_Automated_Model" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_ui_macro",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_generic_round",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "cfor_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_3",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_if",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_ui_macro_test",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "qa_test_seed" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          } ]
+        },
         "all_type_table" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -1165,51 +1242,6 @@
         "env_uitesting_shared_useall_model_1" : {
           "providerType" : "BigQuery",
           "fields" : [ {
-            "name" : "cfor_col_0",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "cfor_col_1",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "cfor_col_2",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "cfor_col_3",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "cfor_col_4",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "c_if",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "c_bool_expr",
-            "dataType" : {
-              "type" : "Boolean"
-            }
-          }, {
-            "name" : "c_concat_expr",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "c_add_expr",
-            "dataType" : {
-              "type" : "Float"
-            }
-          }, {
             "name" : "c_string",
             "dataType" : {
               "type" : "String"
@@ -1248,11 +1280,6 @@
             "name" : "c_interval",
             "dataType" : {
               "type" : "Interval"
-            }
-          }, {
-            "name" : "c_int64",
-            "dataType" : {
-              "type" : "Integer"
             }
           }, {
             "name" : "c_float64",
@@ -1318,16 +1345,6 @@
             "dataType" : {
               "type" : "BigNumeric"
             }
-          }, {
-            "name" : "c_concat_basic",
-            "dataType" : {
-              "type" : "Boolean"
-            }
-          }, {
-            "name" : "c_dbt_utils",
-            "dataType" : {
-              "type" : "String"
-            }
           } ]
         },
         "CUSTOMER_DEMOGRAPHICS" : {
@@ -1376,6 +1393,35 @@
             "name" : "CD_DEP_COLLEGE_COUNT",
             "dataType" : {
               "type" : "Numeric"
+            }
+          } ]
+        },
+        "qa_test_seed_job_BigQuery" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
             }
           } ]
         },
@@ -1671,6 +1717,25 @@
             "name" : " age",
             "dataType" : {
               "type" : "Integer"
+            }
+          } ]
+        },
+        "ungrouped_customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
             }
           } ]
         },
@@ -2312,20 +2377,6 @@
             }
           } ]
         },
-        "qa_table-with complex characters ?????? 00_????tudiant-01" : {
-          "providerType" : "BigQuery",
-          "fields" : [ {
-            "name" : "c_int",
-            "dataType" : {
-              "type" : "Integer"
-            }
-          }, {
-            "name" : "c_string",
-            "dataType" : {
-              "type" : "String"
-            }
-          } ]
-        },
         "STORE" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -2529,6 +2580,49 @@
             }
           } ]
         },
+        "qa_table-with complex characters ग्राहक 00_お客様étudiant-01" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "test_Automated_BigQuery_jobs_model" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          } ]
+        },
         "RAW_CUSTOMERS" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -2545,6 +2639,35 @@
             "name" : "LAST_NAME",
             "dataType" : {
               "type" : "String"
+            }
+          } ]
+        },
+        "test_Automated_bigquery_jobs_model" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
             }
           } ]
         },
@@ -3441,6 +3564,80 @@
             }
           } ]
         },
+        "bq_test_view" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_ui_macro",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_generic_round",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "cfor_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "cfor_2",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_if",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_ui_macro_test",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_variables_model",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_variables_project",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_dependency",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_child_project",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_reformat_1",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_reformat_1_can_change",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_reformat_new_column_added",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_column_final",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
         "HOUSEHOLD_DEMOGRAPHICS" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -3736,6 +3933,20 @@
             "name" : "SS_NET_PROFIT",
             "dataType" : {
               "type" : "Numeric"
+            }
+          } ]
+        },
+        "test_automated_mode" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_ui_macro",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_generic_round",
+            "dataType" : {
+              "type" : "Float"
             }
           } ]
         },
@@ -4106,6 +4317,35 @@
             }
           } ]
         },
+        "qa_test_seed_job_bigquery" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int64",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_bignumeric",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "c_float64",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "c_bool",
+            "dataType" : {
+              "type" : "Boolean"
+            }
+          } ]
+        },
         "CATALOG_SALES" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -4400,6 +4640,155 @@
             "name" : "INV_QUANTITY_ON_HAND",
             "dataType" : {
               "type" : "Numeric"
+            }
+          } ]
+        }
+      }
+    }, {
+      "type" : "Schema",
+      "name" : "dataset",
+      "tables" : {
+        "raw_customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "testCsvLoad" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Email",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Phone_Number",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Address",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "raw_orders" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "user_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "status",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "raw_payments" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "payment_method",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "amount",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          } ]
+        },
+        "stg_customers" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "customer_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "first_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "last_name",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
+        "testCsv" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "order_id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "Name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Email",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Phone_Number",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Address",
+            "dataType" : {
+              "type" : "String"
             }
           } ]
         }
