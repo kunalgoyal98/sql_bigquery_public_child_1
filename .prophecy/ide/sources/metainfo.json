@@ -2312,6 +2312,20 @@
             }
           } ]
         },
+        "qa_table-with complex characters ?????? 00_????tudiant-01" : {
+          "providerType" : "BigQuery",
+          "fields" : [ {
+            "name" : "c_int",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "c_string",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        },
         "STORE" : {
           "providerType" : "BigQuery",
           "fields" : [ {
@@ -2510,20 +2524,6 @@
             }
           }, {
             "name" : "T_MEAL_TIME",
-            "dataType" : {
-              "type" : "String"
-            }
-          } ]
-        },
-        "qa_table-with complex characters ?????? 00_????tudiant-01" : {
-          "providerType" : "BigQuery",
-          "fields" : [ {
-            "name" : "c_int",
-            "dataType" : {
-              "type" : "Integer"
-            }
-          }, {
-            "name" : "c_string",
             "dataType" : {
               "type" : "String"
             }
