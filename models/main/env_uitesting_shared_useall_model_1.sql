@@ -9,9 +9,11 @@
 {% set v_complex_dict = { "problems" : [{ "Diabetes" : [{ "medications" : [{ "medicationsClasses" : [{ "className" : [{ "associatedDrug" : [{ "name" : "asprin", "dose" : "", "strength" : "500 mg" }], "associatedDrug#2" : [{ "name" : "somethingElse", "dose" : "", "strength" : "500 mg" }] }], "className2" : [{ "associatedDrug" : [{ "name" : "asprin", "dose" : "", "strength" : "500 mg" }], "associatedDrug#2" : [{ "name" : "somethingElse", "dose" : "", "strength" : "500 mg" }] }] }] }], "labs" : [{ "missing_field" : "missing_value" }] }], "Asthma" : [{  }] }] } %}
 {% set v_float = 10.12 %}
 {% set v_bool = True %}
+{% set v_expression_config = 'concat(c_string, c_struct.age, c_struct.name)' %}
 {% set v_array = [1, 2, 3, 4] %}
 {% set v_dict = { 'a' : 10, 'b' : 20 } %}
 {% set v_int = 22 %}
+
 
 
 
@@ -147,7 +149,7 @@ AllStunningOne AS (
     c_bool AS c_bool,
     c_json AS c_json,
     c_interval AS c_interval,
-    c_int64 * 2,
+    c_int64 * 2 AS c_int16_into_two,
     c_float64 AS c_float64,
     c_numeric_2 AS c_numeric_2,
     c_date AS c_date,
@@ -158,7 +160,10 @@ AllStunningOne AS (
     c_time AS c_time,
     c_bignumeric AS c_bignumeric,
     {{ SQL_BigQueryParentProjectMain.qa_boolean_macro('c_int64') }} AS c_concat_basic,
-    concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format("my pretty message") }}') AS c_dbt_utils
+    concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format("my pretty message") }}') AS c_dbt_utils,
+    `prophecy-qa`.qa_test_dataset.qa_addFourAndDivide(c_int64, 2) AS c_function_bigquery,
+    {{v_expression_config}} AS c_expression_from_config,
+    JUSTIFY_DAYS(INTERVAL 29 DAY) AS c_interval_1
   
   FROM Join_1 AS in0
 
@@ -242,7 +247,7 @@ Join_3 AS (
     in0.c_interval AS c_interval,
     in0.c_float64 AS c_float64,
     in0.c_numeric_2 AS c_numeric_2,
-    in0.c_date AS c_date,
+    in0.c_date,
     in0.c_datetime AS c_datetime,
     in0.c_bytes AS c_bytes,
     in0.c_struct AS c_struct,

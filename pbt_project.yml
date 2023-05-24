@@ -168,6 +168,11 @@ sqlSources:
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 09:31:43'
       modifiedAt: '2023-04-20 09:31:43'
+    - name: testModel
+      description: null
+      author: abhisheks+shared@prophecy.io
+      createdAt: '2023-05-24 09:03:46'
+      modifiedAt: '2023-05-24 09:03:46'
 sqlUnreferencedSources:
   .prophecy/metadata/sqlunreferencedsources/prophecy-qa_qa_test_dataset_ungrouped_customers:
     name: prophecy-qa.qa_test_dataset.ungrouped_customers

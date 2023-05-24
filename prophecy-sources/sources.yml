@@ -631,3 +631,14 @@ sources:
     - name: "p_date"
       dataType:
         type: "Date"
+  - name: "testModel"
+    columns:
+    - name: "id"
+      dataType:
+        type: "Integer"
+    - name: " name"
+      dataType:
+        type: "String"
+    - name: " age"
+      dataType:
+        type: "Integer"
