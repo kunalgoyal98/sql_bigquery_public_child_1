@@ -103,7 +103,18 @@ sqlModels:
       datasets: []
     createdAt: '2023-04-16 16:08:46'
     modifiedAt: '2023-04-16 16:08:46'
-sqlMacros: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/combine_multi_tables:
+    name: combine_multi_tables
+    macroType: query
+    description: null
+    author: abhisheks+shared@prophecy.io
+    files:
+    - macros/combine_multi_tables.sql
+    - .prophecy/ide/macros/combine_multi_tables.json
+    - macros/macros.yml
+    createdAt: '2023-05-24 13:47:59'
+    modifiedAt: '2023-05-24 13:47:59'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers

@@ -38,6 +38,16 @@ SQLStatement_1 AS (
 
 ),
 
+Limit_5 AS (
+
+  SELECT * 
+  
+  FROM SQLStatement_1 AS in0
+  
+  LIMIT 20
+
+),
+
 Aggregate_1 AS (
 
   SELECT 
@@ -49,9 +59,18 @@ Aggregate_1 AS (
     any_value(c_time) AS c_time,
     any_value(c_timestamp) AS c_timestamp,
     any_value(c_datetime) AS c_datetime,
-    any_value(c_geography) AS c_geography
+    any_value(c_geography) AS c_geography,
+    APPROX_COUNT_DISTINCT(c_int64) + sum(c_int64) + max(c_int64) + min(c_int64) + COUNTIF(
+      c_int64 > 25) + AVG(c_int64) + BIT_AND(c_int64) - BIT_OR(c_int64) + BIT_XOR(c_int64) + COUNT(DISTINCT c_bignumeric) AS c_int_aggregate,
+    ARRAY_CONCAT_AGG(c_array_int64) AS c_array_concat_agg,
+    LOGICAL_AND(
+      c_int64 < 3) or LOGICAL_OR(
+      c_int64 < 3) AS c_bool_aggregate,
+    APPROX_QUANTILES(c_int64, 2) AS c_approx_qauntiles,
+    APPROX_TOP_COUNT(c_int64, 2) AS c_approx_top_count,
+    APPROX_TOP_SUM(c_int64, 2, 2) AS c_approx_top_sum
   
-  FROM SQLStatement_1 AS in0
+  FROM Limit_5 AS in0
   
   GROUP BY c_bool
   
@@ -59,11 +78,126 @@ Aggregate_1 AS (
 
 ),
 
-env_uitesting_shared_child_model_1 AS (
+raw_orders AS (
 
   SELECT * 
   
-  FROM {{ ref('env_uitesting_shared_child_model_1')}}
+  FROM {{ ref('raw_orders')}}
+
+),
+
+Macro_1 AS (
+
+  {{ SQL_BigQueryParentProjectMain.qa_all_not_null(model = 'raw_orders', column_name = 'user_id') }}
+
+),
+
+raw_payments AS (
+
+  SELECT * 
+  
+  FROM {{ ref('raw_payments')}}
+
+),
+
+SQLStatement_2 AS (
+
+  SELECT 
+    t1.id,
+    t1.payment_method
+  
+  FROM raw_payments AS t1, raw_orders AS t2
+  
+  WHERE t1.order_id = t2.id or t2.status IS NOT NULL or t1.payment_method IS NOT NULL
+
+),
+
+Limit_5_1 AS (
+
+  SELECT * 
+  
+  FROM SQLStatement_2 AS in0
+  
+  LIMIT 25
+
+),
+
+Join_2 AS (
+
+  SELECT 
+    in0.c_string AS c_string,
+    in0.c_float64 AS c_float64,
+    in0.c_bytes AS c_bytes,
+    in0.c_numeric_1 AS c_numeric_1,
+    in0.c_date AS c_date,
+    in0.c_time AS c_time,
+    in0.c_timestamp AS c_timestamp,
+    in0.c_datetime AS c_datetime,
+    in0.c_geography AS c_geography
+  
+  FROM Aggregate_1 AS in0
+  INNER JOIN Macro_1 AS in1
+     ON in0.c_string != in1.status
+  RIGHT JOIN Limit_5_1 AS in2
+     ON in1.status != in2.payment_method
+
+),
+
+Limit_2 AS (
+
+  SELECT * 
+  
+  FROM Join_2 AS in0
+  
+  LIMIT 10
+
+),
+
+tpcds_1_env_uitesting_shared AS (
+
+  SELECT * 
+  
+  FROM {{ ref('tpcds_1_env_uitesting_shared')}}
+
+),
+
+SQLStatement_1_1 AS (
+
+  SELECT 
+    RAND() AS c_float,
+    GENERATE_UUID() AS c_string,
+    GENERATE_ARRAY(1, 4, 10) AS c_array,
+    GENERATE_DATE_ARRAY('2016-10-05', '2016-10-08') AS c_date_array
+  
+  FROM `prophecy-qa.qa_test_dataset.all_type_table`
+  
+  WHERE c_int64 != (
+    SELECT count(*)
+    
+    FROM tpcds_1_env_uitesting_shared
+   )
+  
+  LIMIT 100
+
+),
+
+Limit_1 AS (
+
+  SELECT * 
+  
+  FROM SQLStatement_1_1 AS in0
+  
+  LIMIT 10
+
+),
+
+OrderBy_1 AS (
+
+  SELECT * 
+  
+  FROM Limit_1 AS in0
+  
+  ORDER BY concat(c_string, c_float) ASC NULLS FIRST, c_string DESC
 
 ),
 
@@ -75,11 +209,39 @@ env_uitesting_shared_mid_model_1 AS (
 
 ),
 
+Limit_4 AS (
+
+  SELECT * 
+  
+  FROM env_uitesting_shared_mid_model_1 AS in0
+  
+  LIMIT 10
+
+),
+
+env_uitesting_shared_child_model_1 AS (
+
+  SELECT * 
+  
+  FROM {{ ref('env_uitesting_shared_child_model_1')}}
+
+),
+
 env_uitesting_shared_parent_model_1 AS (
 
   SELECT * 
   
   FROM {{ ref('env_uitesting_shared_parent_model_1')}}
+
+),
+
+Limit_3 AS (
+
+  SELECT * 
+  
+  FROM env_uitesting_shared_parent_model_1 AS in0
+  
+  LIMIT 10
 
 ),
 
@@ -107,10 +269,10 @@ Join_1 AS (
     env_uitesting_shared_child_model_1.c_struct.name AS c_struct_name,
     env_uitesting_shared_child_model_1.c_struct.age AS c_struct_age
   
-  FROM env_uitesting_shared_parent_model_1
-  INNER JOIN env_uitesting_shared_child_model_1
+  FROM Limit_3 AS env_uitesting_shared_parent_model_1
+  LEFT JOIN env_uitesting_shared_child_model_1
      ON env_uitesting_shared_parent_model_1.c_bool = env_uitesting_shared_child_model_1.c_bool
-  INNER JOIN env_uitesting_shared_mid_model_1
+  RIGHT JOIN Limit_4 AS env_uitesting_shared_mid_model_1
      ON env_uitesting_shared_parent_model_1.c_int64 = env_uitesting_shared_mid_model_1.c_int64 and env_uitesting_shared_parent_model_1.c_bignumeric = env_uitesting_shared_mid_model_1.c_bignumeric and env_uitesting_shared_parent_model_1.c_bool = env_uitesting_shared_mid_model_1.c_bool
 
 ),
@@ -163,7 +325,8 @@ AllStunningOne AS (
     concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format("my pretty message") }}') AS c_dbt_utils,
     `prophecy-qa`.qa_test_dataset.qa_addFourAndDivide(c_int64, 2) AS c_function_bigquery,
     {{v_expression_config}} AS c_expression_from_config,
-    JUSTIFY_DAYS(INTERVAL 29 DAY) AS c_interval_1
+    JUSTIFY_DAYS(INTERVAL 29 DAY) AS c_interval_1,
+    SUM(c_numeric_1) OVER (PARTITION BY c_date ORDER BY c_datetime ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS c_sum_over
   
   FROM Join_1 AS in0
 
@@ -179,96 +342,20 @@ Filter_1 AS (
 
 ),
 
-raw_orders AS (
+model_with_only_seed_base AS (
 
   SELECT * 
   
-  FROM {{ ref('raw_orders')}}
+  FROM {{ ref('model_with_only_seed_base')}}
 
 ),
 
-Macro_1 AS (
+combine_multi_tables_1 AS (
 
-  {{ SQL_BigQueryParentProjectMain.qa_all_not_null(model = 'raw_orders', column_name = 'user_id') }}
-
-),
-
-raw_payments AS (
-
-  SELECT * 
-  
-  FROM {{ ref('raw_payments')}}
-
-),
-
-SQLStatement_2 AS (
-
-  SELECT 
-    t1.id,
-    t1.payment_method
-  
-  FROM raw_payments AS t1, raw_orders AS t2
-  
-  WHERE t1.order_id = t2.id or t2.status IS NOT NULL or t1.payment_method IS NOT NULL
-
-),
-
-Join_2 AS (
-
-  SELECT 
-    in0.c_string AS c_string,
-    in0.c_float64 AS c_float64,
-    in0.c_bytes AS c_bytes,
-    in0.c_numeric_1 AS c_numeric_1,
-    in0.c_date AS c_date,
-    in0.c_time AS c_time,
-    in0.c_timestamp AS c_timestamp,
-    in0.c_datetime AS c_datetime,
-    in0.c_geography AS c_geography
-  
-  FROM Aggregate_1 AS in0
-  INNER JOIN Macro_1 AS in1
-     ON in0.c_string != in1.status
-  INNER JOIN SQLStatement_2 AS in2
-     ON in1.status != in2.payment_method
-
-),
-
-Join_3 AS (
-
-  SELECT 
-    in0.c_string AS c_string,
-    in0.c_geography AS c_geography,
-    in0.c_numeric_1 AS c_numeric_1,
-    in0.p_date AS p_date,
-    in0.c_timestamp AS c_timestamp,
-    in0.c_bool AS c_bool,
-    in0.c_json AS c_json,
-    in0.c_interval AS c_interval,
-    in0.c_float64 AS c_float64,
-    in0.c_numeric_2 AS c_numeric_2,
-    in0.c_date,
-    in0.c_datetime AS c_datetime,
-    in0.c_bytes AS c_bytes,
-    in0.c_struct AS c_struct,
-    in0.c_array_int64 AS c_array_int64,
-    in0.c_time AS c_time,
-    in0.c_bignumeric AS c_bignumeric
-  
-  FROM Filter_1 AS in0
-  INNER JOIN Join_2 AS in1
-     ON in0.cfor_col_1 != in1.c_string
-
-),
-
-Reformat_1 AS (
-
-  SELECT * 
-  
-  FROM env_uitesting_shared_parent_model_1 AS in0
+  {{ SQL_BigquerySharedBasic.combine_multi_tables(table_1 = 'Filter_1', table_2 = 'Limit_2', table_3 = 'OrderBy_1', table_4 = 'Limit_1', table_5 = 'model_with_only_seed_base', col_table_1 = 'c_numeric_1') }}
 
 )
 
 SELECT *
 
-FROM Join_3
+FROM combine_multi_tables_1
