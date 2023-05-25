@@ -5,7 +5,321 @@
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
-      "sources" : [ ]
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "raw_customers",
+            "sourceName" : "prophecy-qa.dataset",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "raw_customers",
+        "canJoinWith" : [ {
+          "processLabel" : "raw_payments_1",
+          "processId" : "6C3mmEeVc0TvXgWE0b5YK",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_payments_1",
+              "expression" : {
+                "expression" : "raw_payments_1.id = raw_customers.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_customers.first_name"
+              },
+              "alias" : "first_name"
+            }, {
+              "expression" : {
+                "expression" : "raw_customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.payment_method"
+              },
+              "alias" : "payment_method"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.amount"
+              },
+              "alias" : "amount"
+            } ],
+            "headAlias" : "raw_customers"
+          },
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "raw_orders",
+            "sourceName" : "prophecy-qa.dataset",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "raw_orders_1",
+        "canJoinWith" : [ {
+          "processLabel" : "raw_payments_1",
+          "processId" : "6C3mmEeVc0TvXgWE0b5YK",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_payments_1",
+              "expression" : {
+                "expression" : "raw_payments_1.id = raw_orders_1.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_orders_1.user_id"
+              },
+              "alias" : "user_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_orders_1.order_date"
+              },
+              "alias" : "order_date"
+            }, {
+              "expression" : {
+                "expression" : "raw_orders_1.status"
+              },
+              "alias" : "status"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.payment_method"
+              },
+              "alias" : "payment_method"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.amount"
+              },
+              "alias" : "amount"
+            } ],
+            "headAlias" : "raw_orders_1"
+          },
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "testCsv",
+            "sourceName" : "prophecy-qa.dataset",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "testCsv",
+        "canJoinWith" : [ {
+          "processLabel" : "raw_payments_1",
+          "processId" : "6C3mmEeVc0TvXgWE0b5YK",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "order_id" ],
+            "conditions" : [ {
+              "alias" : "raw_payments_1",
+              "expression" : {
+                "expression" : "raw_payments_1.order_id = testCsv.order_id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "testCsv.Name"
+              },
+              "alias" : "Name"
+            }, {
+              "expression" : {
+                "expression" : "testCsv.Email"
+              },
+              "alias" : "Email"
+            }, {
+              "expression" : {
+                "expression" : "testCsv.Phone_Number"
+              },
+              "alias" : "Phone_Number"
+            }, {
+              "expression" : {
+                "expression" : "testCsv.Address"
+              },
+              "alias" : "Address"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.payment_method"
+              },
+              "alias" : "payment_method"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.amount"
+              },
+              "alias" : "amount"
+            } ],
+            "headAlias" : "testCsv"
+          },
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "testCsvLoad",
+            "sourceName" : "prophecy-qa.dataset",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "testCsvLoad",
+        "canJoinWith" : [ {
+          "processLabel" : "raw_payments_1",
+          "processId" : "6C3mmEeVc0TvXgWE0b5YK",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "order_id" ],
+            "conditions" : [ {
+              "alias" : "raw_payments_1",
+              "expression" : {
+                "expression" : "raw_payments_1.order_id = testCsvLoad.order_id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "testCsvLoad.Name"
+              },
+              "alias" : "Name"
+            }, {
+              "expression" : {
+                "expression" : "testCsvLoad.Email"
+              },
+              "alias" : "Email"
+            }, {
+              "expression" : {
+                "expression" : "testCsvLoad.Phone_Number"
+              },
+              "alias" : "Phone_Number"
+            }, {
+              "expression" : {
+                "expression" : "testCsvLoad.Address"
+              },
+              "alias" : "Address"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.payment_method"
+              },
+              "alias" : "payment_method"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.amount"
+              },
+              "alias" : "amount"
+            } ],
+            "headAlias" : "testCsvLoad"
+          },
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "raw_customers",
+            "sourceType" : "Seed"
+          }
+        },
+        "sourceComponentKind" : "Seed",
+        "sourceLabel" : "raw_customers",
+        "canJoinWith" : [ {
+          "processLabel" : "raw_payments_1",
+          "processId" : "6C3mmEeVc0TvXgWE0b5YK",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_payments_1",
+              "expression" : {
+                "expression" : "raw_payments_1.id = raw_customers.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_customers.first_name"
+              },
+              "alias" : "first_name"
+            }, {
+              "expression" : {
+                "expression" : "raw_customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.payment_method"
+              },
+              "alias" : "payment_method"
+            }, {
+              "expression" : {
+                "expression" : "raw_payments_1.amount"
+              },
+              "alias" : "amount"
+            } ],
+            "headAlias" : "raw_customers"
+          },
+          "isRecommended" : false
+        } ]
+      } ]
     },
     "graphConfig" : {
       "modelConfig" : {

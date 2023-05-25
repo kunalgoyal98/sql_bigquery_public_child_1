@@ -642,3 +642,34 @@ sources:
     - name: " age"
       dataType:
         type: "Integer"
+- name: "prophecy-qa.qa_test_another_dataset"
+  database: "prophecy-qa"
+  schema: "qa_test_another_dataset"
+  config:
+    enabled: true
+  tables:
+  - name: "hundred_rows_table"
+    columns:
+    - name: "a"
+      dataType:
+        type: "Integer"
+- name: "prophecy-qa.dataset"
+  database: "prophecy-qa"
+  schema: "dataset"
+  config:
+    enabled: true
+  tables:
+  - name: "raw_payments"
+    columns:
+    - name: "id"
+      dataType:
+        type: "Integer"
+    - name: "order_id"
+      dataType:
+        type: "Integer"
+    - name: "payment_method"
+      dataType:
+        type: "String"
+    - name: "amount"
+      dataType:
+        type: "Integer"

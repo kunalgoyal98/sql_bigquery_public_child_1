@@ -125,6 +125,34 @@ sqlSeeds:
     createdAt: '2023-04-16 15:59:36'
     modifiedAt: '2023-04-16 15:59:36'
 sqlSources:
+  .prophecy/metadata/sqlsources/prophecy-qa_dataset:
+    name: prophecy-qa.dataset
+    description: null
+    author: abhisheks+shared@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-05-25 04:35:48'
+    modifiedAt: '2023-05-25 04:35:48'
+    tables:
+    - name: raw_payments
+      description: null
+      author: abhisheks+shared@prophecy.io
+      createdAt: '2023-05-25 04:35:48'
+      modifiedAt: '2023-05-25 04:35:48'
+  .prophecy/metadata/sqlsources/prophecy-qa_qa_test_another_dataset:
+    name: prophecy-qa.qa_test_another_dataset
+    description: null
+    author: abhisheks+shared@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-05-25 04:35:25'
+    modifiedAt: '2023-05-25 04:35:25'
+    tables:
+    - name: hundred_rows_table
+      description: null
+      author: abhisheks+shared@prophecy.io
+      createdAt: '2023-05-25 04:35:25'
+      modifiedAt: '2023-05-25 04:35:25'
   .prophecy/metadata/sqlsources/prophecy-qa_qa_test_dataset:
     name: prophecy-qa.qa_test_dataset
     description: null
