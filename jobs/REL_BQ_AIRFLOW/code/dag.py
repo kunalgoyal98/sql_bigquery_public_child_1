@@ -11,9 +11,17 @@ PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLA
 with DAG(
     dag_id = "uitesting_shared_team_SQL_BigquerySharedBasic_REL_BQ_AIRFLOW", 
     schedule_interval = "0 0 10 * *", 
-    default_args = {"owner" : "Prophecy", "ignore_first_depends_on_past" : True, "do_xcom_push" : True}, 
-    start_date = pendulum.today('UTC'), 
-    catchup = True
+    default_args = {
+      "owner": "Prophecy", 
+      "retries": 1, 
+      "retry_delay": timedelta(minutes = 2.0), 
+      "ignore_first_depends_on_past": True, 
+      "do_xcom_push": True
+    }, 
+    start_date = pendulum.datetime(2023, 2, 22, tz = "America/Adak"), 
+    end_date = pendulum.datetime(2080, 2, 22, tz = "America/Adak"), 
+    catchup = True, 
+    tags = []
 ) as dag:
     DBT_0_op = DBT_0()
     Script_1_op = Script_1()

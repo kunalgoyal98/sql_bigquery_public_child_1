@@ -31,7 +31,7 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-04-21 13:02:23'
-    modifiedAt: '2023-05-17 17:20:21'
+    modifiedAt: '2023-05-30 15:24:37'
     author: abhisheks+shared@prophecy.io
 functions:
   author: null
@@ -45,6 +45,75 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1:
     name: env_uitesting_shared_parent_model_1
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: c_int64
+        dataType:
+          type: Integer
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: p_date
+        dataType:
+          type: Date
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -57,6 +126,75 @@ sqlModels:
     modifiedAt: '2023-04-16 16:04:01'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1:
     name: env_uitesting_shared_child_model_1
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: c_int64
+        dataType:
+          type: Integer
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: p_date
+        dataType:
+          type: Date
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -69,6 +207,75 @@ sqlModels:
     modifiedAt: '2023-04-16 16:06:07'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1:
     name: env_uitesting_shared_mid_model_1
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: c_int64
+        dataType:
+          type: Integer
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: p_date
+        dataType:
+          type: Date
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -81,6 +288,36 @@ sqlModels:
     modifiedAt: '2023-04-16 16:05:29'
   .prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared:
     name: tpcds_1_env_uitesting_shared
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: I_ITEM_ID
+        dataType:
+          type: String
+      - name: I_ITEM_DESC
+        dataType:
+          type: String
+      - name: I_CATEGORY
+        dataType:
+          type: String
+      - name: I_CLASS
+        dataType:
+          type: String
+      - name: I_CURRENT_PRICE
+        dataType:
+          type: Numeric
+      - name: ITEMREVENUE
+        dataType:
+          type: Numeric
+      - name: REVENUERATIO
+        dataType:
+          type: Numeric
+      - name: SM_TYPE
+        dataType:
+          type: String
+      - name: CC_NAME
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -93,6 +330,120 @@ sqlModels:
     modifiedAt: '2023-04-20 04:12:51'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1:
     name: env_uitesting_shared_useall_model_1
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: cfor_col_0
+        dataType:
+          type: String
+      - name: cfor_col_1
+        dataType:
+          type: String
+      - name: cfor_col_2
+        dataType:
+          type: String
+      - name: cfor_col_3
+        dataType:
+          type: String
+      - name: cfor_col_4
+        dataType:
+          type: String
+      - name: c_if
+        dataType:
+          type: String
+      - name: c_bool_expr
+        dataType:
+          type: Boolean
+      - name: c_concat_expr
+        dataType:
+          type: String
+      - name: c_add_expr
+        dataType:
+          type: Float
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: p_date
+        dataType:
+          type: Date
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_int16_into_two
+        dataType:
+          type: Integer
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_concat_basic
+        dataType:
+          type: Boolean
+      - name: c_dbt_utils
+        dataType:
+          type: String
+      - name: c_function_bigquery
+        dataType:
+          type: Float
+      - name: c_expression_from_config
+        dataType:
+          type: String
+      - name: c_interval_1
+        dataType:
+          type: Interval
+      - name: c_sum_over
+        dataType:
+          type: Numeric
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -118,6 +469,18 @@ sqlMacros:
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -135,6 +498,21 @@ sqlSources:
     modifiedAt: '2023-05-25 04:35:48'
     tables:
     - name: raw_payments
+      schema:
+        providerType: bigquery
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: order_id
+          dataType:
+            type: Integer
+        - name: payment_method
+          dataType:
+            type: String
+        - name: amount
+          dataType:
+            type: Integer
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-05-25 04:35:48'
@@ -149,6 +527,12 @@ sqlSources:
     modifiedAt: '2023-05-25 04:35:25'
     tables:
     - name: hundred_rows_table
+      schema:
+        providerType: bigquery
+        fields:
+        - name: a
+          dataType:
+            type: Integer
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-05-25 04:35:25'
@@ -163,51 +547,696 @@ sqlSources:
     modifiedAt: '2023-04-16 16:04:09'
     tables:
     - name: all_type_table
+      schema:
+        providerType: bigquery
+        fields:
+        - name: c_int64
+          dataType:
+            type: Integer
+        - name: c_bignumeric
+          dataType:
+            type: BigNumeric
+        - name: c_bool
+          dataType:
+            type: Boolean
+        - name: c_bytes
+          dataType:
+            type: Bytes
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_float64
+          dataType:
+            type: Float
+        - name: c_numeric_1
+          dataType:
+            type: Numeric
+        - name: c_numeric_2
+          dataType:
+            type: Numeric
+        - name: c_date
+          dataType:
+            type: Date
+        - name: c_interval
+          dataType:
+            type: Interval
+        - name: c_time
+          dataType:
+            type: Time
+        - name: c_timestamp
+          dataType:
+            type: Timestamp
+        - name: c_datetime
+          dataType:
+            type: Date
+        - name: c_geography
+          dataType:
+            type: Geography
+        - name: c_json
+          dataType:
+            type: Json
+        - name: c_array_int64
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: c_struct
+          dataType:
+            type: Record
+            fields:
+            - name: name
+              dataType:
+                type: String
+            - name: age
+              dataType:
+                type: Integer
+            - name: department
+              dataType:
+                type: String
+        - name: p_date
+          dataType:
+            type: Date
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-16 16:04:09'
       modifiedAt: '2023-04-16 16:04:09'
     - name: CATALOG_SALES
+      schema:
+        providerType: bigquery
+        fields:
+        - name: CS_SOLD_DATE_SK
+          dataType:
+            type: Numeric
+        - name: CS_SOLD_TIME_SK
+          dataType:
+            type: Numeric
+        - name: CS_SHIP_DATE_SK
+          dataType:
+            type: Numeric
+        - name: CS_BILL_CUSTOMER_SK
+          dataType:
+            type: Numeric
+        - name: CS_BILL_CDEMO_SK
+          dataType:
+            type: Numeric
+        - name: CS_BILL_HDEMO_SK
+          dataType:
+            type: Numeric
+        - name: CS_BILL_ADDR_SK
+          dataType:
+            type: Numeric
+        - name: CS_SHIP_CUSTOMER_SK
+          dataType:
+            type: Numeric
+        - name: CS_SHIP_CDEMO_SK
+          dataType:
+            type: Numeric
+        - name: CS_SHIP_HDEMO_SK
+          dataType:
+            type: Numeric
+        - name: CS_SHIP_ADDR_SK
+          dataType:
+            type: Numeric
+        - name: CS_CALL_CENTER_SK
+          dataType:
+            type: Numeric
+        - name: CS_CATALOG_PAGE_SK
+          dataType:
+            type: Numeric
+        - name: CS_SHIP_MODE_SK
+          dataType:
+            type: Numeric
+        - name: CS_WAREHOUSE_SK
+          dataType:
+            type: Numeric
+        - name: CS_ITEM_SK
+          dataType:
+            type: Numeric
+        - name: CS_PROMO_SK
+          dataType:
+            type: Numeric
+        - name: CS_ORDER_NUMBER
+          dataType:
+            type: Numeric
+        - name: CS_QUANTITY
+          dataType:
+            type: Numeric
+        - name: CS_WHOLESALE_COST
+          dataType:
+            type: Numeric
+        - name: CS_LIST_PRICE
+          dataType:
+            type: Numeric
+        - name: CS_SALES_PRICE
+          dataType:
+            type: Numeric
+        - name: CS_EXT_DISCOUNT_AMT
+          dataType:
+            type: Numeric
+        - name: CS_EXT_SALES_PRICE
+          dataType:
+            type: Numeric
+        - name: CS_EXT_WHOLESALE_COST
+          dataType:
+            type: Numeric
+        - name: CS_EXT_LIST_PRICE
+          dataType:
+            type: Numeric
+        - name: CS_EXT_TAX
+          dataType:
+            type: Numeric
+        - name: CS_COUPON_AMT
+          dataType:
+            type: Numeric
+        - name: CS_EXT_SHIP_COST
+          dataType:
+            type: Numeric
+        - name: CS_NET_PAID
+          dataType:
+            type: Numeric
+        - name: CS_NET_PAID_INC_TAX
+          dataType:
+            type: Numeric
+        - name: CS_NET_PAID_INC_SHIP
+          dataType:
+            type: Numeric
+        - name: CS_NET_PAID_INC_SHIP_TAX
+          dataType:
+            type: Numeric
+        - name: CS_NET_PROFIT
+          dataType:
+            type: Numeric
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:15:55'
       modifiedAt: '2023-04-20 04:15:55'
     - name: WAREHOUSE
+      schema:
+        providerType: bigquery
+        fields:
+        - name: W_WAREHOUSE_SK
+          dataType:
+            type: Numeric
+        - name: W_WAREHOUSE_ID
+          dataType:
+            type: String
+        - name: W_WAREHOUSE_NAME
+          dataType:
+            type: String
+        - name: W_WAREHOUSE_SQ_FT
+          dataType:
+            type: Numeric
+        - name: W_STREET_NUMBER
+          dataType:
+            type: String
+        - name: W_STREET_NAME
+          dataType:
+            type: String
+        - name: W_STREET_TYPE
+          dataType:
+            type: String
+        - name: W_SUITE_NUMBER
+          dataType:
+            type: String
+        - name: W_CITY
+          dataType:
+            type: String
+        - name: W_COUNTY
+          dataType:
+            type: String
+        - name: W_STATE
+          dataType:
+            type: String
+        - name: W_ZIP
+          dataType:
+            type: String
+        - name: W_COUNTRY
+          dataType:
+            type: String
+        - name: W_GMT_OFFSET
+          dataType:
+            type: Numeric
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:16:00'
       modifiedAt: '2023-04-20 04:16:00'
     - name: SHIP_MODE
+      schema:
+        providerType: bigquery
+        fields:
+        - name: SM_SHIP_MODE_SK
+          dataType:
+            type: Numeric
+        - name: SM_SHIP_MODE_ID
+          dataType:
+            type: String
+        - name: SM_TYPE
+          dataType:
+            type: String
+        - name: SM_CODE
+          dataType:
+            type: String
+        - name: SM_CARRIER
+          dataType:
+            type: String
+        - name: SM_CONTRACT
+          dataType:
+            type: String
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:16:08'
       modifiedAt: '2023-04-20 04:16:08'
     - name: CALL_CENTER
+      schema:
+        providerType: bigquery
+        fields:
+        - name: CC_CALL_CENTER_SK
+          dataType:
+            type: Numeric
+        - name: CC_CALL_CENTER_ID
+          dataType:
+            type: String
+        - name: CC_REC_START_DATE
+          dataType:
+            type: Date
+        - name: CC_REC_END_DATE
+          dataType:
+            type: Date
+        - name: CC_CLOSED_DATE_SK
+          dataType:
+            type: Numeric
+        - name: CC_OPEN_DATE_SK
+          dataType:
+            type: Numeric
+        - name: CC_NAME
+          dataType:
+            type: String
+        - name: CC_CLASS
+          dataType:
+            type: String
+        - name: CC_EMPLOYEES
+          dataType:
+            type: Numeric
+        - name: CC_SQ_FT
+          dataType:
+            type: Numeric
+        - name: CC_HOURS
+          dataType:
+            type: String
+        - name: CC_MANAGER
+          dataType:
+            type: String
+        - name: CC_MKT_ID
+          dataType:
+            type: Numeric
+        - name: CC_MKT_CLASS
+          dataType:
+            type: String
+        - name: CC_MKT_DESC
+          dataType:
+            type: String
+        - name: CC_MARKET_MANAGER
+          dataType:
+            type: String
+        - name: CC_DIVISION
+          dataType:
+            type: Numeric
+        - name: CC_DIVISION_NAME
+          dataType:
+            type: String
+        - name: CC_COMPANY
+          dataType:
+            type: Numeric
+        - name: CC_COMPANY_NAME
+          dataType:
+            type: String
+        - name: CC_STREET_NUMBER
+          dataType:
+            type: String
+        - name: CC_STREET_NAME
+          dataType:
+            type: String
+        - name: CC_STREET_TYPE
+          dataType:
+            type: String
+        - name: CC_SUITE_NUMBER
+          dataType:
+            type: String
+        - name: CC_CITY
+          dataType:
+            type: String
+        - name: CC_COUNTY
+          dataType:
+            type: String
+        - name: CC_STATE
+          dataType:
+            type: String
+        - name: CC_ZIP
+          dataType:
+            type: String
+        - name: CC_COUNTRY
+          dataType:
+            type: String
+        - name: CC_GMT_OFFSET
+          dataType:
+            type: Numeric
+        - name: CC_TAX_PERCENTAGE
+          dataType:
+            type: Numeric
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:16:12'
       modifiedAt: '2023-04-20 04:16:12'
     - name: DATE_DIM
+      schema:
+        providerType: bigquery
+        fields:
+        - name: D_DATE_SK
+          dataType:
+            type: Numeric
+        - name: D_DATE_ID
+          dataType:
+            type: String
+        - name: D_DATE
+          dataType:
+            type: Date
+        - name: D_MONTH_SEQ
+          dataType:
+            type: Numeric
+        - name: D_WEEK_SEQ
+          dataType:
+            type: Numeric
+        - name: D_QUARTER_SEQ
+          dataType:
+            type: Numeric
+        - name: D_YEAR
+          dataType:
+            type: Numeric
+        - name: D_DOW
+          dataType:
+            type: Numeric
+        - name: D_MOY
+          dataType:
+            type: Numeric
+        - name: D_DOM
+          dataType:
+            type: Numeric
+        - name: D_QOY
+          dataType:
+            type: Numeric
+        - name: D_FY_YEAR
+          dataType:
+            type: Numeric
+        - name: D_FY_QUARTER_SEQ
+          dataType:
+            type: Numeric
+        - name: D_FY_WEEK_SEQ
+          dataType:
+            type: Numeric
+        - name: D_DAY_NAME
+          dataType:
+            type: String
+        - name: D_QUARTER_NAME
+          dataType:
+            type: String
+        - name: D_HOLIDAY
+          dataType:
+            type: String
+        - name: D_WEEKEND
+          dataType:
+            type: String
+        - name: D_FOLLOWING_HOLIDAY
+          dataType:
+            type: String
+        - name: D_FIRST_DOM
+          dataType:
+            type: Numeric
+        - name: D_LAST_DOM
+          dataType:
+            type: Numeric
+        - name: D_SAME_DAY_LY
+          dataType:
+            type: Numeric
+        - name: D_SAME_DAY_LQ
+          dataType:
+            type: Numeric
+        - name: D_CURRENT_DAY
+          dataType:
+            type: String
+        - name: D_CURRENT_WEEK
+          dataType:
+            type: String
+        - name: D_CURRENT_MONTH
+          dataType:
+            type: String
+        - name: D_CURRENT_QUARTER
+          dataType:
+            type: String
+        - name: D_CURRENT_YEAR
+          dataType:
+            type: String
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:18:46'
       modifiedAt: '2023-04-20 04:18:46'
     - name: STORE_SALES
+      schema:
+        providerType: bigquery
+        fields:
+        - name: SS_SOLD_DATE_SK
+          dataType:
+            type: Numeric
+        - name: SS_SOLD_TIME_SK
+          dataType:
+            type: Numeric
+        - name: SS_ITEM_SK
+          dataType:
+            type: Numeric
+        - name: SS_CUSTOMER_SK
+          dataType:
+            type: Numeric
+        - name: SS_CDEMO_SK
+          dataType:
+            type: Numeric
+        - name: SS_HDEMO_SK
+          dataType:
+            type: Numeric
+        - name: SS_ADDR_SK
+          dataType:
+            type: Numeric
+        - name: SS_STORE_SK
+          dataType:
+            type: Numeric
+        - name: SS_PROMO_SK
+          dataType:
+            type: Numeric
+        - name: SS_TICKET_NUMBER
+          dataType:
+            type: Numeric
+        - name: SS_QUANTITY
+          dataType:
+            type: Numeric
+        - name: SS_WHOLESALE_COST
+          dataType:
+            type: Numeric
+        - name: SS_LIST_PRICE
+          dataType:
+            type: Numeric
+        - name: SS_SALES_PRICE
+          dataType:
+            type: Numeric
+        - name: SS_EXT_DISCOUNT_AMT
+          dataType:
+            type: Numeric
+        - name: SS_EXT_SALES_PRICE
+          dataType:
+            type: Numeric
+        - name: SS_EXT_WHOLESALE_COST
+          dataType:
+            type: Numeric
+        - name: SS_EXT_LIST_PRICE
+          dataType:
+            type: Numeric
+        - name: SS_EXT_TAX
+          dataType:
+            type: Numeric
+        - name: SS_COUPON_AMT
+          dataType:
+            type: Numeric
+        - name: SS_NET_PAID
+          dataType:
+            type: Numeric
+        - name: SS_NET_PAID_INC_TAX
+          dataType:
+            type: Numeric
+        - name: SS_NET_PROFIT
+          dataType:
+            type: Numeric
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:24:12'
       modifiedAt: '2023-04-20 04:24:12'
     - name: ITEM
+      schema:
+        providerType: bigquery
+        fields:
+        - name: I_ITEM_SK
+          dataType:
+            type: Numeric
+        - name: I_ITEM_ID
+          dataType:
+            type: String
+        - name: I_REC_START_DATE
+          dataType:
+            type: Date
+        - name: I_REC_END_DATE
+          dataType:
+            type: Date
+        - name: I_ITEM_DESC
+          dataType:
+            type: String
+        - name: I_CURRENT_PRICE
+          dataType:
+            type: Numeric
+        - name: I_WHOLESALE_COST
+          dataType:
+            type: Numeric
+        - name: I_BRAND_ID
+          dataType:
+            type: Numeric
+        - name: I_BRAND
+          dataType:
+            type: String
+        - name: I_CLASS_ID
+          dataType:
+            type: Numeric
+        - name: I_CLASS
+          dataType:
+            type: String
+        - name: I_CATEGORY_ID
+          dataType:
+            type: Numeric
+        - name: I_CATEGORY
+          dataType:
+            type: String
+        - name: I_MANUFACT_ID
+          dataType:
+            type: Numeric
+        - name: I_MANUFACT
+          dataType:
+            type: String
+        - name: I_SIZE
+          dataType:
+            type: String
+        - name: I_FORMULATION
+          dataType:
+            type: String
+        - name: I_COLOR
+          dataType:
+            type: String
+        - name: I_UNITS
+          dataType:
+            type: String
+        - name: I_CONTAINER
+          dataType:
+            type: String
+        - name: I_MANAGER_ID
+          dataType:
+            type: Numeric
+        - name: I_PRODUCT_NAME
+          dataType:
+            type: String
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:24:30'
       modifiedAt: '2023-04-20 04:24:30'
     - name: qa_table_with_complex_column_names_and_table_with_long_name_1_table_with_complex_column_names_and_table_with_long_name_table_with_complex_column_names_and_table_with_long_name
+      schema:
+        providerType: bigquery
+        fields:
+        - name: c_int64
+          dataType:
+            type: Integer
+        - name: _c_bignumeric
+          dataType:
+            type: BigNumeric
+        - name: _c_bool123
+          dataType:
+            type: Boolean
+        - name: c_bytes
+          dataType:
+            type: Bytes
+        - name: c_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little_buddy_string_with_a_very_long_name_little123
+          dataType:
+            type: String
+        - name: c_float64
+          dataType:
+            type: Float
+        - name: _c_numeric_1
+          dataType:
+            type: Numeric
+        - name: _c_numeric_2
+          dataType:
+            type: Numeric
+        - name: c_date
+          dataType:
+            type: Date
+        - name: c_interval
+          dataType:
+            type: Interval
+        - name: c_time
+          dataType:
+            type: Time
+        - name: c_timestamp
+          dataType:
+            type: Timestamp
+        - name: c_datetime
+          dataType:
+            type: Date
+        - name: c_geography
+          dataType:
+            type: Geography
+        - name: _c_json
+          dataType:
+            type: Json
+        - name: _c_array_int64
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: _c_struct1
+          dataType:
+            type: Record
+            fields:
+            - name: _name1
+              dataType:
+                type: String
+            - name: _age2
+              dataType:
+                type: Integer
+            - name: _department3
+              dataType:
+                type: String
+        - name: p_date
+          dataType:
+            type: Date
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 09:31:43'
       modifiedAt: '2023-04-20 09:31:43'
     - name: testModel
+      schema:
+        providerType: bigquery
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: ' name'
+          dataType:
+            type: String
+        - name: ' age'
+          dataType:
+            type: Integer
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-05-24 09:03:46'
@@ -215,6 +1244,18 @@ sqlSources:
 sqlUnreferencedSources:
   .prophecy/metadata/sqlunreferencedsources/prophecy-qa_qa_test_dataset_ungrouped_customers:
     name: prophecy-qa.qa_test_dataset.ungrouped_customers
+    schema:
+      providerType: bigquery
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
     description: null
     author: abhisheks+shared@prophecy.io
     files:

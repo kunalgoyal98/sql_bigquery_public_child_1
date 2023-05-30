@@ -338,7 +338,7 @@ Filter_1 AS (
   
   FROM AllStunningOne AS in0
   
-  WHERE c_bool IS true
+  WHERE c_bool IS true or c_bool IS false
 
 ),
 

@@ -15,6 +15,8 @@
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
+      "retries" : 1,
+      "retry_delay" : 2,
       "ignore_first_depends_on_past" : true,
       "do_xcom_push" : true
     },
@@ -24,8 +26,15 @@
     "availableFabrics" : [ {
       "id" : "5295",
       "name" : "dev_airflow"
+    }, {
+      "id" : "6470",
+      "name" : "airflow_composer1"
     } ],
-    "catchup" : true
+    "catchup" : true,
+    "tags" : [ ],
+    "startDate" : "2023-02-22",
+    "endDate" : "2080-02-22",
+    "scheduleTimeZone" : "America/Adak"
   },
   "processes" : {
     "0AGbVaAQQc0Qw2jM1dZX6$$Hdr-3KCGsEy9qv41V96Ov" : {
