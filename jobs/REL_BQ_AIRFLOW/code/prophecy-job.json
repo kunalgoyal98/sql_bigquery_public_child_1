@@ -123,8 +123,8 @@
       "metadata" : {
         "label" : "Script_1_1",
         "slug" : "Script_1_1",
-        "x" : 1000,
-        "y" : 280
+        "x" : 1060,
+        "y" : 80
       },
       "ports" : {
         "inputs" : [ {
@@ -169,22 +169,22 @@
         "taskId" : null
       }
     },
-    "1miEc_QklH3gjrjvne939" : {
-      "id" : "1miEc_QklH3gjrjvne939",
+    "JfolP3rhJ-sLJQlSrXNut" : {
+      "id" : "JfolP3rhJ-sLJQlSrXNut",
       "component" : "DBT",
       "metadata" : {
-        "label" : "DBT_0_1",
-        "slug" : "DBT_0_1",
-        "x" : 1260,
-        "y" : 320
+        "label" : "DBT_0_2",
+        "slug" : "DBT_0_2",
+        "x" : 1080,
+        "y" : 400
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "yE2Z2VS8iL6a9K_79Ziwo",
+          "id" : "B9KMrdinQsedUVxz7tdNl",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "uNsizTYAe42pb-sf-LYGy",
+          "id" : "hqZhH-aTBhfsXsTj0g16b",
           "slug" : ""
         } ]
       },
@@ -213,14 +213,13 @@
         "gitSubPath" : null,
         "runModelWithParents" : false,
         "defer" : true,
-        "noDefer" : null,
+        "noDefer" : false,
         "runSeed" : true,
         "gitEntity" : "branch",
         "noPartialParse" : null,
         "warnErrorOptions" : null,
         "gitTokenSecret" : null,
-        "state" : null,
-        "useExperimentalParser" : null,
+        "useExperimentalParser" : true,
         "gitSshUrl" : null,
         "indirectSelection" : "Cautious",
         "partialParse" : true,
@@ -238,7 +237,6 @@
         "recordTimingInfo" : "output.profile",
         "fullRefresh" : true,
         "noCacheSelectedOnly" : true,
-        "noFavorState" : null,
         "isProphecyManaged" : false,
         "profile" : null,
         "noVersionCheck" : true,
@@ -250,12 +248,12 @@
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
         "models" : null,
-        "target" : null,
+        "target" : "dev",
         "exclude" : "env_uitesting_shared_excluded_model",
         "runDeps" : true,
         "noAnonymousUsageStats" : true,
         "selector" : null,
-        "targetPath" : null,
+        "targetPath" : "compiled",
         "threads" : "2",
         "warnError" : false,
         "currentProjectModels" : [ {
@@ -309,10 +307,10 @@
     "sourcePort" : "npxj0PzLMGtyRwMfbYLD9$$NV3-_8-x6UFlYw_eC6aXQ",
     "targetPort" : "-8oSDaLIF6ZZgzmrU4DUv"
   }, {
-    "id" : "eCUYuJpPYxfuzWl68Y3tf",
-    "source" : "Ioqgq8SmpM2ycrCG3mKwZ",
-    "target" : "1miEc_QklH3gjrjvne939",
-    "sourcePort" : "FAHuZyEHByPQvjNpKjb_P",
-    "targetPort" : "yE2Z2VS8iL6a9K_79Ziwo"
+    "id" : "aDrYHgnE_eOecFjocKkVm",
+    "source" : "RYlp0UCOqf7UeirWRSARY$$PP8mhnBZAfJT-AvdO1NDg",
+    "target" : "JfolP3rhJ-sLJQlSrXNut",
+    "sourcePort" : "npxj0PzLMGtyRwMfbYLD9$$NV3-_8-x6UFlYw_eC6aXQ",
+    "targetPort" : "B9KMrdinQsedUVxz7tdNl"
   } ]
 }
