@@ -10,7 +10,7 @@ def DBT_0():
     envs["DBT_PROFILE_SECRET"] = "NLLzyDWWL-0ro4aLPT44-"
     envs["GIT_TOKEN_SECRET"] = ""
     envs["GIT_ENTITY"] = "branch"
-    envs["GIT_ENTITY_VALUE"] = "main"
+    envs["GIT_ENTITY_VALUE"] = "dev"
     envs["GIT_SSH_URL"] = "https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1"
     envs["GIT_SUB_PATH"] = ""
 

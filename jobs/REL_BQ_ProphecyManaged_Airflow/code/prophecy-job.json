@@ -97,7 +97,7 @@
         "noWriteJson" : false,
         "printerWidth" : null,
         "sqlFabricId" : "5285",
-        "gitEntityValue" : "main",
+        "gitEntityValue" : "dev",
         "logFormat" : null,
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
@@ -111,6 +111,11 @@
         "threads" : null,
         "warnError" : null,
         "currentProjectModels" : [ {
+          "label" : "env_uitesting_shared_excluded_model",
+          "value" : "env_uitesting_shared_excluded_model",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_excluded_model",
+          "name" : "env_uitesting_shared_excluded_model"
+        }, {
           "label" : "tpcds_1_env_uitesting_shared",
           "value" : "tpcds_1_env_uitesting_shared",
           "id" : "24115/.prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared",
