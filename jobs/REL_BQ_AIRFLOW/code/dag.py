@@ -24,7 +24,7 @@ with DAG(
     tags = []
 ) as dag:
     DBT_0_op = DBT_0()
-    Script_1_op = Script_1()
     Script_1_1_op = Script_1_1()
+    Script_1_op = Script_1()
     DBT_0_op >> Script_1_op
     Script_1_op >> Script_1_1_op

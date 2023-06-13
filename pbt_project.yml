@@ -31,7 +31,31 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-04-21 13:02:23'
-    modifiedAt: '2023-05-30 15:24:37'
+    modifiedAt: '2023-06-13 04:53:51'
+    author: abhisheks+shared@prophecy.io
+  jobs/REL_BQ_ProphecyManaged_Airflow:
+    name: REL_BQ_ProphecyManaged_Airflow
+    description: REL_BQ_ProphecyManaged_Airflow
+    fabricUID: 7039
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 13 * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-06-13 04:55:43'
+    modifiedAt: '2023-06-13 05:45:58'
     author: abhisheks+shared@prophecy.io
 functions:
   author: null
@@ -43,6 +67,30 @@ functions:
   expressions: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/env_uitesting_shared_excluded_model:
+    name: env_uitesting_shared_excluded_model
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+shared@prophecy.io
+    files:
+    - models/excluded/env_uitesting_shared_excluded_model.sql
+    - .prophecy/ide/models/env_uitesting_shared_excluded_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-13 05:01:43'
+    modifiedAt: '2023-06-13 05:01:43'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1:
     name: env_uitesting_shared_parent_model_1
     schema:
