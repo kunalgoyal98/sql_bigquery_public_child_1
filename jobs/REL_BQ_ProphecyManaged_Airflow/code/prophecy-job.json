@@ -162,31 +162,50 @@
         "storeFailures" : null
       }
     },
-    "aOWEKvMawQW0IITJk1dOC" : {
-      "id" : "aOWEKvMawQW0IITJk1dOC",
+    "qUGA6xtvHgHswlp4PkiqA" : {
+      "id" : "qUGA6xtvHgHswlp4PkiqA",
       "component" : "DBT",
       "metadata" : {
-        "label" : "DBT_0_1",
-        "slug" : "DBT_0_1",
-        "x" : 0,
-        "y" : 180
+        "label" : "DBT_0_2",
+        "slug" : "DBT_0_2",
+        "x" : -180,
+        "y" : 120
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "oJnyfcbPLQdDOQDOydiJ4",
+          "id" : "A7DbKndEjS4D_Ipb1MbbB",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "hs6bGHClh1uN6Db5qXi1r",
+          "id" : "v0at2L9wXHED2DCswxj8r",
           "slug" : ""
         } ]
       },
-      "settings" : { },
+      "settings" : {
+        "email" : "abhisheks@prophecy.io",
+        "email_on_failure" : true,
+        "email_on_retry" : true,
+        "retries" : 1,
+        "retry_delay" : 1,
+        "retry_exponential_backoff" : true,
+        "max_retry_delay" : 1,
+        "execution_timeout_int" : 1800,
+        "trigger_rule" : "always",
+        "depends_on_past" : true,
+        "ignore_first_depends_on_past" : true,
+        "wait_for_downstream" : true,
+        "priority_weight" : 1,
+        "weight_rule" : "absolute",
+        "queue" : "",
+        "pool" : "testAutomationPool",
+        "pool_slots" : 2,
+        "max_active_tis_per_dag" : 2
+      },
       "properties" : {
         "cacheSelectedOnly" : null,
         "gitSubPath" : null,
         "runModelWithParents" : false,
-        "defer" : null,
+        "defer" : true,
         "noDefer" : null,
         "runSeed" : true,
         "gitEntity" : "branch",
@@ -196,28 +215,28 @@
         "state" : null,
         "useExperimentalParser" : null,
         "gitSshUrl" : null,
-        "indirectSelection" : null,
-        "partialParse" : null,
+        "indirectSelection" : "Cautious",
+        "partialParse" : true,
         "runRun" : true,
-        "vars" : null,
+        "vars" : "'{test_var: hello}'",
         "noPrint" : true,
-        "quiet" : null,
+        "quiet" : true,
         "projectId" : "24115",
         "runOnlyModel" : false,
-        "favorState" : null,
+        "favorState" : true,
         "failFast" : true,
         "noStaticParser" : null,
         "runTest" : false,
         "select" : null,
-        "recordTimingInfo" : null,
+        "recordTimingInfo" : "output.profile",
         "fullRefresh" : true,
-        "noCacheSelectedOnly" : null,
+        "noCacheSelectedOnly" : true,
         "noFavorState" : null,
         "isProphecyManaged" : false,
         "profile" : null,
-        "noVersionCheck" : null,
-        "noWriteJson" : false,
-        "printerWidth" : null,
+        "noVersionCheck" : true,
+        "noWriteJson" : true,
+        "printerWidth" : "100",
         "sqlFabricId" : "5285",
         "gitEntityValue" : "dev",
         "logFormat" : null,
@@ -225,12 +244,13 @@
         "dbtProfileSecret" : null,
         "models" : null,
         "target" : null,
+        "exclude" : "env_uitesting_shared_excluded_model",
         "runDeps" : true,
         "noAnonymousUsageStats" : true,
         "selector" : null,
         "targetPath" : null,
-        "threads" : null,
-        "warnError" : null,
+        "threads" : "2",
+        "warnError" : false,
         "currentProjectModels" : [ {
           "label" : "env_uitesting_shared_excluded_model",
           "value" : "env_uitesting_shared_excluded_model",
@@ -264,16 +284,16 @@
         } ],
         "profilesDir" : null,
         "taskId" : null,
-        "logPath" : null,
+        "logPath" : "logs.txt",
         "storeFailures" : null
       }
     }
   },
   "connections" : [ {
-    "id" : "50zzegfD2bqqRGRBBHmmS",
+    "id" : "3HIR_YQlo9ysyvE0_aV9p$$nF_D0RUOFUywDWOEBI00_",
     "source" : "v6vSE9dYEZIId0VvUBI9M$$fyPG4eVvVo1p5hCpGVqL6",
-    "target" : "aOWEKvMawQW0IITJk1dOC",
+    "target" : "qUGA6xtvHgHswlp4PkiqA",
     "sourcePort" : "Z9cLx9QY-nQZkKEEmCE4h$$1Vm-moX8bUV0hq1BOmajI",
-    "targetPort" : "oJnyfcbPLQdDOQDOydiJ4"
+    "targetPort" : "A7DbKndEjS4D_Ipb1MbbB"
   } ]
 }

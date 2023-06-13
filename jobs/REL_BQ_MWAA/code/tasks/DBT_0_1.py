@@ -1,4 +1,4 @@
-def DBT_0():
+def DBT_0_1():
     from datetime import timedelta
     from airflow.operators.bash import BashOperator
     envs = {}
@@ -6,7 +6,7 @@ def DBT_0():
     envs["DBT_PRINTER_WIDTH"] = "100"
     envs["DBT_VERSION_CHECK"] = "false"
     envs["DBT_PARTIAL_PARSE"] = "true"
-    envs["DBT_PROFILES_DIR"] = "/home/airflow/gcs/data"
+    envs["DBT_PROFILES_DIR"] = "/usr/local/airflow/dags"
     envs["DBT_SEND_ANONYMOUS_USAGE_STATS"] = "false"
     envs["DBT_FAIL_FAST"] = "true"
     envs["DBT_QUIET"] = "true"
@@ -21,7 +21,7 @@ def DBT_0():
         envs["DBT_INDIRECT_SELECTION"] = "Cautious"
 
     return BashOperator(
-        task_id = "DBT_0",
+        task_id = "DBT_0_1",
         bash_command = "set -euxo pipefail; tmpDir=`mktemp -d`; git clone https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1 --branch dev --single-branch $tmpDir; cd $tmpDir/; dbt -r output.profile deps --profile run_profile_bigquery --vars '{test_var: hello}'; dbt -r output.profile seed --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; dbt -r output.profile run --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; ",
         env = envs,
         append_env = True,
