@@ -53,9 +53,9 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2023-06-13 04:55:43'
-    modifiedAt: '2023-06-13 07:28:51'
+    modifiedAt: '2023-06-13 10:05:11'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_MWAA:
     name: REL_BQ_MWAA
@@ -77,9 +77,9 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2023-06-13 07:31:04'
-    modifiedAt: '2023-06-13 07:32:54'
+    modifiedAt: '2023-06-13 10:05:05'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_DoAnything_Job:
     name: REL_BQ_DoAnything_Job

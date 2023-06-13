@@ -6,7 +6,7 @@
     "name" : "REL_BQ_MWAA",
     "dagName" : "uitesting_shared_team_SQL_ChildBigqueryShared_REL_BQ_MWAA",
     "schedule" : "0 0 18,25 * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

@@ -6,7 +6,7 @@
     "name" : "REL_BQ_ProphecyManaged_Airflow",
     "dagName" : "NPP4q9MIzskxZeICpwPZAw_",
     "schedule" : "0 0 13 * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
