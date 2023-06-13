@@ -31,6 +31,7 @@ target-path: "target"
 vars:
   v_project_int: '11'
   v_project_dict: '{''a'': 2, ''b'': ''hello''}'
+  test_var: hello sir mister
 
 # ============
 # Misc
