@@ -1,0 +1,172 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "5295",
+    "jobId" : "jobs/REL_BQ_DoAnything_Job",
+    "name" : "REL_BQ_DoAnything_Job",
+    "dagName" : "uitesting_shared_team_SQL_ChildBigqueryShared_REL_BQ_DoAnything_Job",
+    "schedule" : "0 0 1 1 *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "timeoutSeconds" : 1800,
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "email" : "abhisheks@prophecy.io,abhisheks@simpledatalabs.com",
+      "email_on_failure" : true,
+      "email_on_retry" : true,
+      "retries" : 1,
+      "retry_delay" : 1,
+      "retry_exponential_backoff" : true,
+      "max_retry_delay" : 1,
+      "execution_timeout_int" : 1800,
+      "trigger_rule" : "all_done",
+      "depends_on_past" : true,
+      "ignore_first_depends_on_past" : true,
+      "wait_for_downstream" : true,
+      "priority_weight" : 1,
+      "weight_rule" : "downstream",
+      "pool" : "testAutomationPool",
+      "pool_slots" : 2,
+      "max_active_tis_per_dag" : 1,
+      "do_xcom_push" : true
+    },
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "availableFabrics" : [ {
+      "id" : "5295",
+      "name" : "dev_airflow"
+    }, {
+      "id" : "6470",
+      "name" : "airflow_composer1"
+    }, {
+      "id" : "7039",
+      "name" : "dev_airflow_prohecy_managed"
+    }, {
+      "id" : "7040",
+      "name" : "dev_airflow_mwaa"
+    } ],
+    "catchup" : true,
+    "maxActiveTasks" : 2,
+    "maxActiveRuns" : 26,
+    "tags" : [ "doanything" ],
+    "startDate" : "2023-02-28",
+    "endDate" : "2080-02-28",
+    "scheduleTimeZone" : "UTC"
+  },
+  "processes" : {
+    "18eE4R5jj_WpgHsyLmcTh$$6uH5vHBy3OINCjn8W_psB" : {
+      "id" : "18eE4R5jj_WpgHsyLmcTh$$6uH5vHBy3OINCjn8W_psB",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : -460,
+        "y" : -200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KpuL4bQRJMg7Sdar3nzvN$$c7MmmERIY04ZdOAl1raYj",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "AfF9-VcqD0sIoii2fkY-u$$VZXcK3pnjOputwke3Sgk8",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : true,
+        "runRun" : true,
+        "vars" : null,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "24115",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : true,
+        "noStaticParser" : null,
+        "runTest" : false,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : true,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : true,
+        "noWriteJson" : true,
+        "printerWidth" : null,
+        "sqlFabricId" : "5285",
+        "gitEntityValue" : "dev",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "models" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : true,
+        "noAnonymousUsageStats" : true,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : true,
+        "currentProjectModels" : [ {
+          "label" : "env_uitesting_shared_excluded_model",
+          "value" : "env_uitesting_shared_excluded_model",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_excluded_model",
+          "name" : "env_uitesting_shared_excluded_model"
+        }, {
+          "label" : "tpcds_1_env_uitesting_shared",
+          "value" : "tpcds_1_env_uitesting_shared",
+          "id" : "24115/.prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared",
+          "name" : "tpcds_1_env_uitesting_shared"
+        }, {
+          "label" : "env_uitesting_shared_useall_model_1",
+          "value" : "env_uitesting_shared_useall_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1",
+          "name" : "env_uitesting_shared_useall_model_1"
+        }, {
+          "label" : "env_uitesting_shared_child_model_1",
+          "value" : "env_uitesting_shared_child_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1",
+          "name" : "env_uitesting_shared_child_model_1"
+        }, {
+          "label" : "env_uitesting_shared_mid_model_1",
+          "value" : "env_uitesting_shared_mid_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1",
+          "name" : "env_uitesting_shared_mid_model_1"
+        }, {
+          "label" : "env_uitesting_shared_parent_model_1",
+          "value" : "env_uitesting_shared_parent_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1",
+          "name" : "env_uitesting_shared_parent_model_1"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      }
+    }
+  },
+  "connections" : [ ]
+}

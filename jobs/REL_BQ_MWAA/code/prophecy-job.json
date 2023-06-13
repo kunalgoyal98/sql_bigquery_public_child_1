@@ -1,0 +1,215 @@
+{
+  "metainfo" : {
+    "type" : "MWAA",
+    "fabricId" : "7040",
+    "jobId" : "jobs/REL_BQ_MWAA",
+    "name" : "REL_BQ_MWAA",
+    "dagName" : "uitesting_shared_team_SQL_ChildBigqueryShared_REL_BQ_MWAA",
+    "schedule" : "0 0 18,25 * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "availableFabrics" : [ {
+      "id" : "5295",
+      "name" : "dev_airflow"
+    }, {
+      "id" : "6470",
+      "name" : "airflow_composer1"
+    }, {
+      "id" : "7039",
+      "name" : "dev_airflow_prohecy_managed"
+    }, {
+      "id" : "7040",
+      "name" : "dev_airflow_mwaa"
+    } ],
+    "catchup" : true,
+    "tags" : [ ],
+    "scheduleTimeZone" : "Pacific/Marquesas"
+  },
+  "processes" : {
+    "BEek-DYnw-5maqGU9HnQZ$$BLDFQOq0crA2kUpX-c_T0" : {
+      "id" : "BEek-DYnw-5maqGU9HnQZ$$BLDFQOq0crA2kUpX-c_T0",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 300,
+        "y" : 200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XuXlFXa54ms8AAAz2BKHm$$LzxSqM5s0jo5j5Priq3S4",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "A3lkB8Rcek2VQGbru2maY$$OVuo7nFIlYHAKHB0pFd5Y",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "24115",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : true,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "5285",
+        "gitEntityValue" : "dev",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "models" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "env_uitesting_shared_excluded_model",
+          "value" : "env_uitesting_shared_excluded_model",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_excluded_model",
+          "name" : "env_uitesting_shared_excluded_model"
+        }, {
+          "label" : "tpcds_1_env_uitesting_shared",
+          "value" : "tpcds_1_env_uitesting_shared",
+          "id" : "24115/.prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared",
+          "name" : "tpcds_1_env_uitesting_shared"
+        }, {
+          "label" : "env_uitesting_shared_useall_model_1",
+          "value" : "env_uitesting_shared_useall_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1",
+          "name" : "env_uitesting_shared_useall_model_1"
+        }, {
+          "label" : "env_uitesting_shared_child_model_1",
+          "value" : "env_uitesting_shared_child_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1",
+          "name" : "env_uitesting_shared_child_model_1"
+        }, {
+          "label" : "env_uitesting_shared_mid_model_1",
+          "value" : "env_uitesting_shared_mid_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1",
+          "name" : "env_uitesting_shared_mid_model_1"
+        }, {
+          "label" : "env_uitesting_shared_parent_model_1",
+          "value" : "env_uitesting_shared_parent_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1",
+          "name" : "env_uitesting_shared_parent_model_1"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      }
+    },
+    "2i5LIM6tzfPt7PiW7s3KU$$AWIngLXnL_gC6aVunpWtO" : {
+      "id" : "2i5LIM6tzfPt7PiW7s3KU$$AWIngLXnL_gC6aVunpWtO",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 100,
+        "y" : 180
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "t-RBViRK3iQZCHblxwAge$$VXl1vtEY2NaoFsOmvZY9h",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "SYOlORxZsK7nHOylqMkA7$$NdfmjQjDqKofFt-UKfBIq",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "code" : "cars = ['Ford', 'BMW', 'Volvo']\ncars.sort()\nprint(cars)",
+        "language" : "python",
+        "taskId" : null
+      }
+    },
+    "NjVFY9YrgQoE6sXF31rl0$$FbVoLfzlvmmDODdhXC51A" : {
+      "id" : "NjVFY9YrgQoE6sXF31rl0$$FbVoLfzlvmmDODdhXC51A",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_2",
+        "slug" : "Script_2",
+        "x" : 480,
+        "y" : 240
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sdYq-HfbO_fKm_3_6mSnF$$U3dYriBQZxyIM_TB886iA",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "BgvEGyfOL4VL4zOULVYCJ$$sny92ybngnaHhOh9Pb597",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "code" : "ls -ltr",
+        "language" : "bash",
+        "taskId" : null
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "NgbZx3Y9QEMLXZcGJaNSD$$x90_CF-Ru5febMRYbAKkZ",
+    "source" : "2i5LIM6tzfPt7PiW7s3KU$$AWIngLXnL_gC6aVunpWtO",
+    "target" : "BEek-DYnw-5maqGU9HnQZ$$BLDFQOq0crA2kUpX-c_T0",
+    "sourcePort" : "SYOlORxZsK7nHOylqMkA7$$NdfmjQjDqKofFt-UKfBIq",
+    "targetPort" : "XuXlFXa54ms8AAAz2BKHm$$LzxSqM5s0jo5j5Priq3S4"
+  }, {
+    "id" : "q-scaI2C6uo61fsQsl1Hv$$PDBM7CIWxbTiEncmiHVJ7",
+    "source" : "BEek-DYnw-5maqGU9HnQZ$$BLDFQOq0crA2kUpX-c_T0",
+    "target" : "NjVFY9YrgQoE6sXF31rl0$$FbVoLfzlvmmDODdhXC51A",
+    "sourcePort" : "A3lkB8Rcek2VQGbru2maY$$OVuo7nFIlYHAKHB0pFd5Y",
+    "targetPort" : "sdYq-HfbO_fKm_3_6mSnF$$U3dYriBQZxyIM_TB886iA"
+  } ]
+}

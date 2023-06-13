@@ -13,9 +13,20 @@
       "onSuccess" : false,
       "onFailure" : false
     },
+    "timeoutSeconds" : 3600,
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
+      "retries" : 1,
+      "retry_delay" : 1,
+      "retry_exponential_backoff" : true,
+      "max_retry_delay" : 1,
+      "execution_timeout_int" : 900,
+      "trigger_rule" : "all_success",
+      "depends_on_past" : false,
       "ignore_first_depends_on_past" : true,
+      "wait_for_downstream" : true,
+      "priority_weight" : 2,
+      "weight_rule" : "downstream",
       "pool" : "tB-MN8Ps",
       "do_xcom_push" : true
     },
@@ -36,6 +47,10 @@
       "name" : "dev_airflow_mwaa"
     } ],
     "catchup" : true,
+    "maxActiveTasks" : 2,
+    "maxActiveRuns" : 25,
+    "tags" : [ "bigquery_shared" ],
+    "startDate" : "2023-02-28",
     "endDate" : "2023-07-03",
     "scheduleTimeZone" : "UTC"
   },
