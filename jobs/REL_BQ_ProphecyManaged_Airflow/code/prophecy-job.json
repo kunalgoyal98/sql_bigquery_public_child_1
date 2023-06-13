@@ -46,8 +46,8 @@
       "metadata" : {
         "label" : "DBT_0",
         "slug" : "DBT_0",
-        "x" : -60,
-        "y" : 140
+        "x" : -380,
+        "y" : 80
       },
       "ports" : {
         "inputs" : [ {
@@ -146,7 +146,119 @@
         "logPath" : null,
         "storeFailures" : null
       }
+    },
+    "aOWEKvMawQW0IITJk1dOC" : {
+      "id" : "aOWEKvMawQW0IITJk1dOC",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0_1",
+        "slug" : "DBT_0_1",
+        "x" : 0,
+        "y" : 180
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oJnyfcbPLQdDOQDOydiJ4",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "hs6bGHClh1uN6Db5qXi1r",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "noPrint" : true,
+        "quiet" : null,
+        "projectId" : "24115",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : true,
+        "noStaticParser" : null,
+        "runTest" : false,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : true,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "5285",
+        "gitEntityValue" : "dev",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "models" : null,
+        "target" : null,
+        "runDeps" : true,
+        "noAnonymousUsageStats" : true,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "env_uitesting_shared_excluded_model",
+          "value" : "env_uitesting_shared_excluded_model",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_excluded_model",
+          "name" : "env_uitesting_shared_excluded_model"
+        }, {
+          "label" : "tpcds_1_env_uitesting_shared",
+          "value" : "tpcds_1_env_uitesting_shared",
+          "id" : "24115/.prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared",
+          "name" : "tpcds_1_env_uitesting_shared"
+        }, {
+          "label" : "env_uitesting_shared_useall_model_1",
+          "value" : "env_uitesting_shared_useall_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1",
+          "name" : "env_uitesting_shared_useall_model_1"
+        }, {
+          "label" : "env_uitesting_shared_child_model_1",
+          "value" : "env_uitesting_shared_child_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1",
+          "name" : "env_uitesting_shared_child_model_1"
+        }, {
+          "label" : "env_uitesting_shared_mid_model_1",
+          "value" : "env_uitesting_shared_mid_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1",
+          "name" : "env_uitesting_shared_mid_model_1"
+        }, {
+          "label" : "env_uitesting_shared_parent_model_1",
+          "value" : "env_uitesting_shared_parent_model_1",
+          "id" : "24115/.prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1",
+          "name" : "env_uitesting_shared_parent_model_1"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      }
     }
   },
-  "connections" : [ ]
+  "connections" : [ {
+    "id" : "50zzegfD2bqqRGRBBHmmS",
+    "source" : "v6vSE9dYEZIId0VvUBI9M$$fyPG4eVvVo1p5hCpGVqL6",
+    "target" : "aOWEKvMawQW0IITJk1dOC",
+    "sourcePort" : "Z9cLx9QY-nQZkKEEmCE4h$$1Vm-moX8bUV0hq1BOmajI",
+    "targetPort" : "oJnyfcbPLQdDOQDOydiJ4"
+  } ]
 }
