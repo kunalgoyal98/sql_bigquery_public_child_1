@@ -252,7 +252,6 @@
         "state" : null,
         "useExperimentalParser" : null,
         "gitSshUrl" : null,
-        "indirectSelection" : "Cautious",
         "partialParse" : true,
         "runRun" : true,
         "vars" : "'{test_var: hello}'",

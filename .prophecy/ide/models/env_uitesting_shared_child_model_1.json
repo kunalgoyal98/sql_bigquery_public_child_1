@@ -19,6 +19,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_1",
+        "x" : 320,
+        "y" : 120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -269,6 +271,8 @@
       "component" : "Filter",
       "metadata" : {
         "label" : "Filter_1",
+        "x" : 920,
+        "y" : 120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -521,6 +525,8 @@
       "component" : "Limit",
       "metadata" : {
         "label" : "Limit_1",
+        "x" : 720,
+        "y" : 120,
         "phase" : 0
       },
       "properties" : {
@@ -771,6 +777,8 @@
       "component" : "Model",
       "metadata" : {
         "label" : "env_uitesting_shared_mid_model_1",
+        "x" : 120,
+        "y" : 120,
         "phase" : 0
       },
       "properties" : {
@@ -906,6 +914,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "env_uitesting_shared_child_model_1",
+        "x" : 1120,
+        "y" : 120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -1162,6 +1172,8 @@
       "component" : "OrderBy",
       "metadata" : {
         "label" : "OrderBy_1",
+        "x" : 520,
+        "y" : 120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
