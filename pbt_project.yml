@@ -330,7 +330,120 @@ sqlModels:
     modifiedAt: '2023-04-20 04:12:51'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1:
     name: env_uitesting_shared_useall_model_1
-    schema: null
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: cfor_col_0
+        dataType:
+          type: String
+      - name: cfor_col_1
+        dataType:
+          type: String
+      - name: cfor_col_2
+        dataType:
+          type: String
+      - name: cfor_col_3
+        dataType:
+          type: String
+      - name: cfor_col_4
+        dataType:
+          type: String
+      - name: c_if
+        dataType:
+          type: String
+      - name: c_bool_expr
+        dataType:
+          type: Boolean
+      - name: c_concat_expr
+        dataType:
+          type: String
+      - name: c_add_expr
+        dataType:
+          type: Float
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: p_date
+        dataType:
+          type: Date
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_int16_into_two
+        dataType:
+          type: Integer
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_concat_basic
+        dataType:
+          type: Boolean
+      - name: c_dbt_utils
+        dataType:
+          type: String
+      - name: c_function_bigquery
+        dataType:
+          type: Float
+      - name: c_expression_from_config
+        dataType:
+          type: String
+      - name: c_interval_1
+        dataType:
+          type: Interval
+      - name: c_sum_over
+        dataType:
+          type: Numeric
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
