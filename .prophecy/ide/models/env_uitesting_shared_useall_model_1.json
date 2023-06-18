@@ -426,6 +426,11 @@
               "dataType" : {
                 "type" : "Date"
               }
+            }, {
+              "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
+              }
             } ]
           },
           "slug" : "in0"
@@ -557,6 +562,11 @@
               "name" : "p_date",
               "dataType" : {
                 "type" : "Date"
+              }
+            }, {
+              "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },
@@ -2046,6 +2056,11 @@
               "dataType" : {
                 "type" : "Date"
               }
+            }, {
+              "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
+              }
             } ]
           },
           "slug" : "in0"
@@ -3391,6 +3406,11 @@
               "name" : "p_date",
               "dataType" : {
                 "type" : "Date"
+              }
+            }, {
+              "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },
@@ -5272,6 +5292,11 @@
               "dataType" : {
                 "type" : "Date"
               }
+            }, {
+              "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
+              }
             } ]
           },
           "slug" : "env_uitesting_main_model_bigquery_1"
@@ -5403,6 +5428,11 @@
               "name" : "p_date",
               "dataType" : {
                 "type" : "Date"
+              }
+            }, {
+              "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },

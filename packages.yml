@@ -1,5 +1,5 @@
 ---
 packages:
-- revision: "SQL_ParentBigquery/1.0"
+- revision: "SQL_ParentBigquery/v3.1.0.0"
   git: "https://github.com/abhisheks-prophecy/sql_bigquery_public_parent"
   subdirectory: ""
