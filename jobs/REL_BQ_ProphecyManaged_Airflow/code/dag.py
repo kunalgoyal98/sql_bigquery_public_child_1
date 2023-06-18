@@ -10,7 +10,7 @@ PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLA
 
 with DAG(
     dag_id = "NPP4q9MIzskxZeICpwPZAw_", 
-    schedule_interval = "0 0 13 * *", 
+    schedule_interval = "0 0/4 * * *", 
     default_args = {
       "owner": "Prophecy", 
       "retry_exponential_backoff": True, 
@@ -27,7 +27,7 @@ with DAG(
       "pool": "tB-MN8Ps", 
       "do_xcom_push": True
     }, 
-    start_date = pendulum.datetime(2023, 2, 28, tz = "UTC"), 
+    start_date = pendulum.datetime(2023, 6, 17, tz = "UTC"), 
     end_date = pendulum.datetime(2023, 7, 3, tz = "UTC"), 
     catchup = True, 
     dagrun_timeout = timedelta(seconds = 3600), 
