@@ -8,7 +8,7 @@ def DBT_0():
 
     return BashOperator(
         task_id = "DBT_0",
-        bash_command = "set -euxo pipefail; tmpDir=`mktemp -d`; git clone https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1 --branch dev --single-branch $tmpDir; cd $tmpDir/; dbt run --profile run_profile_bigquery; dbt test --profile run_profile_bigquery; ",
+        bash_command = "set -euxo pipefail; tmpDir=`mktemp -d`; git clone https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1 --branch dev --single-branch $tmpDir; cd $tmpDir/; dbt deps --profile run_profile_bigquery; dbt seed --profile run_profile_bigquery; dbt run --profile run_profile_bigquery; ",
         env = envs,
         append_env = True,
         **settings

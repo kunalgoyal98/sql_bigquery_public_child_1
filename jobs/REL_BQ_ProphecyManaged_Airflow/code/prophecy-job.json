@@ -37,10 +37,7 @@
       "id" : "5295",
       "name" : "dev_airflow"
     }, {
-      "id" : "5839",
-      "name" : "airflow_test"
-    }, {
-      "id" : "6144",
+      "id" : "6470",
       "name" : "airflow_composer1"
     }, {
       "id" : "7039",
@@ -222,7 +219,6 @@
         "indirectSelection" : "Cautious",
         "partialParse" : true,
         "runRun" : true,
-        "vars" : "'{test_var: hello}'",
         "noPrint" : true,
         "quiet" : true,
         "projectId" : "24115",

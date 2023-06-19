@@ -28,7 +28,7 @@ def DBT_0_2():
 
     return BashOperator(
         task_id = "DBT_0_2",
-        bash_command = f"$PROPHECY_HOME/run_dbt.sh \"dbt -r output.profile deps --profile run_profile --vars '{test_var: hello}'; dbt -r output.profile seed --profile run_profile --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; dbt -r output.profile run --profile run_profile --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; \"",
+        bash_command = f"$PROPHECY_HOME/run_dbt.sh \"dbt -r output.profile deps --profile run_profile; dbt -r output.profile seed --profile run_profile --threads=2 --exclude env_uitesting_shared_excluded_model; dbt -r output.profile run --profile run_profile --threads=2 --exclude env_uitesting_shared_excluded_model; \"",
         env = envs,
         append_env = True,
         email = "abhisheks@prophecy.io", 

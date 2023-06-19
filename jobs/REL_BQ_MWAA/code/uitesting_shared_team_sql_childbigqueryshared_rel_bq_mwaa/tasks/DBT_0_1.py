@@ -19,7 +19,7 @@ def DBT_0_1():
 
     return BashOperator(
         task_id = "DBT_0_1",
-        bash_command = "set -euxo pipefail; tmpDir=`mktemp -d`; git clone https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1 --branch dev --single-branch $tmpDir; cd $tmpDir/; dbt -r output.profile deps --profile run_profile_bigquery --vars '{test_var: hello}'; dbt -r output.profile seed --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; dbt -r output.profile run --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; ",
+        bash_command = "set -euxo pipefail; tmpDir=`mktemp -d`; git clone https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1 --branch dev --single-branch $tmpDir; cd $tmpDir/; dbt -r output.profile deps --profile run_profile_bigquery --vars '{test_var: hello}'; dbt -r output.profile seed --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; dbt -r output.profile run --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; dbt -r output.profile test --profile run_profile_bigquery --vars '{test_var: hello}' --threads=2 --exclude env_uitesting_shared_excluded_model; ",
         env = envs,
         append_env = True,
         email = "abhisheks@prophecy.io", 
