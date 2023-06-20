@@ -6,7 +6,7 @@
     "name" : "REL_BQ_PM_Airflow",
     "dagName" : "feXMfEHqM3jCL463QXDfnQ_",
     "schedule" : "0 0 18 * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -47,7 +47,7 @@
       "metadata" : {
         "label" : "DBT_0",
         "slug" : "DBT_0",
-        "x" : 340,
+        "x" : 280,
         "y" : 240
       },
       "ports" : {
