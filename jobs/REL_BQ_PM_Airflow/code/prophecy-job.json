@@ -1,12 +1,12 @@
 {
   "metainfo" : {
-    "type" : "Composer",
-    "fabricId" : "5295",
-    "jobId" : "jobs/REL_BQ_PMAirflow",
-    "name" : "REL_BQ_PMAirflow",
-    "dagName" : "uitesting_shared_team_SQL_ChildBigqueryShared_REL_BQ_PMAirflow",
-    "schedule" : "0 0 25 * *",
-    "enabled" : true,
+    "type" : "Prophecy",
+    "fabricId" : "7557",
+    "jobId" : "jobs/REL_BQ_PM_Airflow",
+    "name" : "REL_BQ_PM_Airflow",
+    "dagName" : "feXMfEHqM3jCL463QXDfnQ_",
+    "schedule" : "0 0 18 * *",
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -16,6 +16,7 @@
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
       "ignore_first_depends_on_past" : true,
+      "pool" : "n7pJN9mh",
       "do_xcom_push" : true
     },
     "jobClusterMode" : {
@@ -36,25 +37,26 @@
       "trialStartDate" : 1687261887500
     } ],
     "catchup" : true,
+    "endDate" : "2023-07-11",
     "scheduleTimeZone" : "UTC"
   },
   "processes" : {
-    "XEc5hLhJ2Qe5j8tpFqYQ6" : {
-      "id" : "XEc5hLhJ2Qe5j8tpFqYQ6",
+    "Ubt00BJR9BInqWi-R9BxZ" : {
+      "id" : "Ubt00BJR9BInqWi-R9BxZ",
       "component" : "DBT",
       "metadata" : {
         "label" : "DBT_0",
         "slug" : "DBT_0",
-        "x" : 920,
-        "y" : 200
+        "x" : 500,
+        "y" : 220
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "SiL3AkNkTqSltWmZuYAAN",
+          "id" : "JvdamYd7HppnLS6AMRVOT",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "AwL-MjexLYrp3voqZFbWs",
+          "id" : "IaqRwM_V8B1PRSRYAktF_",
           "slug" : ""
         } ]
       },
@@ -146,22 +148,22 @@
         "storeFailures" : null
       }
     },
-    "u6l60I2i-rqWJDOQBKe8t" : {
-      "id" : "u6l60I2i-rqWJDOQBKe8t",
+    "oGbGXKgfWS_smxvKQ6dp5" : {
+      "id" : "oGbGXKgfWS_smxvKQ6dp5",
       "component" : "DBT",
       "metadata" : {
         "label" : "DBT_0_2",
         "slug" : "DBT_0_2",
-        "x" : 1120,
-        "y" : 240
+        "x" : 700,
+        "y" : 260
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "BUiBpp-ZDK_qEhM3_NYk2",
+          "id" : "mqkj7z13hXxNR-I8vEIk3",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "yGSYswjrlCa92B3MinoRD",
+          "id" : "BAooD_8mlgnw_dFO7AcR-",
           "slug" : ""
         } ]
       },
@@ -273,10 +275,10 @@
     }
   },
   "connections" : [ {
-    "id" : "5TtXcAecgBGaoOYJe76-S",
-    "source" : "XEc5hLhJ2Qe5j8tpFqYQ6",
-    "target" : "u6l60I2i-rqWJDOQBKe8t",
-    "sourcePort" : "AwL-MjexLYrp3voqZFbWs",
-    "targetPort" : "BUiBpp-ZDK_qEhM3_NYk2"
+    "id" : "xK_GO0bXCKjwmsqTxSvIt",
+    "source" : "Ubt00BJR9BInqWi-R9BxZ",
+    "target" : "oGbGXKgfWS_smxvKQ6dp5",
+    "sourcePort" : "IaqRwM_V8B1PRSRYAktF_",
+    "targetPort" : "mqkj7z13hXxNR-I8vEIk3"
   } ]
 }
