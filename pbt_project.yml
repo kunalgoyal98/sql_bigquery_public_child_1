@@ -33,30 +33,6 @@ jobs:
     createdAt: '2023-04-21 13:02:23'
     modifiedAt: '2023-06-19 12:09:00'
     author: abhisheks+shared@prophecy.io
-  jobs/REL_BQ_ProphecyManaged_Airflow:
-    name: REL_BQ_ProphecyManaged_Airflow
-    description: REL_BQ_ProphecyManaged_Airflow
-    fabricUID: 7039
-    scheduler:
-      Prophecy: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: 0 0/4 * * *
-    timeout: 3600
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: true
-    createdAt: '2023-06-13 04:55:43'
-    modifiedAt: '2023-06-19 17:07:26'
-    author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_MWAA:
     name: REL_BQ_MWAA
     description: REL_BQ_MWAA
@@ -104,6 +80,30 @@ jobs:
     enabled: false
     createdAt: '2023-06-13 08:09:06'
     modifiedAt: '2023-06-13 13:29:02'
+    author: abhisheks+shared@prophecy.io
+  jobs/REL_BQ_PMAirflow:
+    name: REL_BQ_PMAirflow
+    description: ''
+    fabricUID: 5295
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 25 * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2023-06-20 12:46:50'
+    modifiedAt: '2023-06-20 12:48:09'
     author: abhisheks+shared@prophecy.io
 functions:
   author: null

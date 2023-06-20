@@ -1,11 +1,11 @@
 {
   "metainfo" : {
-    "type" : "Prophecy",
-    "fabricId" : "7039",
-    "jobId" : "jobs/REL_BQ_ProphecyManaged_Airflow",
-    "name" : "REL_BQ_ProphecyManaged_Airflow",
-    "dagName" : "NPP4q9MIzskxZeICpwPZAw_",
-    "schedule" : "0 0/4 * * *",
+    "type" : "Composer",
+    "fabricId" : "5295",
+    "jobId" : "jobs/REL_BQ_PMAirflow",
+    "name" : "REL_BQ_PMAirflow",
+    "dagName" : "uitesting_shared_team_SQL_ChildBigqueryShared_REL_BQ_PMAirflow",
+    "schedule" : "0 0 25 * *",
     "enabled" : true,
     "alerting" : {
       "emails" : "",
@@ -13,21 +13,9 @@
       "onSuccess" : false,
       "onFailure" : false
     },
-    "timeoutSeconds" : 3600,
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
-      "retries" : 1,
-      "retry_delay" : 1,
-      "retry_exponential_backoff" : true,
-      "max_retry_delay" : 1,
-      "execution_timeout_int" : 900,
-      "trigger_rule" : "all_success",
-      "depends_on_past" : false,
       "ignore_first_depends_on_past" : true,
-      "wait_for_downstream" : true,
-      "priority_weight" : 2,
-      "weight_rule" : "downstream",
-      "pool" : "tB-MN8Ps",
       "do_xcom_push" : true
     },
     "jobClusterMode" : {
@@ -40,38 +28,33 @@
       "id" : "6470",
       "name" : "airflow_composer1"
     }, {
-      "id" : "7039",
-      "name" : "dev_airflow_prohecy_managed",
-      "trialStartDate" : 1686553669462
-    }, {
       "id" : "7040",
       "name" : "dev_airflow_mwaa"
+    }, {
+      "id" : "7557",
+      "name" : "dev_airflow_prohecy_managed",
+      "trialStartDate" : 1687261887500
     } ],
     "catchup" : true,
-    "maxActiveTasks" : 2,
-    "maxActiveRuns" : 25,
-    "tags" : [ "bigquery_shared" ],
-    "startDate" : "2023-06-17",
-    "endDate" : "2023-07-03",
     "scheduleTimeZone" : "UTC"
   },
   "processes" : {
-    "v6vSE9dYEZIId0VvUBI9M$$fyPG4eVvVo1p5hCpGVqL6" : {
-      "id" : "v6vSE9dYEZIId0VvUBI9M$$fyPG4eVvVo1p5hCpGVqL6",
+    "XEc5hLhJ2Qe5j8tpFqYQ6" : {
+      "id" : "XEc5hLhJ2Qe5j8tpFqYQ6",
       "component" : "DBT",
       "metadata" : {
         "label" : "DBT_0",
         "slug" : "DBT_0",
-        "x" : -380,
-        "y" : 80
+        "x" : 920,
+        "y" : 200
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "ghvp3FyPa2uXuVDhJ18WE$$AcdDXGvkHMgn0V1iMX7f2",
+          "id" : "SiL3AkNkTqSltWmZuYAAN",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "Z9cLx9QY-nQZkKEEmCE4h$$1Vm-moX8bUV0hq1BOmajI",
+          "id" : "AwL-MjexLYrp3voqZFbWs",
           "slug" : ""
         } ]
       },
@@ -163,22 +146,22 @@
         "storeFailures" : null
       }
     },
-    "qUGA6xtvHgHswlp4PkiqA" : {
-      "id" : "qUGA6xtvHgHswlp4PkiqA",
+    "u6l60I2i-rqWJDOQBKe8t" : {
+      "id" : "u6l60I2i-rqWJDOQBKe8t",
       "component" : "DBT",
       "metadata" : {
         "label" : "DBT_0_2",
         "slug" : "DBT_0_2",
-        "x" : -180,
-        "y" : 120
+        "x" : 1120,
+        "y" : 240
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "A7DbKndEjS4D_Ipb1MbbB",
+          "id" : "BUiBpp-ZDK_qEhM3_NYk2",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "v0at2L9wXHED2DCswxj8r",
+          "id" : "yGSYswjrlCa92B3MinoRD",
           "slug" : ""
         } ]
       },
@@ -290,10 +273,10 @@
     }
   },
   "connections" : [ {
-    "id" : "3HIR_YQlo9ysyvE0_aV9p$$nF_D0RUOFUywDWOEBI00_",
-    "source" : "v6vSE9dYEZIId0VvUBI9M$$fyPG4eVvVo1p5hCpGVqL6",
-    "target" : "qUGA6xtvHgHswlp4PkiqA",
-    "sourcePort" : "Z9cLx9QY-nQZkKEEmCE4h$$1Vm-moX8bUV0hq1BOmajI",
-    "targetPort" : "A7DbKndEjS4D_Ipb1MbbB"
+    "id" : "5TtXcAecgBGaoOYJe76-S",
+    "source" : "XEc5hLhJ2Qe5j8tpFqYQ6",
+    "target" : "u6l60I2i-rqWJDOQBKe8t",
+    "sourcePort" : "AwL-MjexLYrp3voqZFbWs",
+    "targetPort" : "BUiBpp-ZDK_qEhM3_NYk2"
   } ]
 }
