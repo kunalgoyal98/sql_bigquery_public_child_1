@@ -1,6 +1,6 @@
 name: SQL_BigquerySharedBasic
 description: ''
-version: v3.0.2.0
+version: v3.1.0.0-1
 author: null
 language: sql
 buildSystem: ''
@@ -31,7 +31,7 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-04-21 13:02:23'
-    modifiedAt: '2023-06-14 06:56:30'
+    modifiedAt: '2023-06-18 16:58:08'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_ProphecyManaged_Airflow:
     name: REL_BQ_ProphecyManaged_Airflow
@@ -41,7 +41,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0 0 13 * *
+    scheduleCron: 0 0/4 * * *
     timeout: 3600
     alerting:
       emails: ''
@@ -55,7 +55,7 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-06-13 04:55:43'
-    modifiedAt: '2023-06-16 04:20:31'
+    modifiedAt: '2023-06-18 17:01:04'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_MWAA:
     name: REL_BQ_MWAA
@@ -79,7 +79,7 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-06-13 07:31:04'
-    modifiedAt: '2023-06-16 12:10:22'
+    modifiedAt: '2023-06-18 16:58:08'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_DoAnything_Job:
     name: REL_BQ_DoAnything_Job

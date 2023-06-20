@@ -5,7 +5,7 @@
     "jobId" : "jobs/REL_BQ_ProphecyManaged_Airflow",
     "name" : "REL_BQ_ProphecyManaged_Airflow",
     "dagName" : "NPP4q9MIzskxZeICpwPZAw_",
-    "schedule" : "0 0 13 * *",
+    "schedule" : "0 0/4 * * *",
     "enabled" : true,
     "alerting" : {
       "emails" : "",
@@ -37,7 +37,10 @@
       "id" : "5295",
       "name" : "dev_airflow"
     }, {
-      "id" : "6470",
+      "id" : "5839",
+      "name" : "airflow_test"
+    }, {
+      "id" : "6144",
       "name" : "airflow_composer1"
     }, {
       "id" : "7039",
@@ -51,7 +54,7 @@
     "maxActiveTasks" : 2,
     "maxActiveRuns" : 25,
     "tags" : [ "bigquery_shared" ],
-    "startDate" : "2023-02-28",
+    "startDate" : "2023-06-17",
     "endDate" : "2023-07-03",
     "scheduleTimeZone" : "UTC"
   },
