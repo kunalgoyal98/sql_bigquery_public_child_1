@@ -15,11 +15,8 @@ def DBT_0_2():
     envs["DBT_DEFER"] = "true"
     envs["DBT_FAVOR_STATE"] = "true"
     envs["DBT_FULL_REFRESH"] = "true"
-
-    if "Cautious":
-        envs["DBT_INDIRECT_SELECTION"] = "Cautious"
-
-    envs["DBT_PROFILE_SECRET"] = "K_VC5qMyA7-49u2s9PmLq"
+    envs["DBT_INDIRECT_SELECTION"] = "Cautious"
+    envs["DBT_PROFILE_SECRET"] = "pnwzLj4P50hUndNzj-fEl"
     envs["GIT_TOKEN_SECRET"] = ""
     envs["GIT_ENTITY"] = "branch"
     envs["GIT_ENTITY_VALUE"] = "dev"

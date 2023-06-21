@@ -18,9 +18,7 @@ def DBT_0_2():
     envs["DBT_DEFER"] = "true"
     envs["DBT_FAVOR_STATE"] = "true"
     envs["DBT_FULL_REFRESH"] = "true"
-
-    if "Cautious":
-        envs["DBT_INDIRECT_SELECTION"] = "Cautious"
+    envs["DBT_INDIRECT_SELECTION"] = "Cautious"
 
     return BashOperator(
         task_id = "DBT_0_2",
