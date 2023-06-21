@@ -153,6 +153,22 @@ Limit_2 AS (
 
 ),
 
+INCOME_BAND AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy-qa.qa_suggestion_database', 'INCOME_BAND') }}
+
+),
+
+Reformat_5 AS (
+
+  SELECT * 
+  
+  FROM INCOME_BAND AS in0
+
+),
+
 tpcds_1_env_uitesting_shared AS (
 
   SELECT * 
@@ -329,6 +345,86 @@ AllStunningOne AS (
     SUM(c_numeric_1) OVER (PARTITION BY c_date ORDER BY c_datetime ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS c_sum_over
   
   FROM Join_1 AS in0
+
+),
+
+ORDERS AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy-qa.qa_suggestion_database', 'ORDERS') }}
+
+),
+
+Reformat_4 AS (
+
+  SELECT * 
+  
+  FROM ORDERS AS in0
+
+),
+
+PAYMENTS AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy-qa.qa_suggestion_database', 'PAYMENTS') }}
+
+),
+
+Reformat_3 AS (
+
+  SELECT * 
+  
+  FROM PAYMENTS AS in0
+
+),
+
+TIME_DIM AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy-qa.qa_suggestion_database', 'TIME_DIM') }}
+
+),
+
+Reformat_2 AS (
+
+  SELECT 
+    T_TIME_SK AS T_TIME_SK,
+    T_TIME_ID AS T_TIME_ID,
+    T_TIME AS T_TIME,
+    T_HOUR AS T_HOUR,
+    T_MINUTE AS T_MINUTE,
+    T_SECOND AS T_SECOND,
+    T_AM_PM AS T_AM_PM,
+    T_SHIFT AS T_SHIFT,
+    T_SUB_SHIFT AS T_SUB_SHIFT,
+    T_MEAL_TIME AS T_MEAL_TIME
+  
+  FROM TIME_DIM AS in0
+
+),
+
+CUSTOMER_ADDRESS AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy-qa.qa_suggestion_database', 'CUSTOMER_ADDRESS') }}
+
+),
+
+Reformat_1 AS (
+
+  SELECT * 
+  
+  FROM CUSTOMER_ADDRESS AS in0
+
+),
+
+combine_multi_tables_2 AS (
+
+  {{ SQL_BigquerySharedBasic.combine_multi_tables(table_1 = 'Reformat_2', table_2 = 'Reformat_1', table_3 = 'Reformat_3', table_4 = 'Reformat_4', table_5 = 'Reformat_5', col_table_1 = 'T_SECOND') }}
 
 ),
 

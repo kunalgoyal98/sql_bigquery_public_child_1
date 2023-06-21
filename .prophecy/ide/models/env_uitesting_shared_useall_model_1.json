@@ -27,6 +27,473 @@
     }
   },
   "processes" : {
+    "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ" : {
+      "id" : "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "combine_multi_tables_2",
+        "slug" : "combine_multi_tables_2",
+        "x" : 1320,
+        "y" : 0,
+        "phase" : 0,
+        "macroDependencies" : [ "SQL_BigquerySharedBasic.combine_multi_tables" ]
+      },
+      "properties" : {
+        "macroName" : "combine_multi_tables",
+        "parameters" : [ {
+          "name" : "table_1",
+          "value" : "'Reformat_2'"
+        }, {
+          "name" : "table_2",
+          "value" : "'Reformat_1'"
+        }, {
+          "name" : "table_3",
+          "value" : "'Reformat_3'"
+        }, {
+          "name" : "table_4",
+          "value" : "'Reformat_4'"
+        }, {
+          "name" : "table_5",
+          "value" : "'Reformat_5'"
+        }, {
+          "name" : "col_table_1",
+          "value" : "'T_SECOND'"
+        } ],
+        "projectName" : "SQL_BigquerySharedBasic"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "9hMvnO0as9V4ZflyqfBYu",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "T_TIME_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_TIME_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_TIME",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_HOUR",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_MINUTE",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_SECOND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_AM_PM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SUB_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_MEAL_TIME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "Reformat_2"
+        }, {
+          "id" : "ShUOOTAazLGkqOMNzeuKC",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "CA_ADDRESS_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_ADDRESS_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_SUITE_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_CITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_ZIP",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTRY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_GMT_OFFSET",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_LOCATION_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "Reformat_1"
+        }, {
+          "id" : "PemBPQIkn29wMZ_IoVU-2",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "PAYMENT_METHOD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AMOUNT",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "Reformat_3"
+        }, {
+          "id" : "4c9cyVWDI4a4Egh6JY05H",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "USER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "Reformat_4"
+        }, {
+          "id" : "1DRn3sDGHbU3s2uSrbo1h",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "IB_INCOME_BAND_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_LOWER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_UPPER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            } ]
+          },
+          "slug" : "Reformat_5"
+        } ],
+        "outputs" : [ {
+          "id" : "BPJhwFGIGbM2oBiNBYC3e$$9Nm8fKQwPKTVYMnfZq3UY",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "T_TIME_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_TIME_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_TIME",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_HOUR",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_MINUTE",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_SECOND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_AM_PM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SUB_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_MEAL_TIME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "yoZt1a5XQc2LH9vRtqmfv$$hnwePdquY_Yo8w-PjDzRn" : {
+      "id" : "yoZt1a5XQc2LH9vRtqmfv$$hnwePdquY_Yo8w-PjDzRn",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 520,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "CA_ADDRESS_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_ADDRESS_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_SUITE_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_CITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_ZIP",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTRY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_GMT_OFFSET",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_LOCATION_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "OQQhH2CKgLPTuvPTz4X0V$$TLIvpFO3KTQ9wetX_Ib9D",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "CA_ADDRESS_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_ADDRESS_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_SUITE_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_CITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_ZIP",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTRY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_GMT_OFFSET",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_LOCATION_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "XqMc1-3JdeCPZIVnB5gYq$$EEgboBjbiNMajMdj-MrRG" : {
       "id" : "XqMc1-3JdeCPZIVnB5gYq$$EEgboBjbiNMajMdj-MrRG",
       "component" : "Limit",
@@ -1828,6 +2295,191 @@
         "isCustomOutputSchema" : false
       }
     },
+    "pxAEnHqmOakt0k3QB2mmG$$AlSOvCdDo2HP80_TkWVHn" : {
+      "id" : "pxAEnHqmOakt0k3QB2mmG$$AlSOvCdDo2HP80_TkWVHn",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "Reformat_2",
+        "x" : 600,
+        "y" : -160,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_TIME_SK", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_TIME_ID", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_TIME", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_HOUR", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_MINUTE", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_SECOND", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_AM_PM", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_SHIFT", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_SUB_SHIFT", "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb##T_MEAL_TIME" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "T_TIME_SK"
+          },
+          "alias" : "T_TIME_SK"
+        }, {
+          "expression" : {
+            "expression" : "T_TIME_ID"
+          },
+          "alias" : "T_TIME_ID"
+        }, {
+          "expression" : {
+            "expression" : "T_TIME"
+          },
+          "alias" : "T_TIME"
+        }, {
+          "expression" : {
+            "expression" : "T_HOUR"
+          },
+          "alias" : "T_HOUR"
+        }, {
+          "expression" : {
+            "expression" : "T_MINUTE"
+          },
+          "alias" : "T_MINUTE"
+        }, {
+          "expression" : {
+            "expression" : "T_SECOND"
+          },
+          "alias" : "T_SECOND"
+        }, {
+          "expression" : {
+            "expression" : "T_AM_PM"
+          },
+          "alias" : "T_AM_PM"
+        }, {
+          "expression" : {
+            "expression" : "T_SHIFT"
+          },
+          "alias" : "T_SHIFT"
+        }, {
+          "expression" : {
+            "expression" : "T_SUB_SHIFT"
+          },
+          "alias" : "T_SUB_SHIFT"
+        }, {
+          "expression" : {
+            "expression" : "T_MEAL_TIME"
+          },
+          "alias" : "T_MEAL_TIME"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "T_TIME_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_TIME_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_TIME",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_HOUR",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_MINUTE",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_SECOND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_AM_PM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SUB_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_MEAL_TIME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ijrXEVxbngZ2MkyjMkwbM$$XO-NyNSpC41GYb24Pqc2Q",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "T_TIME_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_TIME_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_TIME",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_HOUR",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_MINUTE",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_SECOND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_AM_PM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SUB_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_MEAL_TIME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "Aggregate_1##koSdXnSn" : {
       "id" : "Aggregate_1##koSdXnSn",
       "component" : "Aggregate",
@@ -2185,6 +2837,52 @@
         "isCustomOutputSchema" : false
       }
     },
+    "gcXMLzUXDm2VBnMp0m_iW" : {
+      "id" : "gcXMLzUXDm2VBnMp0m_iW",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "INCOME_BAND",
+        "slug" : "INCOME_BAND",
+        "x" : 920,
+        "y" : 280,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "INCOME_BAND",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-qa.qa_suggestion_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "jH4p2ydeNxaVipTXIjkJ4",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "IB_INCOME_BAND_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_LOWER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_UPPER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "env_uitesting_shared_parent_model_1##thSprMbz" : {
       "id" : "env_uitesting_shared_parent_model_1##thSprMbz",
       "component" : "Model",
@@ -2322,6 +3020,57 @@
         "isCustomOutputSchema" : false
       }
     },
+    "QvFIHI5zT6gQ2-0hMk4cp" : {
+      "id" : "QvFIHI5zT6gQ2-0hMk4cp",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ORDERS",
+        "slug" : "ORDERS",
+        "x" : 640,
+        "y" : 240,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "ORDERS",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-qa.qa_suggestion_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "d-eGOYSpb-EsbNiCRmKtm",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "USER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "SQLStatement_2##XwZRBaJc" : {
       "id" : "SQLStatement_2##XwZRBaJc",
       "component" : "SQLStatement",
@@ -2407,6 +3156,102 @@
               }
             }, {
               "name" : "payment_method",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "OVQiscazVL1TmA3R9L-wR" : {
+      "id" : "OVQiscazVL1TmA3R9L-wR",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "CUSTOMER_ADDRESS",
+        "slug" : "CUSTOMER_ADDRESS",
+        "x" : 340,
+        "y" : -40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "CUSTOMER_ADDRESS",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-qa.qa_suggestion_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "po9JKdxvvkez7tXmtZI7B",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "CA_ADDRESS_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_ADDRESS_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STREET_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_SUITE_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_CITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_STATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_ZIP",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_COUNTRY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CA_GMT_OFFSET",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "CA_LOCATION_TYPE",
               "dataType" : {
                 "type" : "String"
               }
@@ -3991,6 +4836,71 @@
         "isCustomOutputSchema" : false
       }
     },
+    "4Jeju_J1bod1EruYL5K3D$$xA5os07Z8wGT6HVYuMcoU" : {
+      "id" : "4Jeju_J1bod1EruYL5K3D$$xA5os07Z8wGT6HVYuMcoU",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_5",
+        "slug" : "Reformat_5",
+        "x" : 1060,
+        "y" : 200,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WSezXLe_huZ2MOaVaCayw$$bYfS9rkKwE3QSD-oeCrWm",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "IB_INCOME_BAND_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_LOWER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_UPPER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "wVG9LvCvCOOcm2vy26Grn$$tyOb85zd9T0h7I2dAcY5V",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "IB_INCOME_BAND_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_LOWER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "IB_UPPER_BOUND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "ME8-cRwV1Pg7ZDVN3BOO7$$llTw45AFa-o8Pw41k2PX9" : {
       "id" : "ME8-cRwV1Pg7ZDVN3BOO7$$llTw45AFa-o8Pw41k2PX9",
       "component" : "Limit",
@@ -4071,6 +4981,57 @@
                 "dataType" : {
                   "type" : "Date"
                 }
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "NjlPoO_hsELBv-yq4oceh" : {
+      "id" : "NjlPoO_hsELBv-yq4oceh",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "PAYMENTS",
+        "slug" : "PAYMENTS",
+        "x" : 360,
+        "y" : 100,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "PAYMENTS",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-qa.qa_suggestion_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "a1UeT2e5MQnQfEXPksPBn",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "PAYMENT_METHOD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AMOUNT",
+              "dataType" : {
+                "type" : "Float"
               }
             } ]
           },
@@ -4636,6 +5597,81 @@
         "isCustomOutputSchema" : false
       }
     },
+    "mQyHTYhvKgDGqg3usjoB3$$vJHRAhBawjG6Ee1EDOak8" : {
+      "id" : "mQyHTYhvKgDGqg3usjoB3$$vJHRAhBawjG6Ee1EDOak8",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_3",
+        "slug" : "Reformat_3",
+        "x" : 560,
+        "y" : 100,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ODYTkXZ4R8Fi-wj6szjOP$$NU3YhQx8YmzQVKuWYSfK9",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "PAYMENT_METHOD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AMOUNT",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "MRrACw9USbzeDKmiYd6sf$$CjYAP9HJHPj98-P7chHN6",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "PAYMENT_METHOD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AMOUNT",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "LEyOX2WIgbl4Dfu8W9wUk" : {
       "id" : "LEyOX2WIgbl4Dfu8W9wUk",
       "component" : "Model",
@@ -5147,6 +6183,87 @@
         "isCustomOutputSchema" : false
       }
     },
+    "qbJdBA7EO6f1yMoJds_oG" : {
+      "id" : "qbJdBA7EO6f1yMoJds_oG",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "TIME_DIM",
+        "slug" : "TIME_DIM",
+        "x" : 380,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "TIME_DIM",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-qa.qa_suggestion_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "g-1hxgXVRYbfG_glBmTqH",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "T_TIME_SK",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_TIME_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_TIME",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_HOUR",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_MINUTE",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_SECOND",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "T_AM_PM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_SUB_SHIFT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "T_MEAL_TIME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "SQLStatement_1##HaNQpwxU" : {
       "id" : "SQLStatement_1##HaNQpwxU",
       "component" : "Filter",
@@ -5431,6 +6548,81 @@
               }
             }, {
               "name" : "c_base_project_macro_call",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "jSEt0EdxhTF8amCdM_AtM$$xQYw76fmCJSIuF-Xde_sc" : {
+      "id" : "jSEt0EdxhTF8amCdM_AtM$$xQYw76fmCJSIuF-Xde_sc",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_4",
+        "slug" : "Reformat_4",
+        "x" : 800,
+        "y" : 180,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "CeJWv0EH7AH8mfi0lyjOd$$XKoDecxeSdAIkR62eZpCH",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "USER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ahrfW01ntydKgzwcJMmRK$$wfVZAvLQn0KNmkUDX9LR8",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "USER_ID",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "ORDER_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "STATUS",
               "dataType" : {
                 "type" : "String"
               }
@@ -5896,6 +7088,66 @@
     "sourcePort" : "TQbHZomgRqxMPx_kdWhyT$$Ofw16gKr6hGNBLeSSC5Wa",
     "target" : "OSXBhivzaXtjjR-q8xHb5$$2A6qQ-G2pcEryLKI7lWmB",
     "targetPort" : "8VJtclxaGa5GGcrnFqBVd"
+  }, {
+    "id" : "SU_gD18AscEdBFgzy4o3f$$rfuWGkFMQkbtUUrQCeXZZ",
+    "source" : "OVQiscazVL1TmA3R9L-wR",
+    "sourcePort" : "po9JKdxvvkez7tXmtZI7B",
+    "target" : "yoZt1a5XQc2LH9vRtqmfv$$hnwePdquY_Yo8w-PjDzRn",
+    "targetPort" : "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3"
+  }, {
+    "id" : "1a_O257kiF_yg2a625tgb",
+    "source" : "yoZt1a5XQc2LH9vRtqmfv$$hnwePdquY_Yo8w-PjDzRn",
+    "sourcePort" : "OQQhH2CKgLPTuvPTz4X0V$$TLIvpFO3KTQ9wetX_Ib9D",
+    "target" : "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ",
+    "targetPort" : "ShUOOTAazLGkqOMNzeuKC"
+  }, {
+    "id" : "X8CHT13b3BzGZ87bwEgKS",
+    "source" : "pxAEnHqmOakt0k3QB2mmG$$AlSOvCdDo2HP80_TkWVHn",
+    "sourcePort" : "ijrXEVxbngZ2MkyjMkwbM$$XO-NyNSpC41GYb24Pqc2Q",
+    "target" : "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ",
+    "targetPort" : "9hMvnO0as9V4ZflyqfBYu"
+  }, {
+    "id" : "lZKFUO7-G3xCqJn5x7DP8$$KjAWuES4bM6rkMfkzPZwU",
+    "source" : "NjlPoO_hsELBv-yq4oceh",
+    "sourcePort" : "a1UeT2e5MQnQfEXPksPBn",
+    "target" : "mQyHTYhvKgDGqg3usjoB3$$vJHRAhBawjG6Ee1EDOak8",
+    "targetPort" : "ODYTkXZ4R8Fi-wj6szjOP$$NU3YhQx8YmzQVKuWYSfK9"
+  }, {
+    "id" : "vyyarRCjO_jz4XpxIC1C-",
+    "source" : "mQyHTYhvKgDGqg3usjoB3$$vJHRAhBawjG6Ee1EDOak8",
+    "sourcePort" : "MRrACw9USbzeDKmiYd6sf$$CjYAP9HJHPj98-P7chHN6",
+    "target" : "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ",
+    "targetPort" : "PemBPQIkn29wMZ_IoVU-2"
+  }, {
+    "id" : "n8McWgb_q05kCskADoU2u$$n1aK6do3HAj-TPb9j98xY",
+    "source" : "QvFIHI5zT6gQ2-0hMk4cp",
+    "sourcePort" : "d-eGOYSpb-EsbNiCRmKtm",
+    "target" : "jSEt0EdxhTF8amCdM_AtM$$xQYw76fmCJSIuF-Xde_sc",
+    "targetPort" : "CeJWv0EH7AH8mfi0lyjOd$$XKoDecxeSdAIkR62eZpCH"
+  }, {
+    "id" : "BTFWwhyRpxsw8DyA2w0Mk",
+    "source" : "jSEt0EdxhTF8amCdM_AtM$$xQYw76fmCJSIuF-Xde_sc",
+    "sourcePort" : "ahrfW01ntydKgzwcJMmRK$$wfVZAvLQn0KNmkUDX9LR8",
+    "target" : "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ",
+    "targetPort" : "4c9cyVWDI4a4Egh6JY05H"
+  }, {
+    "id" : "ziwWsTXe_Bf6-Ta8wsB_c",
+    "source" : "gcXMLzUXDm2VBnMp0m_iW",
+    "sourcePort" : "jH4p2ydeNxaVipTXIjkJ4",
+    "target" : "4Jeju_J1bod1EruYL5K3D$$xA5os07Z8wGT6HVYuMcoU",
+    "targetPort" : "WSezXLe_huZ2MOaVaCayw$$bYfS9rkKwE3QSD-oeCrWm"
+  }, {
+    "id" : "1nfXmQbWP3NrX26ckqcIg",
+    "source" : "4Jeju_J1bod1EruYL5K3D$$xA5os07Z8wGT6HVYuMcoU",
+    "sourcePort" : "wVG9LvCvCOOcm2vy26Grn$$tyOb85zd9T0h7I2dAcY5V",
+    "target" : "Ardag5yT7dr3ProNeNFj0$$UBhPawqQOL2pFVdeCrJwQ",
+    "targetPort" : "1DRn3sDGHbU3s2uSrbo1h"
+  }, {
+    "id" : "U02nKs3u_5wLlWwVeXROz$$FmZ38MFFMRL4LyUSxHmZn",
+    "source" : "qbJdBA7EO6f1yMoJds_oG",
+    "sourcePort" : "g-1hxgXVRYbfG_glBmTqH",
+    "target" : "pxAEnHqmOakt0k3QB2mmG$$AlSOvCdDo2HP80_TkWVHn",
+    "targetPort" : "cBTxs6_A0RZFjxBDtI7xR$$11pmgZsincSCz2CL59WEb"
   } ],
   "component" : "Model"
 }
