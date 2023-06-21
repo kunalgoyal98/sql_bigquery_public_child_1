@@ -341,8 +341,73 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
+        "columnsSelector" : [ "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_ADDRESS_SK", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_ADDRESS_ID", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_STREET_NUMBER", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_STREET_NAME", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_STREET_TYPE", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_SUITE_NUMBER", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_CITY", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_COUNTY", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_STATE", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_ZIP", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_COUNTRY", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_GMT_OFFSET", "gPhZarntfU45VfiltoLdk$$e7m8C8cN7s2n9O0x749o3##CA_LOCATION_TYPE" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "CA_ADDRESS_SK"
+          },
+          "alias" : "CA_ADDRESS_SK"
+        }, {
+          "expression" : {
+            "expression" : "CA_ADDRESS_ID"
+          },
+          "alias" : "CA_ADDRESS_ID"
+        }, {
+          "expression" : {
+            "expression" : "CA_STREET_NUMBER"
+          },
+          "alias" : "CA_STREET_NUMBER"
+        }, {
+          "expression" : {
+            "expression" : "CA_STREET_NAME"
+          },
+          "alias" : "CA_STREET_NAME"
+        }, {
+          "expression" : {
+            "expression" : "CA_STREET_TYPE"
+          },
+          "alias" : "CA_STREET_TYPE"
+        }, {
+          "expression" : {
+            "expression" : "CA_SUITE_NUMBER"
+          },
+          "alias" : "CA_SUITE_NUMBER"
+        }, {
+          "expression" : {
+            "expression" : "CA_CITY"
+          },
+          "alias" : "CA_CITY"
+        }, {
+          "expression" : {
+            "expression" : "CA_COUNTY"
+          },
+          "alias" : "CA_COUNTY"
+        }, {
+          "expression" : {
+            "expression" : "CA_STATE"
+          },
+          "alias" : "CA_STATE"
+        }, {
+          "expression" : {
+            "expression" : "CA_ZIP"
+          },
+          "alias" : "CA_ZIP"
+        }, {
+          "expression" : {
+            "expression" : "CA_COUNTRY"
+          },
+          "alias" : "CA_COUNTRY"
+        }, {
+          "expression" : {
+            "expression" : "CA_GMT_OFFSET"
+          },
+          "alias" : "CA_GMT_OFFSET"
+        }, {
+          "expression" : {
+            "expression" : "CA_LOCATION_TYPE"
+          },
+          "alias" : "CA_LOCATION_TYPE"
+        } ]
       },
       "ports" : {
         "inputs" : [ {
@@ -4848,8 +4913,23 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
+        "columnsSelector" : [ "WSezXLe_huZ2MOaVaCayw$$bYfS9rkKwE3QSD-oeCrWm##IB_INCOME_BAND_SK", "WSezXLe_huZ2MOaVaCayw$$bYfS9rkKwE3QSD-oeCrWm##IB_LOWER_BOUND", "WSezXLe_huZ2MOaVaCayw$$bYfS9rkKwE3QSD-oeCrWm##IB_UPPER_BOUND" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "IB_INCOME_BAND_SK"
+          },
+          "alias" : "IB_INCOME_BAND_SK"
+        }, {
+          "expression" : {
+            "expression" : "IB_LOWER_BOUND"
+          },
+          "alias" : "IB_LOWER_BOUND"
+        }, {
+          "expression" : {
+            "expression" : "IB_UPPER_BOUND"
+          },
+          "alias" : "IB_UPPER_BOUND"
+        } ]
       },
       "ports" : {
         "inputs" : [ {
@@ -5609,8 +5689,28 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
+        "columnsSelector" : [ "ODYTkXZ4R8Fi-wj6szjOP$$NU3YhQx8YmzQVKuWYSfK9##ID", "ODYTkXZ4R8Fi-wj6szjOP$$NU3YhQx8YmzQVKuWYSfK9##ORDER_ID", "ODYTkXZ4R8Fi-wj6szjOP$$NU3YhQx8YmzQVKuWYSfK9##PAYMENT_METHOD", "ODYTkXZ4R8Fi-wj6szjOP$$NU3YhQx8YmzQVKuWYSfK9##AMOUNT" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "ID"
+          },
+          "alias" : "ID"
+        }, {
+          "expression" : {
+            "expression" : "ORDER_ID"
+          },
+          "alias" : "ORDER_ID"
+        }, {
+          "expression" : {
+            "expression" : "PAYMENT_METHOD"
+          },
+          "alias" : "PAYMENT_METHOD"
+        }, {
+          "expression" : {
+            "expression" : "AMOUNT"
+          },
+          "alias" : "AMOUNT"
+        } ]
       },
       "ports" : {
         "inputs" : [ {
@@ -6570,8 +6670,28 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
+        "columnsSelector" : [ "CeJWv0EH7AH8mfi0lyjOd$$XKoDecxeSdAIkR62eZpCH##ID", "CeJWv0EH7AH8mfi0lyjOd$$XKoDecxeSdAIkR62eZpCH##USER_ID", "CeJWv0EH7AH8mfi0lyjOd$$XKoDecxeSdAIkR62eZpCH##ORDER_DATE", "CeJWv0EH7AH8mfi0lyjOd$$XKoDecxeSdAIkR62eZpCH##STATUS" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "ID"
+          },
+          "alias" : "ID"
+        }, {
+          "expression" : {
+            "expression" : "USER_ID"
+          },
+          "alias" : "USER_ID"
+        }, {
+          "expression" : {
+            "expression" : "ORDER_DATE"
+          },
+          "alias" : "ORDER_DATE"
+        }, {
+          "expression" : {
+            "expression" : "STATUS"
+          },
+          "alias" : "STATUS"
+        } ]
       },
       "ports" : {
         "inputs" : [ {
