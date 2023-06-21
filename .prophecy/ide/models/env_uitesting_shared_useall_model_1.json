@@ -3571,7 +3571,27 @@
         "x" : 360,
         "y" : 320,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "dataExplorerProps" : {
+          "filter" : [ {
+            "type" : "simple",
+            "lhs" : "c_string",
+            "operator" : "in",
+            "rhs" : [ "19_value", "20_value" ]
+          }, {
+            "type" : "simple",
+            "lhs" : "c_numeric_1",
+            "operator" : ">=",
+            "rhs" : "10"
+          } ],
+          "sort" : [ {
+            "column" : "c_string",
+            "order" : "asc"
+          }, {
+            "column" : "c_timestamp",
+            "order" : "desc"
+          } ]
+        }
       },
       "properties" : {
         "conditions" : [ {
@@ -5835,7 +5855,27 @@
         "x" : 1440,
         "y" : 560,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "dataExplorerProps" : {
+          "filter" : [ {
+            "type" : "simple",
+            "lhs" : "cfor_col_0",
+            "operator" : "in",
+            "rhs" : [ "35_value0", "19_value0" ]
+          }, {
+            "type" : "simple",
+            "lhs" : "c_numeric_1",
+            "operator" : ">=",
+            "rhs" : "5"
+          } ],
+          "sort" : [ {
+            "column" : "cfor_col_0",
+            "order" : "asc"
+          }, {
+            "column" : "c_if",
+            "order" : "desc"
+          } ]
+        }
       },
       "properties" : {
         "customQueryDisabled" : true,

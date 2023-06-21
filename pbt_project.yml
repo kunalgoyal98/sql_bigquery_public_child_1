@@ -31,7 +31,6 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-04-21 13:02:23'
-    modifiedAt: '2023-06-21 06:03:27'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_MWAA:
     name: REL_BQ_MWAA
@@ -55,7 +54,6 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-06-13 07:31:04'
-    modifiedAt: '2023-06-21 04:56:50'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_DoAnything_Job:
     name: REL_BQ_DoAnything_Job
@@ -79,7 +77,6 @@ jobs:
       clusterId: null
     enabled: false
     createdAt: '2023-06-13 08:09:06'
-    modifiedAt: '2023-06-13 13:29:02'
     author: abhisheks+shared@prophecy.io
   jobs/REL_BQ_PM_Airflow:
     name: REL_BQ_PM_Airflow
@@ -103,12 +100,10 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2023-06-20 17:00:37'
-    modifiedAt: '2023-06-21 05:29:57'
     author: abhisheks+shared@prophecy.io
 functions:
   author: null
   createdAt: '2023-04-16 15:58:13'
-  modifiedAt: '2023-04-16 15:58:13'
   gems: {}
   udfs: {}
   udafs: {}
@@ -138,7 +133,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-06-13 05:01:43'
-    modifiedAt: '2023-06-13 05:01:43'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1:
     name: env_uitesting_shared_parent_model_1
     schema:
@@ -219,7 +213,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-16 16:04:01'
-    modifiedAt: '2023-04-16 16:04:01'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1:
     name: env_uitesting_shared_child_model_1
     schema:
@@ -300,7 +293,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-16 16:06:07'
-    modifiedAt: '2023-04-16 16:06:07'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1:
     name: env_uitesting_shared_mid_model_1
     schema:
@@ -381,7 +373,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-16 16:05:29'
-    modifiedAt: '2023-04-16 16:05:29'
   .prophecy/metadata/sqlmodels/tpcds_1_env_uitesting_shared:
     name: tpcds_1_env_uitesting_shared
     schema:
@@ -423,7 +414,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-20 04:12:51'
-    modifiedAt: '2023-04-20 04:12:51'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_useall_model_1:
     name: env_uitesting_shared_useall_model_1
     schema:
@@ -549,7 +539,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-16 16:08:46'
-    modifiedAt: '2023-04-16 16:08:46'
 sqlMacros:
   .prophecy/metadata/sqlmacros/combine_multi_tables:
     name: combine_multi_tables
@@ -561,7 +550,6 @@ sqlMacros:
     - .prophecy/ide/macros/combine_multi_tables.json
     - macros/macros.yml
     createdAt: '2023-05-24 13:47:59'
-    modifiedAt: '2023-05-24 13:47:59'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers
@@ -582,7 +570,6 @@ sqlSeeds:
     files:
     - seeds/raw/raw_customers.csv
     createdAt: '2023-04-16 15:59:36'
-    modifiedAt: '2023-04-16 15:59:36'
 sqlSources:
   .prophecy/metadata/sqlsources/prophecy-qa_dataset:
     name: prophecy-qa.dataset
@@ -591,7 +578,6 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-05-25 04:35:48'
-    modifiedAt: '2023-05-25 04:35:48'
     tables:
     - name: raw_payments
       schema:
@@ -612,7 +598,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-05-25 04:35:48'
-      modifiedAt: '2023-05-25 04:35:48'
   .prophecy/metadata/sqlsources/prophecy-qa_qa_suggestion_database:
     name: prophecy-qa.qa_suggestion_database
     description: null
@@ -620,7 +605,6 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-06-21 07:22:57'
-    modifiedAt: '2023-06-21 07:22:57'
     tables:
     - name: CALL_CENTER
       schema:
@@ -722,7 +706,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CATALOG_PAGE
       schema:
         providerType: bigquery
@@ -757,7 +740,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CATALOG_RETURNS
       schema:
         providerType: bigquery
@@ -846,7 +828,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CATALOG_SALES
       schema:
         providerType: bigquery
@@ -956,7 +937,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CUSTOMER
       schema:
         providerType: bigquery
@@ -1018,7 +998,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CUSTOMER_ADDRESS
       schema:
         providerType: bigquery
@@ -1065,7 +1044,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CUSTOMER_DEMOGRAPHICS
       schema:
         providerType: bigquery
@@ -1100,7 +1078,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: CUSTOMERS
       schema:
         providerType: bigquery
@@ -1117,7 +1094,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: DATE_DIM
       schema:
         providerType: bigquery
@@ -1209,7 +1185,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: DBGEN_VERSION
       schema:
         providerType: bigquery
@@ -1229,7 +1204,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: EMPLOYEES
       schema:
         providerType: bigquery
@@ -1246,7 +1220,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: HOUSEHOLD_DEMOGRAPHICS
       schema:
         providerType: bigquery
@@ -1269,7 +1242,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: INCOME_BAND
       schema:
         providerType: bigquery
@@ -1286,7 +1258,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: INVENTORY
       schema:
         providerType: bigquery
@@ -1306,7 +1277,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: ITEM
       schema:
         providerType: bigquery
@@ -1380,7 +1350,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: ORDERS
       schema:
         providerType: bigquery
@@ -1400,7 +1369,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: PAYMENTS
       schema:
         providerType: bigquery
@@ -1420,7 +1388,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: PROMOTION
       schema:
         providerType: bigquery
@@ -1485,7 +1452,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: REASON
       schema:
         providerType: bigquery
@@ -1502,7 +1468,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: SHIP_MODE
       schema:
         providerType: bigquery
@@ -1528,7 +1493,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: STORE
       schema:
         providerType: bigquery
@@ -1623,7 +1587,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: STORE_RETURNS
       schema:
         providerType: bigquery
@@ -1691,7 +1654,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: STORE_SALES
       schema:
         providerType: bigquery
@@ -1768,7 +1730,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: TIME_DIM
       schema:
         providerType: bigquery
@@ -1806,7 +1767,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: WAREHOUSE
       schema:
         providerType: bigquery
@@ -1856,7 +1816,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: WEB_PAGE
       schema:
         providerType: bigquery
@@ -1906,7 +1865,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: WEB_RETURNS
       schema:
         providerType: bigquery
@@ -1986,7 +1944,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: WEB_SALES
       schema:
         providerType: bigquery
@@ -2096,7 +2053,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
     - name: WEB_SITE
       schema:
         providerType: bigquery
@@ -2182,7 +2138,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-06-21 07:22:57'
-      modifiedAt: '2023-06-21 07:22:57'
   .prophecy/metadata/sqlsources/prophecy-qa_qa_test_another_dataset:
     name: prophecy-qa.qa_test_another_dataset
     description: null
@@ -2190,7 +2145,6 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-05-25 04:35:25'
-    modifiedAt: '2023-05-25 04:35:25'
     tables:
     - name: hundred_rows_table
       schema:
@@ -2202,7 +2156,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-05-25 04:35:25'
-      modifiedAt: '2023-05-25 04:35:25'
   .prophecy/metadata/sqlsources/prophecy-qa_qa_test_dataset:
     name: prophecy-qa.qa_test_dataset
     description: null
@@ -2210,7 +2163,6 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-04-16 16:04:09'
-    modifiedAt: '2023-04-16 16:04:09'
     tables:
     - name: all_type_table
       schema:
@@ -2285,7 +2237,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-16 16:04:09'
-      modifiedAt: '2023-04-16 16:04:09'
     - name: CATALOG_SALES
       schema:
         providerType: bigquery
@@ -2395,7 +2346,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:15:55'
-      modifiedAt: '2023-04-20 04:15:55'
     - name: WAREHOUSE
       schema:
         providerType: bigquery
@@ -2445,7 +2395,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:16:00'
-      modifiedAt: '2023-04-20 04:16:00'
     - name: SHIP_MODE
       schema:
         providerType: bigquery
@@ -2471,7 +2420,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:16:08'
-      modifiedAt: '2023-04-20 04:16:08'
     - name: CALL_CENTER
       schema:
         providerType: bigquery
@@ -2572,7 +2520,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:16:12'
-      modifiedAt: '2023-04-20 04:16:12'
     - name: DATE_DIM
       schema:
         providerType: bigquery
@@ -2664,7 +2611,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:18:46'
-      modifiedAt: '2023-04-20 04:18:46'
     - name: STORE_SALES
       schema:
         providerType: bigquery
@@ -2741,7 +2687,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:24:12'
-      modifiedAt: '2023-04-20 04:24:12'
     - name: ITEM
       schema:
         providerType: bigquery
@@ -2815,7 +2760,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 04:24:30'
-      modifiedAt: '2023-04-20 04:24:30'
     - name: qa_table_with_complex_column_names_and_table_with_long_name_1_table_with_complex_column_names_and_table_with_long_name_table_with_complex_column_names_and_table_with_long_name
       schema:
         providerType: bigquery
@@ -2889,7 +2833,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-20 09:31:43'
-      modifiedAt: '2023-04-20 09:31:43'
     - name: testModel
       schema:
         providerType: bigquery
@@ -2906,7 +2849,6 @@ sqlSources:
       description: null
       author: abhisheks+shared@prophecy.io
       createdAt: '2023-05-24 09:03:46'
-      modifiedAt: '2023-05-24 09:03:46'
 sqlUnreferencedSources:
   .prophecy/metadata/sqlunreferencedsources/prophecy-qa_qa_test_dataset_ungrouped_customers:
     name: prophecy-qa.qa_test_dataset.ungrouped_customers
@@ -2927,13 +2869,11 @@ sqlUnreferencedSources:
     files:
     - prophecy-sources/unreferencedSources.yml
     createdAt: '2023-05-19 06:15:46'
-    modifiedAt: '2023-05-19 06:15:46'
 sqlPipeline:
   name: sqlPipeline
   description: null
   author: abhisheks+e2etests@prophecy.io
   createdAt: '2023-04-16 15:58:13'
-  modifiedAt: '2023-04-16 15:58:13'
 dependencies: '[]'
 projectDependencies: {}
 pipelineConfigurations: {}
