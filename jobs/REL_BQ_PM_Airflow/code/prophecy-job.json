@@ -41,6 +41,36 @@
     "scheduleTimeZone" : "UTC"
   },
   "processes" : {
+    "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa" : {
+      "id" : "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa",
+      "component" : "S3FileSensor",
+      "metadata" : {
+        "label" : "S3FileSensor_1",
+        "slug" : "S3FileSensor_1",
+        "x" : 580,
+        "y" : 420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GMJV_BV8pXovPTxQTqZ3o$$Wd2gtoFtP-9QQnkiH1vAM",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "jV3Xi5j_ATg42CjJC56Uf$$GH6AL3l-jtrzuQzgSXoNc",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "awsConnectionId" : "3hP6KE_YNA1BFStS3sBTI",
+        "wildCardMatch" : false,
+        "responseCheck" : null,
+        "verifySslCertificates" : false,
+        "s3Paths" : "test/validation_data/test_source.json",
+        "bucketName" : "qa-prophecy",
+        "taskId" : null
+      }
+    },
     "Ubt00BJR9BInqWi-R9BxZ" : {
       "id" : "Ubt00BJR9BInqWi-R9BxZ",
       "component" : "DBT",
@@ -146,6 +176,65 @@
         "taskId" : null,
         "logPath" : null,
         "storeFailures" : null
+      }
+    },
+    "pFBJ3noH9boj8feTF17N5" : {
+      "id" : "pFBJ3noH9boj8feTF17N5",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "Email_2",
+        "slug" : "Email_2",
+        "x" : 840,
+        "y" : -60
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "69oVKN5WjXJVIxUPy9JkE",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "hUxM5m_9WZoSz9ssNr7c2",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "emailCC" : "navneet@prophecy.io",
+        "subject" : "Test Airflow",
+        "emailBCC" : null,
+        "emailTo" : "abhisheks@propehcy.io",
+        "emailConnectionId" : "M5banLoWc5-970zwOKU3V",
+        "htmlContent" : "Test Airflow",
+        "taskId" : null
+      }
+    },
+    "iva0EMoU98NMRTzgg-MlN" : {
+      "id" : "iva0EMoU98NMRTzgg-MlN",
+      "component" : "HTTPSensor",
+      "metadata" : {
+        "label" : "HTTPSensor_1",
+        "slug" : "HTTPSensor_1",
+        "x" : 500,
+        "y" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "TeXrI_poCBm8KhI-hMIud",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "8-TYU7N9Q1O3yfmuMmniX",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "pokeInterval" : 5,
+        "httpConnectionId" : "qg4zfoFh98cOx-J9Zkgyt",
+        "responseCheck" : null,
+        "endpoint" : "/webhp",
+        "requestParams" : null,
+        "taskId" : null
       }
     },
     "oGbGXKgfWS_smxvKQ6dp5" : {
@@ -273,36 +362,6 @@
         "storeFailures" : null
       }
     },
-    "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa" : {
-      "id" : "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa",
-      "component" : "S3FileSensor",
-      "metadata" : {
-        "label" : "S3FileSensor_1",
-        "slug" : "S3FileSensor_1",
-        "x" : 580,
-        "y" : 420
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "GMJV_BV8pXovPTxQTqZ3o$$Wd2gtoFtP-9QQnkiH1vAM",
-          "slug" : ""
-        } ],
-        "outputs" : [ {
-          "id" : "jV3Xi5j_ATg42CjJC56Uf$$GH6AL3l-jtrzuQzgSXoNc",
-          "slug" : ""
-        } ]
-      },
-      "settings" : { },
-      "properties" : {
-        "awsConnectionId" : "3hP6KE_YNA1BFStS3sBTI",
-        "wildCardMatch" : false,
-        "responseCheck" : null,
-        "verifySslCertificates" : false,
-        "s3Paths" : "test/validation_data/test_source.json",
-        "bucketName" : "qa-prophecy",
-        "taskId" : null
-      }
-    },
     "eYoAcl3tg-dR499mOlUAL$$B-rbC5ekT8_wEmnjH4Cq0" : {
       "id" : "eYoAcl3tg-dR499mOlUAL$$B-rbC5ekT8_wEmnjH4Cq0",
       "component" : "Slack",
@@ -350,5 +409,17 @@
     "target" : "eYoAcl3tg-dR499mOlUAL$$B-rbC5ekT8_wEmnjH4Cq0",
     "sourcePort" : "BAooD_8mlgnw_dFO7AcR-",
     "targetPort" : "PXPkOXpHRmxMDUn3oaQm0$$eD06qUGO1v7coCjGk_O_N"
+  }, {
+    "id" : "PUY2rk-CmMCsN_UwG4Cm8",
+    "source" : "Ubt00BJR9BInqWi-R9BxZ",
+    "target" : "iva0EMoU98NMRTzgg-MlN",
+    "sourcePort" : "IaqRwM_V8B1PRSRYAktF_",
+    "targetPort" : "TeXrI_poCBm8KhI-hMIud"
+  }, {
+    "id" : "KocwKRwXgpPpkCr4KkOCD",
+    "source" : "iva0EMoU98NMRTzgg-MlN",
+    "target" : "pFBJ3noH9boj8feTF17N5",
+    "sourcePort" : "8-TYU7N9Q1O3yfmuMmniX",
+    "targetPort" : "69oVKN5WjXJVIxUPy9JkE"
   } ]
 }
