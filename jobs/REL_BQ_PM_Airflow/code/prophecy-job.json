@@ -272,6 +272,64 @@
         "logPath" : "logs.txt",
         "storeFailures" : null
       }
+    },
+    "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa" : {
+      "id" : "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa",
+      "component" : "S3FileSensor",
+      "metadata" : {
+        "label" : "S3FileSensor_1",
+        "slug" : "S3FileSensor_1",
+        "x" : 580,
+        "y" : 420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GMJV_BV8pXovPTxQTqZ3o$$Wd2gtoFtP-9QQnkiH1vAM",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "jV3Xi5j_ATg42CjJC56Uf$$GH6AL3l-jtrzuQzgSXoNc",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "awsConnectionId" : "3hP6KE_YNA1BFStS3sBTI",
+        "wildCardMatch" : false,
+        "responseCheck" : null,
+        "verifySslCertificates" : false,
+        "s3Paths" : "test/validation_data/test_source.json",
+        "bucketName" : "qa-prophecy",
+        "taskId" : null
+      }
+    },
+    "eYoAcl3tg-dR499mOlUAL$$B-rbC5ekT8_wEmnjH4Cq0" : {
+      "id" : "eYoAcl3tg-dR499mOlUAL$$B-rbC5ekT8_wEmnjH4Cq0",
+      "component" : "Slack",
+      "metadata" : {
+        "label" : "Slack_1",
+        "slug" : "Slack_1",
+        "x" : 940,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PXPkOXpHRmxMDUn3oaQm0$$eD06qUGO1v7coCjGk_O_N",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "Pm-jb27-byAj5wuyAwwm7$$NeKK-cyTM_9_v_C5mNeVG",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "channel" : "abhyslackpub",
+        "text" : "Test Slack BQ PM",
+        "token" : null,
+        "slackConnectionId" : "7k_Cby3g6vOgeKrdy93nb",
+        "taskId" : null
+      }
     }
   },
   "connections" : [ {
@@ -280,5 +338,17 @@
     "target" : "oGbGXKgfWS_smxvKQ6dp5",
     "sourcePort" : "IaqRwM_V8B1PRSRYAktF_",
     "targetPort" : "mqkj7z13hXxNR-I8vEIk3"
+  }, {
+    "id" : "ZXTSpfExlpvLYQHzXZeH7",
+    "source" : "Ubt00BJR9BInqWi-R9BxZ",
+    "target" : "bYm5u4WqIeIwuZ6d3ad5Z$$xlwEP7HEa5deQijNMSeWa",
+    "sourcePort" : "IaqRwM_V8B1PRSRYAktF_",
+    "targetPort" : "GMJV_BV8pXovPTxQTqZ3o$$Wd2gtoFtP-9QQnkiH1vAM"
+  }, {
+    "id" : "LiUeadf_MoJl9BUaQ9FlL",
+    "source" : "oGbGXKgfWS_smxvKQ6dp5",
+    "target" : "eYoAcl3tg-dR499mOlUAL$$B-rbC5ekT8_wEmnjH4Cq0",
+    "sourcePort" : "BAooD_8mlgnw_dFO7AcR-",
+    "targetPort" : "PXPkOXpHRmxMDUn3oaQm0$$eD06qUGO1v7coCjGk_O_N"
   } ]
 }

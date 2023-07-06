@@ -34,10 +34,10 @@ def DBT_0_1():
         depends_on_past = True, 
         ignore_first_depends_on_past = True, 
         wait_for_downstream = True, 
+        queue = "", 
+        max_active_tis_per_dag = 2, 
         priority_weight = 1, 
         weight_rule = "absolute", 
-        queue = "", 
         pool = "testAutomationPool", 
-        pool_slots = 2, 
-        max_active_tis_per_dag = 2
+        pool_slots = 2
     )

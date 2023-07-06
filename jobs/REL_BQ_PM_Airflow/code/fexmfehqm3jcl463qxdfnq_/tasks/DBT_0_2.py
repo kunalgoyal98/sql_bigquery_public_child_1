@@ -17,7 +17,7 @@ def DBT_0_2():
     envs["DBT_FULL_REFRESH"] = "true"
     envs["DBT_INDIRECT_SELECTION"] = "Cautious"
     envs["DBT_PROFILE_SECRET"] = "pnwzLj4P50hUndNzj-fEl"
-    envs["GIT_TOKEN_SECRET"] = ""
+    envs["GIT_TOKEN_SECRET"] = "3IgBpNVduaWk_taIUJjIaQ_"
     envs["GIT_ENTITY"] = "branch"
     envs["GIT_ENTITY_VALUE"] = "dev"
     envs["GIT_SSH_URL"] = "https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1"
@@ -40,10 +40,10 @@ def DBT_0_2():
         depends_on_past = True, 
         ignore_first_depends_on_past = True, 
         wait_for_downstream = True, 
+        queue = "", 
+        max_active_tis_per_dag = 2, 
         priority_weight = 1, 
         weight_rule = "absolute", 
-        queue = "", 
         pool = "testAutomationPool", 
-        pool_slots = 2, 
-        max_active_tis_per_dag = 2
+        pool_slots = 2
     )

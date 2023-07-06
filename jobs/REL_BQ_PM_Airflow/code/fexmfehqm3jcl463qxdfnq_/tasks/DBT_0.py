@@ -8,7 +8,7 @@ def DBT_0():
     envs["DBT_PRINT"] = "false"
     envs["DBT_FULL_REFRESH"] = "true"
     envs["DBT_PROFILE_SECRET"] = "pnwzLj4P50hUndNzj-fEl"
-    envs["GIT_TOKEN_SECRET"] = ""
+    envs["GIT_TOKEN_SECRET"] = "3IgBpNVduaWk_taIUJjIaQ_"
     envs["GIT_ENTITY"] = "branch"
     envs["GIT_ENTITY_VALUE"] = "dev"
     envs["GIT_SSH_URL"] = "https://github.com/abhisheks-prophecy/sql_bigquery_public_child_1"
