@@ -813,6 +813,125 @@
         "isCustomOutputSchema" : false
       }
     },
+    "3cX23a8tZc_1HmzAA3F3e$$R3doE5qsA_CvsK0Cebd6B" : {
+      "id" : "3cX23a8tZc_1HmzAA3F3e$$R3doE5qsA_CvsK0Cebd6B",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_3",
+        "slug" : "SetOperation_3",
+        "x" : 760,
+        "y" : 1120,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "operationType" : "union",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AkUrsrqrdP0pt6GQavYK7$$1N_WluPlOKyj6rR0lmnwN",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "code_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_macro2",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        }, {
+          "id" : "EGjxwDIKhYICgV1t7sfgM$$0lxnzAnJAlEdRVJpIUw_2",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "code_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_macro2",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "yeLopoyDdARXB_O4rtJWX$$stmAB6LIaXw6g7vL0OBbu",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "code_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_macro2",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "U9UiAkKSr2lnRhYSCdYeP$$SZhry6NJwJF5eGbPGzVaM" : {
       "id" : "U9UiAkKSr2lnRhYSCdYeP$$SZhry6NJwJF5eGbPGzVaM",
       "component" : "Limit",
@@ -1799,8 +1918,8 @@
       "metadata" : {
         "label" : "SetOperation_1",
         "slug" : "SetOperation_1",
-        "x" : 680,
-        "y" : 1000,
+        "x" : 640,
+        "y" : 1020,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -3453,7 +3572,7 @@
         "label" : "SetOperation_2",
         "slug" : "SetOperation_2",
         "x" : 960,
-        "y" : 960,
+        "y" : 980,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -5166,7 +5285,7 @@
         "label" : "Limit_6",
         "slug" : "Limit_6",
         "x" : 1100,
-        "y" : 820,
+        "y" : 800,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -5456,6 +5575,92 @@
               "name" : "AMOUNT",
               "dataType" : {
                 "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "0j4t-Nr54TfaBrYvpiSt_$$m7LV7bhr7gxkhWXes0MQe" : {
+      "id" : "0j4t-Nr54TfaBrYvpiSt_$$m7LV7bhr7gxkhWXes0MQe",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_7",
+        "slug" : "Limit_7",
+        "x" : 780,
+        "y" : 1000,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "2"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Z4nxCnzMuHi4me-CIy3pz$$bkO1BzZGBNq_pqYpoLXK9",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "code_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_macro2",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "xJNYLcTX62JfPMTkUDZGC$$TtTC7zlEs2tR_MrUN4EXA",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "code_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "service_label_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_macro2",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },
@@ -7645,23 +7850,41 @@
     "target" : "OSXBhivzaXtjjR-q8xHb5$$2A6qQ-G2pcEryLKI7lWmB",
     "targetPort" : "pp7BowCVifTjjdR1KIj5X"
   }, {
-    "id" : "7SbRkmBypRfdCkWeNwf-G",
-    "source" : "LEyOX2WIgbl4Dfu8W9wUk",
-    "sourcePort" : "vRqHzCknGMxBSVEFP1-Z4",
-    "target" : "BpMVHNWNqnr0IYF8V-MqT$$Ch-mTcISlHk3fsJ9t_T0h",
-    "targetPort" : "nP46O2TwBpR0AaGdI0sJ1$$DpBMsAWEJw-2H4ufKvn_B"
-  }, {
-    "id" : "vTrQX72JELAYf_Th65I1R",
-    "source" : "lOTHcTNlU2vcaSDHgFjox$$Xex25YFd9-TY1yDwxizb-",
-    "sourcePort" : "_4m88gft_6WLazG37Nmsl$$wtzhxhmwzsrIdRjQVPSsc",
-    "target" : "BpMVHNWNqnr0IYF8V-MqT$$Ch-mTcISlHk3fsJ9t_T0h",
-    "targetPort" : "BEi6ooNgqGLLuLbR6ZuVd$$gZ1wUUPiz3QntTznG_aof"
-  }, {
     "id" : "0MRkhZU74HyISyAFHfrUb",
     "source" : "BpMVHNWNqnr0IYF8V-MqT$$Ch-mTcISlHk3fsJ9t_T0h",
     "sourcePort" : "enO0B_P4mkZlTV2IaG97r$$tEGCTwEWK-CYRacrzWwlo",
     "target" : "tMwlnmK3VB3IDqbm5eTw6$$4BtAYnoQX9zYGd4XolPKr",
     "targetPort" : "0eWVm7uBu2BL6vYncjSV-$$WCgGHt_IejsRsB3qA51sL"
+  }, {
+    "id" : "_hUvr3qe3J8rXoKL_Stme",
+    "source" : "LEyOX2WIgbl4Dfu8W9wUk",
+    "sourcePort" : "vRqHzCknGMxBSVEFP1-Z4",
+    "target" : "3cX23a8tZc_1HmzAA3F3e$$R3doE5qsA_CvsK0Cebd6B",
+    "targetPort" : "AkUrsrqrdP0pt6GQavYK7$$1N_WluPlOKyj6rR0lmnwN"
+  }, {
+    "id" : "b0_ddDaeP1PeKoKxV2iq_",
+    "source" : "LEyOX2WIgbl4Dfu8W9wUk",
+    "sourcePort" : "vRqHzCknGMxBSVEFP1-Z4",
+    "target" : "3cX23a8tZc_1HmzAA3F3e$$R3doE5qsA_CvsK0Cebd6B",
+    "targetPort" : "EGjxwDIKhYICgV1t7sfgM$$0lxnzAnJAlEdRVJpIUw_2"
+  }, {
+    "id" : "rW9gyLISW3v8Y7Y8n_8MZ",
+    "source" : "3cX23a8tZc_1HmzAA3F3e$$R3doE5qsA_CvsK0Cebd6B",
+    "sourcePort" : "yeLopoyDdARXB_O4rtJWX$$stmAB6LIaXw6g7vL0OBbu",
+    "target" : "BpMVHNWNqnr0IYF8V-MqT$$Ch-mTcISlHk3fsJ9t_T0h",
+    "targetPort" : "nP46O2TwBpR0AaGdI0sJ1$$DpBMsAWEJw-2H4ufKvn_B"
+  }, {
+    "id" : "OJvuJ9HaphHjlESqjufHi$$dT_ol4TCLCVn3kz_vvTbZ",
+    "source" : "lOTHcTNlU2vcaSDHgFjox$$Xex25YFd9-TY1yDwxizb-",
+    "sourcePort" : "_4m88gft_6WLazG37Nmsl$$wtzhxhmwzsrIdRjQVPSsc",
+    "target" : "0j4t-Nr54TfaBrYvpiSt_$$m7LV7bhr7gxkhWXes0MQe",
+    "targetPort" : "Z4nxCnzMuHi4me-CIy3pz$$bkO1BzZGBNq_pqYpoLXK9"
+  }, {
+    "id" : "XL5cT4oAfoZPx22Ltlvrm",
+    "source" : "0j4t-Nr54TfaBrYvpiSt_$$m7LV7bhr7gxkhWXes0MQe",
+    "sourcePort" : "xJNYLcTX62JfPMTkUDZGC$$TtTC7zlEs2tR_MrUN4EXA",
+    "target" : "BpMVHNWNqnr0IYF8V-MqT$$Ch-mTcISlHk3fsJ9t_T0h",
+    "targetPort" : "BEi6ooNgqGLLuLbR6ZuVd$$gZ1wUUPiz3QntTznG_aof"
   } ],
   "component" : "Model"
 }

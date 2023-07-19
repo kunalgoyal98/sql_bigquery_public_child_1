@@ -20,7 +20,39 @@
 
 
 
-WITH env_uitesting_main_model_bigquery_1 AS (
+WITH model_with_only_seed_base AS (
+
+  SELECT * 
+  
+  FROM {{ ref('model_with_only_seed_base')}}
+
+),
+
+SetOperation_1 AS (
+
+  SELECT * 
+  
+  FROM model_with_only_seed_base AS in0
+  
+  INTERSECT DISTINCT
+  
+  SELECT * 
+  
+  FROM model_with_only_seed_base AS in1
+
+),
+
+Limit_7 AS (
+
+  SELECT * 
+  
+  FROM SetOperation_1 AS in0
+  
+  LIMIT 2
+
+),
+
+env_uitesting_main_model_bigquery_1 AS (
 
   SELECT * 
   
@@ -163,6 +195,20 @@ Limit_2 AS (
   FROM Join_2 AS in0
   
   LIMIT 10
+
+),
+
+SetOperation_3 AS (
+
+  SELECT * 
+  
+  FROM model_with_only_seed_base AS in0
+  
+  UNION DISTINCT
+  
+  SELECT * 
+  
+  FROM model_with_only_seed_base AS in1
 
 ),
 
@@ -611,39 +657,17 @@ combine_multi_tables_2 AS (
 
 ),
 
-model_with_only_seed_base AS (
-
-  SELECT * 
-  
-  FROM {{ ref('model_with_only_seed_base')}}
-
-),
-
-SetOperation_1 AS (
-
-  SELECT * 
-  
-  FROM model_with_only_seed_base AS in0
-  
-  INTERSECT DISTINCT
-  
-  SELECT * 
-  
-  FROM model_with_only_seed_base AS in1
-
-),
-
 SetOperation_2 AS (
 
   SELECT * 
   
-  FROM SetOperation_1 AS in0
+  FROM Limit_7 AS in0
   
   EXCEPT DISTINCT
   
   SELECT * 
   
-  FROM model_with_only_seed_base AS in1
+  FROM SetOperation_3 AS in1
 
 ),
 
