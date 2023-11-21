@@ -5678,7 +5678,21 @@
         "x" : 500,
         "y" : 960,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "dataExplorerProps" : {
+          "filter" : [ {
+            "type" : "simple",
+            "lhs" : "c_float",
+            "operator" : ">=",
+            "rhs" : "1000"
+          }, {
+            "type" : "simple",
+            "lhs" : "c_string",
+            "operator" : "!=",
+            "rhs" : "sd"
+          } ],
+          "sort" : [ ]
+        }
       },
       "properties" : {
         "fileTabs" : [ {

@@ -938,7 +938,7 @@
       "metadata" : {
         "label" : "SQLStatement_0",
         "x" : 400,
-        "y" : 500,
+        "y" : 540,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -1907,7 +1907,7 @@
           "path" : "",
           "id" : "",
           "language" : "sql",
-          "content" : "select i_item_id\n      ,i_item_desc \n      ,i_category \n      ,i_class \n      ,i_current_price\n      ,sum(ss_ext_sales_price) as itemrevenue \n      ,sum(ss_ext_sales_price)*100/sum(sum(ss_ext_sales_price)) over\n          (partition by i_class) as revenueratio\nfrom\t\n\tqa_test_dataset.STORE_SALES\n    \t,item \n    \t,date_dim\nwhere \n\tss_item_sk = i_item_sk \n  \tand i_category in ('Women', 'Electronics', 'Shoes')\n  \tand ss_sold_date_sk = d_date_sk\n\tand d_date between cast('2002-05-27' as date) \n                                and DATE_ADD(DATE '2002-05-27', INTERVAL 30 DAY)\ngroup by \n\ti_item_id\n        ,i_item_desc \n        ,i_category\n        ,i_class\n        ,i_current_price\norder by \n\ti_category\n        ,i_class\n        ,i_item_id\n        ,i_item_desc\n        ,revenueratio"
+          "content" : "select i_item_id\n      ,i_item_desc \n      ,i_category \n      ,i_class \n      ,i_current_price\n      ,sum(ss_ext_sales_price) as itemrevenue \n      ,sum(ss_ext_sales_price)*100/sum(sum(ss_ext_sales_price)) over\n          (partition by i_class) as revenueratio\nfrom\t\n\t`prophecy-qa`.qa_test_dataset.STORE_SALES\n    \t,item \n    \t,date_dim\nwhere \n\tss_item_sk = i_item_sk \n  \tand i_category in ('Women', 'Electronics', 'Shoes')\n  \tand ss_sold_date_sk = d_date_sk\n\tand d_date between cast('2002-05-27' as date) \n                                and DATE_ADD(DATE '2002-05-27', INTERVAL 30 DAY)\ngroup by \n\ti_item_id\n        ,i_item_desc \n        ,i_category\n        ,i_class\n        ,i_current_price\norder by \n\ti_category\n        ,i_class\n        ,i_item_id\n        ,i_item_desc\n        ,revenueratio"
         } ]
       },
       "ports" : {

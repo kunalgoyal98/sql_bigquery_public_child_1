@@ -8,7 +8,7 @@
     "editable" : true
   },
   "providerType" : "bigquery",
-  "fabricId" : "5285",
+  "fabricId" : "66",
   "prophecyIDEFolder" : {
     "name" : "",
     "children" : { },
@@ -16849,9 +16849,7 @@
   },
   "dependenciesContainer" : {
     "dependencies" : { },
-    "prophecyProjectDependencies" : {
-      "https://github.com/abhisheks-prophecy/sql_bigquery_public_parent" : "24111"
-    }
+    "prophecyProjectDependencies" : { }
   },
   "frontEndLanguage" : "sql"
 }
